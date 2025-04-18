@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ config.name }} - Конфигуратор ПК{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2><i class="fas fa-desktop me-2"></i>{{ config.name }}</h2>
+                <div>
+                    <a href="{{ url_for('config.my_configs') }}" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i>Назад к списку
+                    </a>
+                    <a href="{{ url_for('config.edit_config', config_id=config.conf_id) }}" class="btn btn-outline-primary">
+                        <i class="fas fa-edit me-1"></i>Редактировать
+                    </a>
+                </div>
+            </div>
+            <p class="text-muted">Детальная информация о конфигурации</p>
+        </div>
+    </div>
+
+    <!-- Блок совместимости -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card border">
+                <div class="card-header">
+                    <h5 class="mb-0">Совместимость компонентов</h5>
+                </div>
+                <div class="card-body">
+                    {% if compatibility_issues %}
+                        <div class="alert alert-warning mb-0">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>Обнаружены проблемы совместимости:</h6>
+                            <ul class="list-unstyled ms-4 mt-2 mb-0">
+                                {% for issue in compatibility_issues %}
+                                    <li><i class="fas fa-times-circle text-danger me-2"></i>{{ issue }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-success mb-0">
+                            <i class="fas fa-check-circle me-2"></i>Все компоненты полностью совместимы
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="card-footer bg-white d-flex justify-content-between">
+                    <div>
+                        <span class="text-muted">Итоговая стоимость:</span>
+                        <span class="h4 ms-2">{{ total_price }} ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Компоненты конфигурации -->
+    <div class="row">
+        <!-- Материнская плата -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-microchip me-2"></i>Материнская плата</h5>
+                </div>
+                <div class="card-body">
+                    {% if config.motherboard %}
+                        <h5 class="mb-3">{{ config.motherboard.name }}</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Форм-фактор:</span>
+                                        <span class="fw-bold">{{ config.motherboard.form }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-muted">Сокет:</span>
+                                        <span class="fw-bold">{{ config.motherboard.soket }}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Тип памяти:</span>
+                                        <span class="fw-bold">{{ config.motherboard.type_member }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-muted">Интерфейсы:</span>
+                                        <span class="fw-bold">{{ config.motherboard.interface }}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fs-5 text-primary text-end mb-0">{{ config.motherboard.price }} ₽</p>
+                    {% else %}
+                        <div class="alert alert-secondary mb-0">
+                            <i class="fas fa-exclamation-circle me-2"></i>Компонент не выбран
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Процессор -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0"><i class="fas fa-microchip me-2"></i>Процессор</h5>
+                </div>
+                <div class="card-body">
+                    {% if config.processor %}
+                        <h5 class="mb-3">{{ config.processor.name }}</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Сокет:</span>
+                                        <span class="fw-bold">{{ config.processor.soket }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-muted">Частота:</span>
+                                        <span class="fw-bold">{{ config.processor.frequancy }} ГГц</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Энергопотребление:</span>
+                                        <span class="fw-bold">{{ config.processor.power_use }} Вт</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fs-5 text-danger text-end mb-0">{{ config.processor.price }} ₽</p>
+                    {% else %}
+                        <div class="alert alert-secondary mb-0">
+                            <i class="fas fa-exclamation-circle me-2"></i>Компонент не выбран
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Видеокарта -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="fas fa-tv me-2"></i>Видеокарта</h5>
+                </div>
+                <div class="card-body">
+                    {% if config.graphics_card %}
+                        <h5 class="mb-3">{{ config.graphics_card.name }}</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Частота:</span>
+                                        <span class="fw-bold">{{ config.graphics_card.frequancy }} ГГц</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-muted">Разъем:</span>
+                                        <span class="fw-bold">{{ config.graphics_card.soket }}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Энергопотребление:</span>
+                                        <span class="fw-bold">{{ config.graphics_card.power_use }} Вт</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fs-5 text-success text-end mb-0">{{ config.graphics_card.price }} ₽</p>
+                    {% else %}
+                        <div class="alert alert-secondary mb-0">
+                            <i class="fas fa-exclamation-circle me-2"></i>Компонент не выбран
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Оперативная память -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="fas fa-memory me-2"></i>Оперативная память</h5>
+                </div>
+                <div class="card-body">
+                    {% if config.ram %}
+                        <h5 class="mb-3">{{ config.ram.name }}</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Частота:</span>
+                                        <span class="fw-bold">{{ config.ram.frequancy }} МГц</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-muted">Тип:</span>
+                                        <span class="fw-bold">{{ config.ram.type_member }}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="text-muted">Энергопотребление:</span>
+                                        <span class="fw-bold">{{ config.ram.power_use }} Вт</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fs-5 text-info text-end mb-0">{{ config.ram.price }} ₽</p>
+                    {% else %}
+                        <div class="alert alert-secondary mb-0">
+                            <i class="fas fa-exclamation-circle me-2"></i>Компонент не выбран
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительные компоненты можно добавить по аналогии -->
+        <!-- Блок питания, Жесткий диск, Кулер, Корпус -->
+    </div>
+</div>
+{% endblock %} 
