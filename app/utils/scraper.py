@@ -80,7 +80,7 @@ def create_component(component_type, name, price, specs):
                 price=price,
                 form=specs.get('form', 'ATX'),
                 soket=specs.get('soket', 'AM4'),  # Значение по умолчанию
-                type_member=specs.get('type_member', 'DDR4'),
+                memory_type=specs.get('memory_type', 'DDR4'),
                 interface=specs.get('interface', 'PCIe 3.0')
             )
         
@@ -97,7 +97,7 @@ def create_component(component_type, name, price, specs):
                 name=name,
                 price=price,
                 soket=specs.get('soket', 'AM4'),
-                frequancy=float(specs.get('frequancy', 3.5)),
+                frequency=float(specs.get('frequency', 3.5)),
                 power_use=int(specs.get('power_use', 65))
             )
         
@@ -105,7 +105,7 @@ def create_component(component_type, name, price, specs):
             component = GraphicsCard(
                 name=name,
                 price=price,
-                frequancy=float(specs.get('frequancy', 1500)),
+                frequency=float(specs.get('frequency', 1500)),
                 soket=specs.get('soket', 'PCIe 3.0'),
                 power_use=int(specs.get('power_use', 150))
             )
@@ -122,8 +122,8 @@ def create_component(component_type, name, price, specs):
             component = RAM(
                 name=name,
                 price=price,
-                frequancy=int(specs.get('frequancy', 3200)),
-                type_member=specs.get('type_member', 'DDR4'),
+                frequency=int(specs.get('frequency', 3200)),
+                memory_type=specs.get('memory_type', 'DDR4'),
                 power_use=int(specs.get('power_use', 10))
             )
         

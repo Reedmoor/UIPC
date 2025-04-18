@@ -34,7 +34,7 @@ class Motherboard(db.Model):
     price = db.Column(db.Float, nullable=False)
     form = db.Column(db.String(50), nullable=False)  # ATX, Micro-ATX и т.д.
     soket = db.Column(db.String(50), nullable=False)
-    type_member = db.Column(db.String(50), nullable=False)  # Тип оперативной памяти
+    memory_type = db.Column(db.String(50), nullable=False)  # Тип оперативной памяти
     interface = db.Column(db.String(255), nullable=False)  # JSON или список интерфейсов
 
 class PowerSupply(db.Model):
@@ -53,7 +53,7 @@ class Processor(db.Model):
     name = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Float, nullable=False)
     soket = db.Column(db.String(50), nullable=False)
-    frequancy = db.Column(db.Float, nullable=False)  # Частота в ГГц
+    frequency = db.Column(db.Float, nullable=False)  # Частота в ГГц
     power_use = db.Column(db.Integer, nullable=False)  # Потребляемая мощность в ваттах
 
 class GraphicsCard(db.Model):
@@ -62,7 +62,7 @@ class GraphicsCard(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Float, nullable=False)
-    frequancy = db.Column(db.Float, nullable=False)  # Частота в МГц
+    frequency = db.Column(db.Float, nullable=False)  # Частота в МГц
     soket = db.Column(db.String(255), nullable=False)  # Список доступных разъемов
     power_use = db.Column(db.Integer, nullable=False)  # Потребляемая мощность в ваттах
 
@@ -81,9 +81,10 @@ class RAM(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Float, nullable=False)
-    frequancy = db.Column(db.Integer, nullable=False)  # Частота в МГц
-    type_member = db.Column(db.String(50), nullable=False)  # DDR4, DDR5 и т.д.
+    frequency = db.Column(db.Integer, nullable=False)  # Частота в МГц
+    memory_type = db.Column(db.String(50), nullable=False)  # DDR4, DDR5 и т.д.
     power_use = db.Column(db.Integer, nullable=False)  # Потребляемая мощность в ваттах
+    capacity = db.Column(db.Integer, nullable=False)  # Объем в ГБ
 
 class HardDrive(db.Model):
     __tablename__ = 'hard_drives'
@@ -152,8 +153,8 @@ class Configuration(db.Model):
         
         # Проверка совместимости типа оперативной памяти и материнской платы
         if self.ram and self.motherboard:
-            if self.ram.type_member != self.motherboard.type_member:
-                issues.append(f"Несовместимый тип памяти ({self.ram.type_member}) и материнской платы ({self.motherboard.type_member})")
+            if self.ram.memory_type != self.motherboard.memory_type:
+                issues.append(f"Несовместимый тип памяти ({self.ram.memory_type}) и материнской платы ({self.motherboard.memory_type})")
         
         # Проверка мощности блока питания
         if self.power_supply and (self.processor or self.graphics_card or self.cooler or self.ram):

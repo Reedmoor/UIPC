@@ -48,28 +48,28 @@ def seed_database():
         # Материнские платы
         motherboards = [
             Motherboard(
-                name="ASUS ROG STRIX B550-F GAMING",
-                price=15990,
-                form="ATX",
-                soket="AM4",
-                type_member="DDR4",
-                interface="PCIe 4.0, SATA 6Gb/s"
-            ),
-            Motherboard(
-                name="MSI MPG B550 GAMING PLUS",
-                price=12990,
-                form="ATX",
-                soket="AM4",
-                type_member="DDR4",
-                interface="PCIe 4.0, SATA 6Gb/s"
-            ),
-            Motherboard(
-                name="GIGABYTE Z690 AORUS ELITE",
-                price=23990,
+                name="Asus ROG STRIX Z690-F GAMING WIFI",
+                price=32000,
                 form="ATX",
                 soket="LGA1700",
-                type_member="DDR5",
-                interface="PCIe 5.0, SATA 6Gb/s"
+                memory_type="DDR4",
+                interface="PCIe 5.0, SATA III"
+            ),
+            Motherboard(
+                name="MSI MAG B550 TOMAHAWK",
+                price=15000,
+                form="ATX",
+                soket="AM4",
+                memory_type="DDR4",
+                interface="PCIe 4.0, SATA III"
+            ),
+            Motherboard(
+                name="Gigabyte Z690 AORUS ELITE AX",
+                price=28000,
+                form="ATX",
+                soket="LGA1700",
+                memory_type="DDR5",
+                interface="PCIe 5.0, SATA III"
             )
         ]
         
@@ -84,28 +84,28 @@ def seed_database():
                 name="AMD Ryzen 5 5600X",
                 price=17990,
                 soket="AM4",
-                frequancy=3.7,
+                frequency=3.7,
                 power_use=65
             ),
             Processor(
                 name="AMD Ryzen 7 5800X",
                 price=27990,
                 soket="AM4",
-                frequancy=3.8,
+                frequency=3.8,
                 power_use=105
             ),
             Processor(
                 name="Intel Core i5-12600K",
                 price=22990,
                 soket="LGA1700",
-                frequancy=3.7,
+                frequency=3.7,
                 power_use=125
             ),
             Processor(
                 name="Intel Core i7-12700K",
                 price=34990,
                 soket="LGA1700",
-                frequancy=3.6,
+                frequency=3.6,
                 power_use=125
             )
         ]
@@ -120,21 +120,21 @@ def seed_database():
             GraphicsCard(
                 name="NVIDIA GeForce RTX 3060",
                 price=39990,
-                frequancy=1.32,
+                frequency=1.32,
                 soket="PCIe 4.0",
                 power_use=170
             ),
             GraphicsCard(
                 name="NVIDIA GeForce RTX 3070",
                 price=59990,
-                frequancy=1.5,
+                frequency=1.5,
                 soket="PCIe 4.0",
                 power_use=220
             ),
             GraphicsCard(
                 name="AMD Radeon RX 6700 XT",
                 price=54990,
-                frequancy=2.42,
+                frequency=2.42,
                 soket="PCIe 4.0",
                 power_use=230
             )
@@ -150,22 +150,22 @@ def seed_database():
             RAM(
                 name="Kingston FURY Beast 16GB (2x8GB)",
                 price=7990,
-                frequancy=3200,
-                type_member="DDR4",
+                frequency=3200,
+                memory_type="DDR4",
                 power_use=10
             ),
             RAM(
                 name="Corsair Vengeance RGB Pro 32GB (2x16GB)",
                 price=13990,
-                frequancy=3600,
-                type_member="DDR4",
+                frequency=3600,
+                memory_type="DDR4",
                 power_use=15
             ),
             RAM(
                 name="G.Skill Trident Z5 RGB 32GB (2x16GB)",
                 price=18990,
-                frequancy=5600,
-                type_member="DDR5",
+                frequency=5600,
+                memory_type="DDR5",
                 power_use=20
             )
         ]

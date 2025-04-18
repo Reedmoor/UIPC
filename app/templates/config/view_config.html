@@ -82,7 +82,7 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <span class="text-muted">Тип памяти:</span>
-                                        <span class="fw-bold">{{ config.motherboard.type_member }}</span>
+                                        <span class="fw-bold">{{ config.motherboard.memory_type }}</span>
                                     </li>
                                     <li>
                                         <span class="text-muted">Интерфейсы:</span>
@@ -90,6 +90,10 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-muted small">Поддерживаемый тип памяти:</span>
+                            <span class="fw-bold">{{ config.motherboard.memory_type }}</span>
                         </div>
                         <p class="fs-5 text-primary text-end mb-0">{{ config.motherboard.price }} ₽</p>
                     {% else %}
@@ -119,7 +123,7 @@
                                     </li>
                                     <li>
                                         <span class="text-muted">Частота:</span>
-                                        <span class="fw-bold">{{ config.processor.frequancy }} ГГц</span>
+                                        <span class="fw-bold">{{ config.processor.frequency }} ГГц</span>
                                     </li>
                                 </ul>
                             </div>
@@ -156,7 +160,7 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <span class="text-muted">Частота:</span>
-                                        <span class="fw-bold">{{ config.graphics_card.frequancy }} ГГц</span>
+                                        <span class="fw-bold">{{ config.graphics_card.frequency }} ГГц</span>
                                     </li>
                                     <li>
                                         <span class="text-muted">Разъем:</span>
@@ -197,11 +201,11 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <span class="text-muted">Частота:</span>
-                                        <span class="fw-bold">{{ config.ram.frequancy }} МГц</span>
+                                        <span class="fw-bold">{{ config.ram.frequency }} МГц</span>
                                     </li>
                                     <li>
                                         <span class="text-muted">Тип:</span>
-                                        <span class="fw-bold">{{ config.ram.type_member }}</span>
+                                        <span class="fw-bold">{{ config.ram.memory_type }}</span>
                                     </li>
                                 </ul>
                             </div>

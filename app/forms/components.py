@@ -1,21 +1,27 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, FloatField, IntegerField, SelectField, SubmitField
-from wtforms.validators import DataRequired, NumberRange
+from wtforms.validators import DataRequired, NumberRange, Length
 
 class MotherboardForm(FlaskForm):
-    name = StringField('Название', validators=[DataRequired()])
+    name = StringField('Название', validators=[
+        DataRequired(message='Имя обязательное поле'),
+        Length(min=3, max=100, message='Имя должно быть от 3 до 100 символов')
+    ])
     price = FloatField('Цена (руб.)', validators=[
         DataRequired(),
         NumberRange(min=0, message='Цена должна быть положительным числом')
     ])
     form = SelectField('Форм-фактор', choices=[
         ('ATX', 'ATX'),
-        ('Micro-ATX', 'Micro-ATX'),
-        ('Mini-ITX', 'Mini-ITX'),
+        ('microATX', 'microATX'),
+        ('miniITX', 'mini-ITX'),
         ('E-ATX', 'E-ATX')
     ], validators=[DataRequired()])
-    soket = StringField('Сокет', validators=[DataRequired()])
-    type_member = SelectField('Тип памяти', choices=[
+    soket = StringField('Сокет', validators=[
+        DataRequired(message='Сокет обязательное поле')
+    ])
+    memory_type = SelectField('Тип памяти', choices=[
+        ('DDR3', 'DDR3'),
         ('DDR4', 'DDR4'),
         ('DDR5', 'DDR5')
     ], validators=[DataRequired()])
@@ -46,7 +52,7 @@ class ProcessorForm(FlaskForm):
         NumberRange(min=0, message='Цена должна быть положительным числом')
     ])
     soket = StringField('Сокет', validators=[DataRequired()])
-    frequancy = FloatField('Частота (ГГц)', validators=[
+    frequency = FloatField('Частота (ГГц)', validators=[
         DataRequired(),
         NumberRange(min=0, message='Частота должна быть положительным числом')
     ])
@@ -62,7 +68,7 @@ class GraphicsCardForm(FlaskForm):
         DataRequired(),
         NumberRange(min=0, message='Цена должна быть положительным числом')
     ])
-    frequancy = FloatField('Частота (МГц)', validators=[
+    frequency = FloatField('Частота (МГц)', validators=[
         DataRequired(),
         NumberRange(min=0, message='Частота должна быть положительным числом')
     ])
@@ -95,14 +101,20 @@ class RAMForm(FlaskForm):
         DataRequired(),
         NumberRange(min=0, message='Цена должна быть положительным числом')
     ])
-    frequancy = IntegerField('Частота (МГц)', validators=[
+    frequency = IntegerField('Частота (МГц)', validators=[
         DataRequired(),
         NumberRange(min=0, message='Частота должна быть положительным числом')
     ])
-    type_member = SelectField('Тип памяти', choices=[
+    memory_type = SelectField('Тип памяти', choices=[
+        ('DDR3', 'DDR3'),
         ('DDR4', 'DDR4'),
         ('DDR5', 'DDR5')
     ], validators=[DataRequired()])
+
+    capacity = IntegerField('Объем (ГБ)', validators=[
+        DataRequired(),
+        NumberRange(min=1, message='Объем должен быть положительным числом')
+    ])
     power_use = IntegerField('Потребляемая мощность (Вт)', validators=[
         DataRequired(),
         NumberRange(min=0, message='Потребляемая мощность должна быть положительным числом')
