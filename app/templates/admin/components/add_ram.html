@@ -47,7 +47,7 @@
                     </div>
                     
                     <div class="row mb-3">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 {{ form.memory_type.label(class="form-label") }}
                                 {{ form.memory_type(class="form-select") }}
@@ -60,7 +60,7 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 {{ form.capacity.label(class="form-label") }}
                                 <div class="input-group">
@@ -76,7 +76,9 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 {{ form.frequency.label(class="form-label") }}
                                 <div class="input-group">
@@ -92,9 +94,8 @@
                                 {% endif %}
                             </div>
                         </div>
-                    </div>
                     
-                        <div class="col-md-4">
+                        <div class="col mb-6">
                             <div class="form-group">
                                 {{ form.power_use.label(class="form-label") }}
                                 <div class="input-group">
@@ -111,6 +112,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     
                     <div class="row mb-3">
                         <div class="col-md-6 offset-md-3">
