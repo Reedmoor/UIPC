@@ -38,36 +38,40 @@
                                 <th>ID</th>
                                 <th>Название</th>
                                 <th>Сокет</th>
-                                <th>Частота (ГГц)</th>
-                                <th>Энергопотребление (Вт)</th>
+                                <th>Ядра</th>
+                                <th>Потоки</th>
+                                <th>Базовая частота</th>
+                                <th>Максимальная частота</th>
                                 <th>Цена</th>
                                 <th>Действия</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for proc in processors %}
+                            {% for processor in processors %}
                             <tr>
-                                <td>{{ proc.id }}</td>
-                                <td>{{ proc.name }}</td>
-                                <td>{{ proc.soket }}</td>
-                                <td>{{ proc.frequency }}</td>
-                                <td>{{ proc.power_use }} Вт</td>
-                                <td>{{ proc.price }} ₽</td>
+                                <td>{{ processor.id }}</td>
+                                <td>{{ processor.name }}</td>
+                                <td>{{ processor.soket }}</td>
+                                <td>{{ processor.cores }}</td>
+                                <td>{{ processor.threads }}</td>
+                                <td>{{ processor.base_clock }} ГГц</td>
+                                <td>{{ processor.turbo_clock }} ГГц</td>
+                                <td>{{ processor.price }} ₽</td>
                                 <td>
                                     <div class="btn-group btn-group-sm" role="group">
-                                        <a href="#" class="btn btn-outline-primary" title="Редактировать">
+                                        <a href="{{ url_for('admin.edit_processor', processor_id=processor.id) }}" class="btn btn-outline-primary" title="Редактировать">
                                             <i class="fas fa-edit"></i>
                                         </a>
                                         <button type="button" class="btn btn-outline-danger" 
                                                 data-bs-toggle="modal" 
-                                                data-bs-target="#deleteModal{{ proc.id }}" 
+                                                data-bs-target="#deleteModal{{ processor.id }}" 
                                                 title="Удалить">
                                             <i class="fas fa-trash-alt"></i>
                                         </button>
                                     </div>
                                     
                                     <!-- Модальное окно подтверждения удаления -->
-                                    <div class="modal fade" id="deleteModal{{ proc.id }}" tabindex="-1" aria-hidden="true">
+                                    <div class="modal fade" id="deleteModal{{ processor.id }}" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -75,12 +79,12 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Вы действительно хотите удалить процессор <strong>{{ proc.name }}</strong>?</p>
+                                                    <p>Вы действительно хотите удалить процессор <strong>{{ processor.name }}</strong>?</p>
                                                     <p class="text-danger"><strong>Внимание:</strong> Это действие нельзя отменить.</p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-                                                    <form action="{{ url_for('admin.delete_processor', processor_id=proc.id) }}" method="POST">
+                                                    <button type="button class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                                                    <form action="{{ url_for('admin.delete_processor', processor_id=processor.id) }}" method="POST">
                                                         <button type="submit" class="btn btn-danger">Удалить</button>
                                                     </form>
                                                 </div>
@@ -102,7 +106,7 @@
                         </a>
                         <a href="{{ url_for('admin.scrape') }}" class="btn btn-outline-secondary ms-2">
                             <i class="fas fa-spider me-2"></i>Импортировать данные
-                        </a>
+                        </div>
                     </div>
                 </div>
                 {% endif %}
@@ -138,9 +142,9 @@
                             <div class="card-body text-center">
                                 <h5>Частота</h5>
                                 <div class="mt-2">
-                                    {% set low_freq = processors|selectattr('frequency', 'lt', 3.0)|list|length %}
-                                    {% set mid_freq = processors|selectattr('frequency', 'ge', 3.0)|selectattr('frequency', 'lt', 4.0)|list|length %}
-                                    {% set high_freq = processors|selectattr('frequency', 'ge', 4.0)|list|length %}
+                                    {% set low_freq = processors|selectattr('base_clock', 'lt', 3.0)|list|length %}
+                                    {% set mid_freq = processors|selectattr('base_clock', 'ge', 3.0)|selectattr('base_clock', 'lt', 4.0)|list|length %}
+                                    {% set high_freq = processors|selectattr('base_clock', 'ge', 4.0)|list|length %}
                                     
                                     <span class="badge bg-secondary mb-1 me-1">До 3.0 ГГц ({{ low_freq }})</span>
                                     <span class="badge bg-warning text-dark mb-1 me-1">3.0-4.0 ГГц ({{ mid_freq }})</span>

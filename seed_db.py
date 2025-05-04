@@ -84,28 +84,40 @@ def seed_database():
                 name="AMD Ryzen 5 5600X",
                 price=17990,
                 soket="AM4",
-                frequency=3.7,
+                base_clock=3.7,
+                turbo_clock=4.6,
+                cores=6,
+                threads=12,
                 power_use=65
             ),
             Processor(
                 name="AMD Ryzen 7 5800X",
                 price=27990,
                 soket="AM4",
-                frequency=3.8,
+                base_clock=3.8,
+                turbo_clock=4.7,
+                cores=8,
+                threads=16,
                 power_use=105
             ),
             Processor(
                 name="Intel Core i5-12600K",
                 price=22990,
                 soket="LGA1700",
-                frequency=3.7,
+                base_clock=3.7,
+                turbo_clock=4.9,
+                cores=6,
+                threads=12,
                 power_use=125
             ),
             Processor(
                 name="Intel Core i7-12700K",
                 price=34990,
                 soket="LGA1700",
-                frequency=3.6,
+                base_clock=3.6,
+                turbo_clock=4.9,
+                cores=8,
+                threads=16,
                 power_use=125
             )
         ]
@@ -152,21 +164,24 @@ def seed_database():
                 price=7990,
                 frequency=3200,
                 memory_type="DDR4",
-                power_use=10
+                power_use=10,
+                capacity=16
             ),
             RAM(
                 name="Corsair Vengeance RGB Pro 32GB (2x16GB)",
                 price=13990,
                 frequency=3600,
                 memory_type="DDR4",
-                power_use=15
+                power_use=15,
+                capacity=32
             ),
             RAM(
                 name="G.Skill Trident Z5 RGB 32GB (2x16GB)",
                 price=18990,
                 frequency=5600,
                 memory_type="DDR5",
-                power_use=20
+                power_use=20,
+                capacity=32
             )
         ]
         
@@ -181,19 +196,22 @@ def seed_database():
                 name="Corsair RM750x",
                 price=9990,
                 power=750,
-                type="ATX"
+                type="ATX",
+                certificate="80 PLUS Gold"
             ),
             PowerSupply(
                 name="EVGA SuperNOVA 850 G5",
                 price=12990,
                 power=850,
-                type="ATX"
+                type="ATX",
+                certificate="80 PLUS Gold"
             ),
             PowerSupply(
                 name="Cooler Master V1000 Platinum",
                 price=16990,
                 power=1000,
-                type="ATX"
+                type="ATX",
+                certificate="80 PLUS Gold"
             )
         ]
         

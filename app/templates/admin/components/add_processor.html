@@ -50,7 +50,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 {{ form.soket.label(class="form-label") }}
-                                {{ form.soket(class="form-control") }}
+                                {{ form.soket(class="form-select") }}
                                 {% if form.soket.errors %}
                                 <div class="invalid-feedback d-block">
                                     {% for error in form.soket.errors %}
@@ -63,23 +63,72 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                {{ form.frequency.label(class="form-label") }}
-                                <div class="input-group">
-                                    {{ form.frequency(class="form-control") }}
-                                    <span class="input-group-text">ГГц</span>
-                                </div>
-                                {% if form.frequency.errors %}
+                                {{ form.cores.label(class="form-label") }}
+                                {{ form.cores(class="form-control") }}
+                                {% if form.cores.errors %}
                                 <div class="invalid-feedback d-block">
-                                    {% for error in form.frequency.errors %}
+                                    {% for error in form.cores.errors %}
                                         {{ error }}
                                     {% endfor %}
                                 </div>
                                 {% endif %}
+                                <div class="form-text">Количество ядер процессора</div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form.threads.label(class="form-label") }}
+                                {{ form.threads(class="form-control") }}
+                                {% if form.threads.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {% for error in form.threads.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                <div class="form-text">Количество потоков процессора</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form.base_clock.label(class="form-label") }}
+                                <div class="input-group">
+                                    {{ form.base_clock(class="form-control") }}
+                                    <span class="input-group-text">ГГц</span>
+                                </div>
+                                {% if form.base_clock.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {% for error in form.base_clock.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                <div class="form-text">Базовая частота процессора</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form.turbo_clock.label(class="form-label") }}
+                                <div class="input-group">
+                                    {{ form.turbo_clock(class="form-control") }}
+                                    <span class="input-group-text">ГГц</span>
+                                </div>
+                                {% if form.turbo_clock.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {% for error in form.turbo_clock.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                <div class="form-text">Максимальная частота процессора</div>
+                            </div>
+                        </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 {{ form.power_use.label(class="form-label") }}
@@ -94,8 +143,12 @@
                                     {% endfor %}
                                 </div>
                                 {% endif %}
+                                <div class="form-text">Энергопотребление (TDP)</div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="row mb-3">
                         <div class="col-md-6">
                             <div class="form-group">
                                 {{ form.price.label(class="form-label") }}
@@ -110,6 +163,7 @@
                                     {% endfor %}
                                 </div>
                                 {% endif %}
+                                <div class="form-text">Цена процессора</div>
                             </div>
                         </div>
                     </div>
@@ -141,6 +195,7 @@
                         <li>Указывайте точное название модели процессора</li>
                         <li>Выбирайте правильный сокет для совместимости с материнской платой</li>
                         <li>Для частоты используйте значение в ГГц (например: 3.5)</li>
+                        <li>Указывайте количество ядер и потоков</li>
                         <li>TDP (энергопотребление) указывайте в ваттах</li>
                     </ul>
                 </div>
@@ -148,4 +203,4 @@
         </div>
     </div>
 </div>
-{% endblock %} 
+{% endblock %}

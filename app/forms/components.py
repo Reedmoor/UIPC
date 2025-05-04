@@ -43,6 +43,13 @@ class PowerSupplyForm(FlaskForm):
         ('SFX', 'SFX'),
         ('SFX-L', 'SFX-L')
     ], validators=[DataRequired()])
+    certificate = SelectField('Сертификат', choices=[
+        ('80 PLUS', '80 PLUS'),
+        ('80 PLUS Bronze', '80 PLUS Bronze'),
+        ('80 PLUS Gold', '80 PLUS Gold'),
+        ('80 PLUS Platinum', '80 PLUS Platinum'),
+        ('80 PLUS Titanium', '80 PLUS Titanium'),
+    ], validators=[DataRequired()])
     submit = SubmitField('Добавить блок питания')
 
 class ProcessorForm(FlaskForm):
@@ -52,9 +59,21 @@ class ProcessorForm(FlaskForm):
         NumberRange(min=0, message='Цена должна быть положительным числом')
     ])
     soket = StringField('Сокет', validators=[DataRequired()])
-    frequency = FloatField('Частота (ГГц)', validators=[
+    base_clock = FloatField('Базовая частота (ГГц)', validators=[
         DataRequired(),
-        NumberRange(min=0, message='Частота должна быть положительным числом')
+        NumberRange(min=0, message='Базовая частота должна быть положительным числом')
+    ])
+    turbo_clock = FloatField('Турбочастота (ГГц)', validators=[
+        DataRequired(),
+        NumberRange(min=0, message='Турбочастота должна быть положительным числом')
+    ])
+    cores = IntegerField('Количество ядер', validators=[
+        DataRequired(),
+        NumberRange(min=0, message='Количество ядер должно быть положительным числом')
+    ])
+    threads = IntegerField('Количество потоков', validators=[
+        DataRequired(),
+        NumberRange(min=0, message='Количество потоков должно быть положительным числом')
     ])
     power_use = IntegerField('Потребляемая мощность (Вт)', validators=[
         DataRequired(),

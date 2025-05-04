@@ -4,6 +4,7 @@ from flask_login import LoginManager
 from flask_migrate import Migrate
 import os
 from dotenv import load_dotenv
+from datetime import datetime
 
 # Загрузка переменных окружения
 load_dotenv()
@@ -12,6 +13,10 @@ load_dotenv()
 db = SQLAlchemy()
 migrate = Migrate()
 login_manager = LoginManager()
+
+# Function to get current datetime for templates
+def get_now():
+    return datetime.now()
 
 def create_app():
     app = Flask(__name__)
@@ -42,5 +47,9 @@ def create_app():
     app.register_blueprint(auth_bp, url_prefix='/auth')
     app.register_blueprint(admin_bp, url_prefix='/admin')
     app.register_blueprint(config_bp, url_prefix='/config')
+    
+    # Register functions for Jinja templates
+    app.jinja_env.globals.update(abs=abs)
+    app.jinja_env.globals.update(now=get_now)
     
     return app 

@@ -1,0 +1,1170 @@
+2025-05-03 19:04:23,159 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-03 19:08:11,354 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60338): Read timed out. (read timeout=120)")': /session/f5bdb38b3b5163dcdd4f233729741e92/source
+2025-05-03 19:10:11,373 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60338): Read timed out. (read timeout=120)")': /session/f5bdb38b3b5163dcdd4f233729741e92/source
+2025-05-03 19:11:09,026 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-03 19:11:38,319 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-03 19:11:39,699 - INFO - Reading URLs from urls.txt
+2025-05-03 19:11:39,715 - INFO - Found 1 URLs to process
+2025-05-03 19:11:39,716 - INFO - Processing URL 1/1: https://www.dns-shop.ru/product/134e19be243b1b80/1000-gb-m2-nvme-nakopitel-adata-xpg-gammix-s11-pro-agammixs11p-1tt-c/
+2025-05-03 19:11:39,717 - INFO - Processing URL: https://www.dns-shop.ru/product/134e19be243b1b80/1000-gb-m2-nvme-nakopitel-adata-xpg-gammix-s11-pro-agammixs11p-1tt-c/
+2025-05-03 19:12:13,829 - INFO - Parsed product: 1000 ГБ M.2 NVMe накопитель ADATA XPG GAMMIX S11 Pro [AGAMMIXS11P-1TT-C]
+2025-05-03 19:12:13,835 - INFO - Added new product data for https://www.dns-shop.ru/product/134e19be243b1b80/1000-gb-m2-nvme-nakopitel-adata-xpg-gammix-s11-pro-agammixs11p-1tt-c/
+2025-05-03 19:12:13,843 - INFO - Saved data for product: 1000 ГБ M.2 NVMe накопитель ADATA XPG GAMMIX S11 Pro [AGAMMIXS11P-1TT-C]
+2025-05-03 19:12:14,220 - INFO - Product details parsing complete!
+2025-05-03 20:00:10,262 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-03 20:02:43,541 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-03 20:04:19,158 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-03 20:04:20,663 - INFO - Reading URLs from urls.txt
+2025-05-03 20:04:20,664 - INFO - Found 20 URLs to process
+2025-05-03 20:04:20,664 - INFO - Processing URL 1/20: https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/
+2025-05-03 20:04:20,665 - INFO - Processing URL: https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/
+2025-05-03 20:05:20,695 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7800 XT NITRO+ [11330-01-20G]
+2025-05-03 20:05:20,698 - INFO - Added new product data for https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/
+2025-05-03 20:05:20,700 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7800 XT NITRO+ [11330-01-20G]
+2025-05-03 20:05:20,701 - INFO - Processing URL 2/20: https://www.dns-shop.ru/product/72c0586fc409ed20/videokarta-kfa2-geforce-rtx-4070-ti-super-sg-black-47uzm6md6mek/
+2025-05-03 20:05:20,701 - INFO - Processing URL: https://www.dns-shop.ru/product/72c0586fc409ed20/videokarta-kfa2-geforce-rtx-4070-ti-super-sg-black-47uzm6md6mek/
+2025-05-03 20:06:18,629 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER SG Black [47UZM6MD6MEK]
+2025-05-03 20:06:18,632 - INFO - Added new product data for https://www.dns-shop.ru/product/72c0586fc409ed20/videokarta-kfa2-geforce-rtx-4070-ti-super-sg-black-47uzm6md6mek/
+2025-05-03 20:06:18,635 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER SG Black [47UZM6MD6MEK]
+2025-05-03 20:06:18,635 - INFO - Processing URL 3/20: https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/
+2025-05-03 20:06:18,635 - INFO - Processing URL: https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/
+2025-05-03 20:07:18,022 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4060 CORE Black [46NSL8MD9NXK]
+2025-05-03 20:07:18,025 - INFO - Added new product data for https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/
+2025-05-03 20:07:18,031 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4060 CORE Black [46NSL8MD9NXK]
+2025-05-03 20:07:18,032 - INFO - Processing URL 4/20: https://www.dns-shop.ru/product/07e96c1fcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-windforce-oc-gv-n407swf3oc-12gd/
+2025-05-03 20:07:18,032 - INFO - Processing URL: https://www.dns-shop.ru/product/07e96c1fcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-windforce-oc-gv-n407swf3oc-12gd/
+2025-05-03 20:08:12,918 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC [GV-N407SWF3OC-12GD]
+2025-05-03 20:08:12,921 - INFO - Added new product data for https://www.dns-shop.ru/product/07e96c1fcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-windforce-oc-gv-n407swf3oc-12gd/
+2025-05-03 20:08:12,926 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC [GV-N407SWF3OC-12GD]
+2025-05-03 20:08:12,926 - INFO - Processing URL 5/20: https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/
+2025-05-03 20:08:12,927 - INFO - Processing URL: https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/
+2025-05-03 20:09:07,882 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5090 GameRock [NE75090019R5-GB2020G]
+2025-05-03 20:09:07,885 - INFO - Added new product data for https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/
+2025-05-03 20:09:07,889 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5090 GameRock [NE75090019R5-GB2020G]
+2025-05-03 20:09:07,890 - INFO - Processing URL 6/20: https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/
+2025-05-03 20:09:07,890 - INFO - Processing URL: https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/
+2025-05-03 20:10:03,961 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4060 EAGLE OC [GV-N4060EAGLE OC-8GD]
+2025-05-03 20:10:03,968 - INFO - Added new product data for https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/
+2025-05-03 20:10:03,980 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4060 EAGLE OC [GV-N4060EAGLE OC-8GD]
+2025-05-03 20:10:03,980 - INFO - Processing URL 7/20: https://www.dns-shop.ru/product/69f0bca5b8eaed20/videokarta-msi-geforce-rtx-4070-super-ventus-2x-oc-geforce-rtx-4070-super-12g-ventus-2x-oc/
+2025-05-03 20:10:03,981 - INFO - Processing URL: https://www.dns-shop.ru/product/69f0bca5b8eaed20/videokarta-msi-geforce-rtx-4070-super-ventus-2x-oc-geforce-rtx-4070-super-12g-ventus-2x-oc/
+2025-05-03 20:11:00,637 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC]
+2025-05-03 20:11:00,643 - INFO - Added new product data for https://www.dns-shop.ru/product/69f0bca5b8eaed20/videokarta-msi-geforce-rtx-4070-super-ventus-2x-oc-geforce-rtx-4070-super-12g-ventus-2x-oc/
+2025-05-03 20:11:00,652 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC]
+2025-05-03 20:11:00,653 - INFO - Processing URL 8/20: https://www.dns-shop.ru/product/72372f3cd49ad9cb/videokarta-palit-geforce-rtx-5080-gamingpro-ne75080019t2-gb2031a/
+2025-05-03 20:11:00,653 - INFO - Processing URL: https://www.dns-shop.ru/product/72372f3cd49ad9cb/videokarta-palit-geforce-rtx-5080-gamingpro-ne75080019t2-gb2031a/
+2025-05-03 20:11:55,834 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5080 GamingPro [NE75080019T2-GB2031A]
+2025-05-03 20:11:55,837 - INFO - Added new product data for https://www.dns-shop.ru/product/72372f3cd49ad9cb/videokarta-palit-geforce-rtx-5080-gamingpro-ne75080019t2-gb2031a/
+2025-05-03 20:11:55,845 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5080 GamingPro [NE75080019T2-GB2031A]
+2025-05-03 20:11:55,847 - INFO - Processing URL 9/20: https://www.dns-shop.ru/product/c455f512e73aed20/videokarta-palit-geforce-rtx-4060-infinity-2-ne64060019p1-1070l/
+2025-05-03 20:11:55,847 - INFO - Processing URL: https://www.dns-shop.ru/product/c455f512e73aed20/videokarta-palit-geforce-rtx-4060-infinity-2-ne64060019p1-1070l/
+2025-05-03 20:13:00,380 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Infinity 2 [NE64060019P1-1070L]
+2025-05-03 20:13:00,383 - INFO - Added new product data for https://www.dns-shop.ru/product/c455f512e73aed20/videokarta-palit-geforce-rtx-4060-infinity-2-ne64060019p1-1070l/
+2025-05-03 20:13:00,390 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Infinity 2 [NE64060019P1-1070L]
+2025-05-03 20:13:00,391 - INFO - Processing URL 10/20: https://www.dns-shop.ru/product/bf41006e0b2fed20/videokarta-palit-geforce-rtx-4060-dual-ne64060019p1-1070d/
+2025-05-03 20:13:00,391 - INFO - Processing URL: https://www.dns-shop.ru/product/bf41006e0b2fed20/videokarta-palit-geforce-rtx-4060-dual-ne64060019p1-1070d/
+2025-05-03 20:13:58,750 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Dual [NE64060019P1-1070D]
+2025-05-03 20:13:58,754 - INFO - Added new product data for https://www.dns-shop.ru/product/bf41006e0b2fed20/videokarta-palit-geforce-rtx-4060-dual-ne64060019p1-1070d/
+2025-05-03 20:13:58,764 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Dual [NE64060019P1-1070D]
+2025-05-03 20:13:58,764 - INFO - Processing URL 11/20: https://www.dns-shop.ru/product/5058d787c0eed582/videokarta-palit-geforce-rtx-5080-gamerock-ne75080019t2-gb2030g/
+2025-05-03 20:13:58,765 - INFO - Processing URL: https://www.dns-shop.ru/product/5058d787c0eed582/videokarta-palit-geforce-rtx-5080-gamerock-ne75080019t2-gb2030g/
+2025-05-03 20:14:54,748 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5080 GameRock [NE75080019T2-GB2030G]
+2025-05-03 20:14:54,753 - INFO - Added new product data for https://www.dns-shop.ru/product/5058d787c0eed582/videokarta-palit-geforce-rtx-5080-gamerock-ne75080019t2-gb2030g/
+2025-05-03 20:14:54,773 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5080 GameRock [NE75080019T2-GB2030G]
+2025-05-03 20:14:54,774 - INFO - Processing URL 12/20: https://www.dns-shop.ru/product/fe5cfcefe77fd582/videokarta-palit-geforce-rtx-5070-ti-gamingpro-ne7507t019t2-gb2031a/
+2025-05-03 20:14:54,774 - INFO - Processing URL: https://www.dns-shop.ru/product/fe5cfcefe77fd582/videokarta-palit-geforce-rtx-5070-ti-gamingpro-ne7507t019t2-gb2031a/
+2025-05-03 20:15:50,287 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5070 Ti GamingPro [NE7507T019T2-GB2031A]
+2025-05-03 20:15:50,294 - INFO - Added new product data for https://www.dns-shop.ru/product/fe5cfcefe77fd582/videokarta-palit-geforce-rtx-5070-ti-gamingpro-ne7507t019t2-gb2031a/
+2025-05-03 20:15:50,304 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5070 Ti GamingPro [NE7507T019T2-GB2031A]
+2025-05-03 20:15:50,305 - INFO - Processing URL 13/20: https://www.dns-shop.ru/product/ef42e95e5af71b80/videokarta-palit-geforce-rtx-3060-dual-lhr-ne63060019k9-190ad/
+2025-05-03 20:15:50,305 - INFO - Processing URL: https://www.dns-shop.ru/product/ef42e95e5af71b80/videokarta-palit-geforce-rtx-3060-dual-lhr-ne63060019k9-190ad/
+2025-05-03 20:16:42,814 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x00D6D363+60275]
+	GetHandleVerifier [0x00D6D3A4+60340]
+	(No symbol) [0x00BA06F3]
+	(No symbol) [0x00BE8690]
+	(No symbol) [0x00BE8A2B]
+	(No symbol) [0x00C30EE2]
+	(No symbol) [0x00C0D0D4]
+	(No symbol) [0x00C2E6EB]
+	(No symbol) [0x00C0CE86]
+	(No symbol) [0x00BDC623]
+	(No symbol) [0x00BDD474]
+	GetHandleVerifier [0x00FB8FE3+2467827]
+	GetHandleVerifier [0x00FB45E6+2448886]
+	GetHandleVerifier [0x00FCF80C+2560028]
+	GetHandleVerifier [0x00D83DF5+153093]
+	GetHandleVerifier [0x00D8A3BD+179149]
+	GetHandleVerifier [0x00D74BB8+91080]
+	GetHandleVerifier [0x00D74D60+91504]
+	GetHandleVerifier [0x00D5FA10+4640]
+	BaseThreadInitThunk [0x75C87BA9+25]
+	RtlInitializeExceptionChain [0x77DFC0CB+107]
+	RtlClearBits [0x77DFC04F+191]
+
+2025-05-03 20:16:42,855 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-03 20:16:54,136 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00D6D363+60275]
+	GetHandleVerifier [0x00D6D3A4+60340]
+	(No symbol) [0x00BA06F3]
+	(No symbol) [0x00BE8690]
+	(No symbol) [0x00BE8A2B]
+	(No symbol) [0x00C30EE2]
+	(No symbol) [0x00C0D0D4]
+	(No symbol) [0x00C2E6EB]
+	(No symbol) [0x00C0CE86]
+	(No symbol) [0x00BDC623]
+	(No symbol) [0x00BDD474]
+	GetHandleVerifier [0x00FB8FE3+2467827]
+	GetHandleVerifier [0x00FB45E6+2448886]
+	GetHandleVerifier [0x00FCF80C+2560028]
+	GetHandleVerifier [0x00D83DF5+153093]
+	GetHandleVerifier [0x00D8A3BD+179149]
+	GetHandleVerifier [0x00D74BB8+91080]
+	GetHandleVerifier [0x00D74D60+91504]
+	GetHandleVerifier [0x00D5FA10+4640]
+	BaseThreadInitThunk [0x75C87BA9+25]
+	RtlInitializeExceptionChain [0x77DFC0CB+107]
+	RtlClearBits [0x77DFC04F+191]
+
+2025-05-03 20:16:54,187 - INFO - Parsed product: Видеокарта Palit GeForce RTX 3060 Dual (LHR) [NE63060019K9-190AD]
+2025-05-03 20:16:54,192 - INFO - Added new product data for https://www.dns-shop.ru/product/ef42e95e5af71b80/videokarta-palit-geforce-rtx-3060-dual-lhr-ne63060019k9-190ad/
+2025-05-03 20:16:54,202 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 3060 Dual (LHR) [NE63060019K9-190AD]
+2025-05-03 20:16:54,203 - INFO - Processing URL 14/20: https://www.dns-shop.ru/product/fe3b6907e449d582/videokarta-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-rtx-5070-ti-16g-gaming-trio-oc-plus/
+2025-05-03 20:16:54,203 - INFO - Processing URL: https://www.dns-shop.ru/product/fe3b6907e449d582/videokarta-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-rtx-5070-ti-16g-gaming-trio-oc-plus/
+2025-05-03 20:17:45,449 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x00D6D363+60275]
+	GetHandleVerifier [0x00D6D3A4+60340]
+	(No symbol) [0x00BA06F3]
+	(No symbol) [0x00BE8690]
+	(No symbol) [0x00BE8A2B]
+	(No symbol) [0x00C30EE2]
+	(No symbol) [0x00C0D0D4]
+	(No symbol) [0x00C2E6EB]
+	(No symbol) [0x00C0CE86]
+	(No symbol) [0x00BDC623]
+	(No symbol) [0x00BDD474]
+	GetHandleVerifier [0x00FB8FE3+2467827]
+	GetHandleVerifier [0x00FB45E6+2448886]
+	GetHandleVerifier [0x00FCF80C+2560028]
+	GetHandleVerifier [0x00D83DF5+153093]
+	GetHandleVerifier [0x00D8A3BD+179149]
+	GetHandleVerifier [0x00D74BB8+91080]
+	GetHandleVerifier [0x00D74D60+91504]
+	GetHandleVerifier [0x00D5FA10+4640]
+	BaseThreadInitThunk [0x75C87BA9+25]
+	RtlInitializeExceptionChain [0x77DFC0CB+107]
+	RtlClearBits [0x77DFC04F+191]
+
+2025-05-03 20:17:45,497 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-03 20:17:56,772 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00D6D363+60275]
+	GetHandleVerifier [0x00D6D3A4+60340]
+	(No symbol) [0x00BA06F3]
+	(No symbol) [0x00BE8690]
+	(No symbol) [0x00BE8A2B]
+	(No symbol) [0x00C30EE2]
+	(No symbol) [0x00C0D0D4]
+	(No symbol) [0x00C2E6EB]
+	(No symbol) [0x00C0CE86]
+	(No symbol) [0x00BDC623]
+	(No symbol) [0x00BDD474]
+	GetHandleVerifier [0x00FB8FE3+2467827]
+	GetHandleVerifier [0x00FB45E6+2448886]
+	GetHandleVerifier [0x00FCF80C+2560028]
+	GetHandleVerifier [0x00D83DF5+153093]
+	GetHandleVerifier [0x00D8A3BD+179149]
+	GetHandleVerifier [0x00D74BB8+91080]
+	GetHandleVerifier [0x00D74D60+91504]
+	GetHandleVerifier [0x00D5FA10+4640]
+	BaseThreadInitThunk [0x75C87BA9+25]
+	RtlInitializeExceptionChain [0x77DFC0CB+107]
+	RtlClearBits [0x77DFC04F+191]
+
+2025-05-03 20:17:56,823 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 Ti GAMING TRIO OC PLUS [RTX 5070 Ti 16G GAMING TRIO OC PLUS]
+2025-05-03 20:17:56,829 - INFO - Added new product data for https://www.dns-shop.ru/product/fe3b6907e449d582/videokarta-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-rtx-5070-ti-16g-gaming-trio-oc-plus/
+2025-05-03 20:17:56,840 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 Ti GAMING TRIO OC PLUS [RTX 5070 Ti 16G GAMING TRIO OC PLUS]
+2025-05-03 20:17:56,841 - INFO - Processing URL 15/20: https://www.dns-shop.ru/product/bcef83cb1e36ed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-16g-oc/
+2025-05-03 20:17:56,841 - INFO - Processing URL: https://www.dns-shop.ru/product/bcef83cb1e36ed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-16g-oc/
+2025-05-03 20:18:53,322 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 Ti VENTUS 2X BLACK OC [GeForce RTX 4060 Ti VENTUS 2X BLACK 16G OC]
+2025-05-03 20:18:53,327 - INFO - Added new product data for https://www.dns-shop.ru/product/bcef83cb1e36ed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-16g-oc/
+2025-05-03 20:18:53,336 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 Ti VENTUS 2X BLACK OC [GeForce RTX 4060 Ti VENTUS 2X BLACK 16G OC]
+2025-05-03 20:18:53,338 - INFO - Processing URL 16/20: https://www.dns-shop.ru/product/df050ef102d3d9cb/videokarta-kfa2-geforce-rtx-4070-super-core-black-47som7mdabck/
+2025-05-03 20:18:53,338 - INFO - Processing URL: https://www.dns-shop.ru/product/df050ef102d3d9cb/videokarta-kfa2-geforce-rtx-4070-super-core-black-47som7mdabck/
+2025-05-03 20:19:47,123 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4070 SUPER CORE Black [47SOM7MDABCK]
+2025-05-03 20:19:47,128 - INFO - Added new product data for https://www.dns-shop.ru/product/df050ef102d3d9cb/videokarta-kfa2-geforce-rtx-4070-super-core-black-47som7mdabck/
+2025-05-03 20:19:47,135 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4070 SUPER CORE Black [47SOM7MDABCK]
+2025-05-03 20:19:47,136 - INFO - Processing URL 17/20: https://www.dns-shop.ru/product/75db5ab00b1bed20/videokarta-msi-geforce-rtx-4060-ventus-2x-black-oc-geforce-rtx-4060-ventus-2x/
+2025-05-03 20:19:47,136 - INFO - Processing URL: https://www.dns-shop.ru/product/75db5ab00b1bed20/videokarta-msi-geforce-rtx-4060-ventus-2x-black-oc-geforce-rtx-4060-ventus-2x/
+2025-05-03 20:20:43,466 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X BLACK OC [GeForce RTX 4060 VENTUS 2X]
+2025-05-03 20:20:43,469 - INFO - Added new product data for https://www.dns-shop.ru/product/75db5ab00b1bed20/videokarta-msi-geforce-rtx-4060-ventus-2x-black-oc-geforce-rtx-4060-ventus-2x/
+2025-05-03 20:20:43,481 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X BLACK OC [GeForce RTX 4060 VENTUS 2X]
+2025-05-03 20:20:43,482 - INFO - Processing URL 18/20: https://www.dns-shop.ru/product/7503feffde6fed20/videokarta-palit-geforce-rtx-4060-ti-dual-ne6406t019p1-1060d/
+2025-05-03 20:20:43,482 - INFO - Processing URL: https://www.dns-shop.ru/product/7503feffde6fed20/videokarta-palit-geforce-rtx-4060-ti-dual-ne6406t019p1-1060d/
+2025-05-03 20:21:39,409 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Ti Dual [NE6406T019P1-1060D]
+2025-05-03 20:21:39,415 - INFO - Added new product data for https://www.dns-shop.ru/product/7503feffde6fed20/videokarta-palit-geforce-rtx-4060-ti-dual-ne6406t019p1-1060d/
+2025-05-03 20:21:39,427 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Ti Dual [NE6406T019P1-1060D]
+2025-05-03 20:21:39,428 - INFO - Processing URL 19/20: https://www.dns-shop.ru/product/697e6b357ec2ed20/videokarta-msi-geforce-rtx-4060-ventus-2x-white-oc-geforce-rtx-4060-ventus-2x-white-8g-oc/
+2025-05-03 20:21:39,428 - INFO - Processing URL: https://www.dns-shop.ru/product/697e6b357ec2ed20/videokarta-msi-geforce-rtx-4060-ventus-2x-white-oc-geforce-rtx-4060-ventus-2x-white-8g-oc/
+2025-05-03 20:22:36,717 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X WHITE OC [GeForce RTX 4060 VENTUS 2X WHITE 8G OC]
+2025-05-03 20:22:36,724 - INFO - Added new product data for https://www.dns-shop.ru/product/697e6b357ec2ed20/videokarta-msi-geforce-rtx-4060-ventus-2x-white-oc-geforce-rtx-4060-ventus-2x-white-8g-oc/
+2025-05-03 20:22:36,737 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X WHITE OC [GeForce RTX 4060 VENTUS 2X WHITE 8G OC]
+2025-05-03 20:22:36,738 - INFO - Processing URL 20/20: https://www.dns-shop.ru/product/96dfe7f6df90d582/videokarta-palit-geforce-rtx-5090-gamerock-oc-ne75090s19r5-gb2020g/
+2025-05-03 20:22:36,738 - INFO - Processing URL: https://www.dns-shop.ru/product/96dfe7f6df90d582/videokarta-palit-geforce-rtx-5090-gamerock-oc-ne75090s19r5-gb2020g/
+2025-05-03 20:23:31,676 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5090 GameRock OC [NE75090S19R5-GB2020G]
+2025-05-03 20:23:31,688 - INFO - Added new product data for https://www.dns-shop.ru/product/96dfe7f6df90d582/videokarta-palit-geforce-rtx-5090-gamerock-oc-ne75090s19r5-gb2020g/
+2025-05-03 20:23:31,723 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5090 GameRock OC [NE75090S19R5-GB2020G]
+2025-05-03 20:23:32,383 - INFO - Product details parsing complete!
+2025-05-04 18:02:50,389 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-04 18:03:05,803 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-04 18:03:06,871 - INFO - Reading URLs from urls.txt
+2025-05-04 18:03:06,873 - INFO - Found 3 URLs to process
+2025-05-04 18:03:06,873 - INFO - Processing URL 1/3: https://www.dns-shop.ru/product/414e9c60e254ed20/materinskaa-plata-msi-b650-gaming-plus-wifi/
+2025-05-04 18:03:06,873 - INFO - Processing URL: https://www.dns-shop.ru/product/414e9c60e254ed20/materinskaa-plata-msi-b650-gaming-plus-wifi/
+2025-05-04 18:03:30,939 - INFO - Parsed product: Материнская плата MSI B650 GAMING PLUS WIFI
+2025-05-04 18:03:30,944 - INFO - Added new product data for https://www.dns-shop.ru/product/414e9c60e254ed20/materinskaa-plata-msi-b650-gaming-plus-wifi/
+2025-05-04 18:03:30,953 - INFO - Saved data for product: Материнская плата MSI B650 GAMING PLUS WIFI
+2025-05-04 18:03:30,954 - INFO - Processing URL 2/3: https://www.dns-shop.ru/product/232aa9f9b9a11b80/materinskaa-plata-msi-mpg-b550-gaming-plus/
+2025-05-04 18:03:30,954 - INFO - Processing URL: https://www.dns-shop.ru/product/232aa9f9b9a11b80/materinskaa-plata-msi-mpg-b550-gaming-plus/
+2025-05-04 18:03:52,799 - INFO - Parsed product: Материнская плата MSI MPG B550 GAMING PLUS
+2025-05-04 18:03:52,803 - INFO - Added new product data for https://www.dns-shop.ru/product/232aa9f9b9a11b80/materinskaa-plata-msi-mpg-b550-gaming-plus/
+2025-05-04 18:03:52,816 - INFO - Saved data for product: Материнская плата MSI MPG B550 GAMING PLUS
+2025-05-04 18:03:52,818 - INFO - Processing URL 3/3: https://www.dns-shop.ru/product/b53ec787e255ed20/materinskaa-plata-msi-b760-gaming-plus-wifi/
+2025-05-04 18:03:52,818 - INFO - Processing URL: https://www.dns-shop.ru/product/b53ec787e255ed20/materinskaa-plata-msi-b760-gaming-plus-wifi/
+2025-05-04 18:04:11,557 - INFO - Parsed product: Материнская плата MSI B760 GAMING PLUS WIFI
+2025-05-04 18:04:11,563 - INFO - Added new product data for https://www.dns-shop.ru/product/b53ec787e255ed20/materinskaa-plata-msi-b760-gaming-plus-wifi/
+2025-05-04 18:04:11,580 - INFO - Saved data for product: Материнская плата MSI B760 GAMING PLUS WIFI
+2025-05-04 18:04:12,023 - INFO - Product details parsing complete!
+2025-05-04 18:42:24,295 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-04 18:43:38,961 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-04 18:43:39,948 - INFO - Reading URLs from urls.txt
+2025-05-04 18:43:39,949 - INFO - Found 100 URLs to process
+2025-05-04 18:43:39,950 - INFO - Processing URL 1/100: https://www.dns-shop.ru/product/75d4b3ad3b33ed20/videokarta-msi-geforce-rtx-4070-ventus-3x-e-oc-geforce-rtx-4070-ventus-3x-e-12g-oc/
+2025-05-04 18:43:39,950 - INFO - Processing URL: https://www.dns-shop.ru/product/75d4b3ad3b33ed20/videokarta-msi-geforce-rtx-4070-ventus-3x-e-oc-geforce-rtx-4070-ventus-3x-e-12g-oc/
+2025-05-04 18:44:35,129 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4070 VENTUS 3X E OC [GeForce RTX 4070 VENTUS 3X E 12G OC]
+2025-05-04 18:44:35,134 - INFO - Added new product data for https://www.dns-shop.ru/product/75d4b3ad3b33ed20/videokarta-msi-geforce-rtx-4070-ventus-3x-e-oc-geforce-rtx-4070-ventus-3x-e-12g-oc/
+2025-05-04 18:44:35,146 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4070 VENTUS 3X E OC [GeForce RTX 4070 VENTUS 3X E 12G OC]
+2025-05-04 18:44:35,147 - INFO - Processing URL 2/100: https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/
+2025-05-04 18:44:35,147 - INFO - Processing URL: https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/
+2025-05-04 18:45:29,644 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4060 EAGLE OC [GV-N4060EAGLE OC-8GD]
+2025-05-04 18:45:29,649 - INFO - Updated existing product data for https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/
+2025-05-04 18:45:29,662 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4060 EAGLE OC [GV-N4060EAGLE OC-8GD]
+2025-05-04 18:45:29,663 - INFO - Processing URL 3/100: https://www.dns-shop.ru/product/db46ca9a55f1ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-pulse-11330-02-20g/
+2025-05-04 18:45:29,663 - INFO - Processing URL: https://www.dns-shop.ru/product/db46ca9a55f1ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-pulse-11330-02-20g/
+2025-05-04 18:45:46,314 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7800 XT PULSE [11330-02-20G]
+2025-05-04 18:45:46,319 - INFO - Added new product data for https://www.dns-shop.ru/product/db46ca9a55f1ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-pulse-11330-02-20g/
+2025-05-04 18:45:46,333 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7800 XT PULSE [11330-02-20G]
+2025-05-04 18:45:46,333 - INFO - Processing URL 4/100: https://www.dns-shop.ru/product/67540c757e24ed20/videokarta-gigabyte-geforce-rtx-4060-ti-windforce-oc-gv-n406twf2oc-16gd/
+2025-05-04 18:45:46,334 - INFO - Processing URL: https://www.dns-shop.ru/product/67540c757e24ed20/videokarta-gigabyte-geforce-rtx-4060-ti-windforce-oc-gv-n406twf2oc-16gd/
+2025-05-04 18:46:02,738 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4060 Ti WINDFORCE OC [GV-N406TWF2OC-16GD]
+2025-05-04 18:46:02,743 - INFO - Added new product data for https://www.dns-shop.ru/product/67540c757e24ed20/videokarta-gigabyte-geforce-rtx-4060-ti-windforce-oc-gv-n406twf2oc-16gd/
+2025-05-04 18:46:02,756 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4060 Ti WINDFORCE OC [GV-N406TWF2OC-16GD]
+2025-05-04 18:46:02,757 - INFO - Processing URL 5/100: https://www.dns-shop.ru/product/12c9304fe73bed20/videokarta-palit-geforce-rtx-4060-infinity-2-oc-ne64060s19p1-1070l/
+2025-05-04 18:46:02,757 - INFO - Processing URL: https://www.dns-shop.ru/product/12c9304fe73bed20/videokarta-palit-geforce-rtx-4060-infinity-2-oc-ne64060s19p1-1070l/
+2025-05-04 18:46:22,118 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Infinity 2 OC [NE64060S19P1-1070L]
+2025-05-04 18:46:22,125 - INFO - Added new product data for https://www.dns-shop.ru/product/12c9304fe73bed20/videokarta-palit-geforce-rtx-4060-infinity-2-oc-ne64060s19p1-1070l/
+2025-05-04 18:46:22,140 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Infinity 2 OC [NE64060S19P1-1070L]
+2025-05-04 18:46:22,140 - INFO - Processing URL 6/100: https://www.dns-shop.ru/product/f807b264a2e6ed20/videokarta-palit-geforce-rtx-4080-super-gamingpro-ned408s019t2-1032a/
+2025-05-04 18:46:22,141 - INFO - Processing URL: https://www.dns-shop.ru/product/f807b264a2e6ed20/videokarta-palit-geforce-rtx-4080-super-gamingpro-ned408s019t2-1032a/
+2025-05-04 18:46:41,190 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4080 SUPER GamingPro [NED408S019T2-1032A]
+2025-05-04 18:46:41,197 - INFO - Added new product data for https://www.dns-shop.ru/product/f807b264a2e6ed20/videokarta-palit-geforce-rtx-4080-super-gamingpro-ned408s019t2-1032a/
+2025-05-04 18:46:41,213 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4080 SUPER GamingPro [NED408S019T2-1032A]
+2025-05-04 18:46:41,214 - INFO - Processing URL 7/100: https://www.dns-shop.ru/product/ccbd6c3dcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-gaming-oc-gv-n407sgaming-oc-12gd/
+2025-05-04 18:46:41,214 - INFO - Processing URL: https://www.dns-shop.ru/product/ccbd6c3dcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-gaming-oc-gv-n407sgaming-oc-12gd/
+2025-05-04 18:47:03,515 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER GAMING OC [GV-N407SGAMING OC-12GD]
+2025-05-04 18:47:03,521 - INFO - Added new product data for https://www.dns-shop.ru/product/ccbd6c3dcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-gaming-oc-gv-n407sgaming-oc-12gd/
+2025-05-04 18:47:03,536 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER GAMING OC [GV-N407SGAMING OC-12GD]
+2025-05-04 18:47:03,537 - INFO - Processing URL 8/100: https://www.dns-shop.ru/product/5a74a34171b1ed20/videokarta-kfa2-geforce-rtx-3050-x-black-35nsl8md6yek/
+2025-05-04 18:47:03,537 - INFO - Processing URL: https://www.dns-shop.ru/product/5a74a34171b1ed20/videokarta-kfa2-geforce-rtx-3050-x-black-35nsl8md6yek/
+2025-05-04 18:48:23,275 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 3050 X Black [35NSL8MD6YEK]
+2025-05-04 18:48:23,358 - INFO - Added new product data for https://www.dns-shop.ru/product/5a74a34171b1ed20/videokarta-kfa2-geforce-rtx-3050-x-black-35nsl8md6yek/
+2025-05-04 18:48:23,373 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 3050 X Black [35NSL8MD6YEK]
+2025-05-04 18:48:23,374 - INFO - Processing URL 9/100: https://www.dns-shop.ru/product/b6af9004a8b5d582/videokarta-gigabyte-geforce-rtx-4090-d-windforce-gv-n409dwf3-24gd/
+2025-05-04 18:48:23,375 - INFO - Processing URL: https://www.dns-shop.ru/product/b6af9004a8b5d582/videokarta-gigabyte-geforce-rtx-4090-d-windforce-gv-n409dwf3-24gd/
+2025-05-04 18:49:12,711 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:49:12,782 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:49:18,730 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4090 D WINDFORCE [GV-N409DWF3-24GD]
+2025-05-04 18:49:18,736 - INFO - Added new product data for https://www.dns-shop.ru/product/b6af9004a8b5d582/videokarta-gigabyte-geforce-rtx-4090-d-windforce-gv-n409dwf3-24gd/
+2025-05-04 18:49:18,750 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4090 D WINDFORCE [GV-N409DWF3-24GD]
+2025-05-04 18:49:18,750 - INFO - Processing URL 10/100: https://www.dns-shop.ru/product/508738a9bc02d9cb/videokarta-msi-geforce-rtx-3050-ventus-2x-e-oc-rtx-3050-ventus-2x-e-6g-oc/
+2025-05-04 18:49:18,750 - INFO - Processing URL: https://www.dns-shop.ru/product/508738a9bc02d9cb/videokarta-msi-geforce-rtx-3050-ventus-2x-e-oc-rtx-3050-ventus-2x-e-6g-oc/
+2025-05-04 18:50:08,441 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:50:08,525 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:50:20,004 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:50:20,068 - INFO - Parsed product: Видеокарта MSI GeForce RTX 3050 VENTUS 2X E OC [RTX 3050 VENTUS 2X E 6G OC]
+2025-05-04 18:50:20,072 - INFO - Added new product data for https://www.dns-shop.ru/product/508738a9bc02d9cb/videokarta-msi-geforce-rtx-3050-ventus-2x-e-oc-rtx-3050-ventus-2x-e-6g-oc/
+2025-05-04 18:50:20,087 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 3050 VENTUS 2X E OC [RTX 3050 VENTUS 2X E 6G OC]
+2025-05-04 18:50:20,087 - INFO - Processing URL 11/100: https://www.dns-shop.ru/product/6b5a7dc60b2fed20/videokarta-palit-geforce-rtx-4060-dual-oc-v1-ne64060t19p1-1070d/
+2025-05-04 18:50:20,088 - INFO - Processing URL: https://www.dns-shop.ru/product/6b5a7dc60b2fed20/videokarta-palit-geforce-rtx-4060-dual-oc-v1-ne64060t19p1-1070d/
+2025-05-04 18:51:15,555 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:51:15,599 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:51:27,004 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:51:27,046 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Dual OC V1 [NE64060T19P1-1070D]
+2025-05-04 18:51:27,051 - INFO - Added new product data for https://www.dns-shop.ru/product/6b5a7dc60b2fed20/videokarta-palit-geforce-rtx-4060-dual-oc-v1-ne64060t19p1-1070d/
+2025-05-04 18:51:27,066 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Dual OC V1 [NE64060T19P1-1070D]
+2025-05-04 18:51:27,067 - INFO - Processing URL 12/100: https://www.dns-shop.ru/product/57338160bbf2ed20/videokarta-msi-geforce-rtx-4070-ti-super-gaming-x-slim-rtx-4070-ti-super-16g-gaming-x-slim/
+2025-05-04 18:51:27,067 - INFO - Processing URL: https://www.dns-shop.ru/product/57338160bbf2ed20/videokarta-msi-geforce-rtx-4070-ti-super-gaming-x-slim-rtx-4070-ti-super-16g-gaming-x-slim/
+2025-05-04 18:52:17,012 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:52:17,102 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:52:28,552 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:52:28,591 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4070 Ti SUPER GAMING X SLIM [RTX 4070 Ti SUPER 16G GAMING X SLIM]
+2025-05-04 18:52:28,597 - INFO - Added new product data for https://www.dns-shop.ru/product/57338160bbf2ed20/videokarta-msi-geforce-rtx-4070-ti-super-gaming-x-slim-rtx-4070-ti-super-16g-gaming-x-slim/
+2025-05-04 18:52:28,611 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4070 Ti SUPER GAMING X SLIM [RTX 4070 Ti SUPER 16G GAMING X SLIM]
+2025-05-04 18:52:28,612 - INFO - Processing URL 13/100: https://www.dns-shop.ru/product/7e32a328b373d21a/videokarta-palit-geforce-rtx-4060-ti-dual-v1-ne6406t019p1-1048d/
+2025-05-04 18:52:28,612 - INFO - Processing URL: https://www.dns-shop.ru/product/7e32a328b373d21a/videokarta-palit-geforce-rtx-4060-ti-dual-v1-ne6406t019p1-1048d/
+2025-05-04 18:53:18,397 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:53:18,433 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:53:29,896 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:53:29,951 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Ti Dual V1 [NE6406T019P1-1048D]
+2025-05-04 18:53:29,956 - INFO - Added new product data for https://www.dns-shop.ru/product/7e32a328b373d21a/videokarta-palit-geforce-rtx-4060-ti-dual-v1-ne6406t019p1-1048d/
+2025-05-04 18:53:29,971 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Ti Dual V1 [NE6406T019P1-1048D]
+2025-05-04 18:53:29,972 - INFO - Processing URL 14/100: https://www.dns-shop.ru/product/ca753880eaadd582/videokarta-msi-geforce-rtx-5080-ventus-3x-white-oc-rtx-5080-16g-ventus-3x-oc-white/
+2025-05-04 18:53:29,972 - INFO - Processing URL: https://www.dns-shop.ru/product/ca753880eaadd582/videokarta-msi-geforce-rtx-5080-ventus-3x-white-oc-rtx-5080-16g-ventus-3x-oc-white/
+2025-05-04 18:54:24,095 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:54:24,130 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:54:35,634 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:54:35,684 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5080 VENTUS 3X WHITE OC [RTX 5080 16G VENTUS 3X OC WHITE]
+2025-05-04 18:54:35,694 - INFO - Added new product data for https://www.dns-shop.ru/product/ca753880eaadd582/videokarta-msi-geforce-rtx-5080-ventus-3x-white-oc-rtx-5080-16g-ventus-3x-oc-white/
+2025-05-04 18:54:35,709 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5080 VENTUS 3X WHITE OC [RTX 5080 16G VENTUS 3X OC WHITE]
+2025-05-04 18:54:35,709 - INFO - Processing URL 15/100: https://www.dns-shop.ru/product/c159df7b4d50d0a4/videokarta-palit-geforce-rtx-4060-ti-white-ne6406t019p1-1048l/
+2025-05-04 18:54:35,709 - INFO - Processing URL: https://www.dns-shop.ru/product/c159df7b4d50d0a4/videokarta-palit-geforce-rtx-4060-ti-white-ne6406t019p1-1048l/
+2025-05-04 18:55:25,761 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:55:25,855 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:55:37,349 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:55:37,385 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Ti White [NE6406T019P1-1048L]
+2025-05-04 18:55:37,390 - INFO - Added new product data for https://www.dns-shop.ru/product/c159df7b4d50d0a4/videokarta-palit-geforce-rtx-4060-ti-white-ne6406t019p1-1048l/
+2025-05-04 18:55:37,404 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Ti White [NE6406T019P1-1048L]
+2025-05-04 18:55:37,404 - INFO - Processing URL 16/100: https://www.dns-shop.ru/product/697e6b357ec2ed20/videokarta-msi-geforce-rtx-4060-ventus-2x-white-oc-geforce-rtx-4060-ventus-2x-white-8g-oc/
+2025-05-04 18:55:37,404 - INFO - Processing URL: https://www.dns-shop.ru/product/697e6b357ec2ed20/videokarta-msi-geforce-rtx-4060-ventus-2x-white-oc-geforce-rtx-4060-ventus-2x-white-8g-oc/
+2025-05-04 18:56:28,548 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:56:28,606 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:56:40,004 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:56:40,044 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X WHITE OC [GeForce RTX 4060 VENTUS 2X WHITE 8G OC]
+2025-05-04 18:56:40,049 - INFO - Updated existing product data for https://www.dns-shop.ru/product/697e6b357ec2ed20/videokarta-msi-geforce-rtx-4060-ventus-2x-white-oc-geforce-rtx-4060-ventus-2x-white-8g-oc/
+2025-05-04 18:56:40,063 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X WHITE OC [GeForce RTX 4060 VENTUS 2X WHITE 8G OC]
+2025-05-04 18:56:40,064 - INFO - Processing URL 17/100: https://www.dns-shop.ru/product/f6ddae74be44ed20/videokarta-kfa2-geforce-rtx-3050-x-white-35nsl8md5wek/
+2025-05-04 18:56:40,064 - INFO - Processing URL: https://www.dns-shop.ru/product/f6ddae74be44ed20/videokarta-kfa2-geforce-rtx-3050-x-white-35nsl8md5wek/
+2025-05-04 18:57:30,062 - WARNING - Не удалось нажать на кнопку 'Развернуть все': Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:57:30,105 - WARNING - Контейнер с характеристиками не найден в HTML
+2025-05-04 18:57:41,470 - WARNING - Error clicking thumbnail: Message: 
+Stacktrace:
+	GetHandleVerifier [0x004FD363+60275]
+	GetHandleVerifier [0x004FD3A4+60340]
+	(No symbol) [0x003306F3]
+	(No symbol) [0x00378690]
+	(No symbol) [0x00378A2B]
+	(No symbol) [0x003C0EE2]
+	(No symbol) [0x0039D0D4]
+	(No symbol) [0x003BE6EB]
+	(No symbol) [0x0039CE86]
+	(No symbol) [0x0036C623]
+	(No symbol) [0x0036D474]
+	GetHandleVerifier [0x00748FE3+2467827]
+	GetHandleVerifier [0x007445E6+2448886]
+	GetHandleVerifier [0x0075F80C+2560028]
+	GetHandleVerifier [0x00513DF5+153093]
+	GetHandleVerifier [0x0051A3BD+179149]
+	GetHandleVerifier [0x00504BB8+91080]
+	GetHandleVerifier [0x00504D60+91504]
+	GetHandleVerifier [0x004EFA10+4640]
+	BaseThreadInitThunk [0x75867BA9+25]
+	RtlInitializeExceptionChain [0x7789C0CB+107]
+	RtlClearBits [0x7789C04F+191]
+
+2025-05-04 18:57:41,531 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 3050 X White [35NSL8MD5WEK]
+2025-05-04 18:57:41,540 - INFO - Added new product data for https://www.dns-shop.ru/product/f6ddae74be44ed20/videokarta-kfa2-geforce-rtx-3050-x-white-35nsl8md5wek/
+2025-05-04 18:57:41,556 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 3050 X White [35NSL8MD5WEK]
+2025-05-04 18:57:41,556 - INFO - Processing URL 18/100: https://www.dns-shop.ru/product/1ce0285fd4b4d582/videokarta-gigabyte-geforce-rtx-5070-ti-gaming-oc-gv-n507tgaming-oc-16gd/
+2025-05-04 18:57:41,557 - INFO - Processing URL: https://www.dns-shop.ru/product/1ce0285fd4b4d582/videokarta-gigabyte-geforce-rtx-5070-ti-gaming-oc-gv-n507tgaming-oc-16gd/
+2025-05-04 18:58:37,399 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 5070 Ti GAMING OC [GV-N507TGAMING OC-16GD]
+2025-05-04 18:58:37,405 - INFO - Added new product data for https://www.dns-shop.ru/product/1ce0285fd4b4d582/videokarta-gigabyte-geforce-rtx-5070-ti-gaming-oc-gv-n507tgaming-oc-16gd/
+2025-05-04 18:58:37,423 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 5070 Ti GAMING OC [GV-N507TGAMING OC-16GD]
+2025-05-04 18:58:37,424 - INFO - Processing URL 19/100: https://www.dns-shop.ru/product/e4615b8a3686ed20/videokarta-kfa2-geforce-rtx-4060-x-black-46nsl8md8mek/
+2025-05-04 18:58:37,424 - INFO - Processing URL: https://www.dns-shop.ru/product/e4615b8a3686ed20/videokarta-kfa2-geforce-rtx-4060-x-black-46nsl8md8mek/
+2025-05-04 18:59:33,873 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4060 X Black [46NSL8MD8MEK]
+2025-05-04 18:59:33,882 - INFO - Added new product data for https://www.dns-shop.ru/product/e4615b8a3686ed20/videokarta-kfa2-geforce-rtx-4060-x-black-46nsl8md8mek/
+2025-05-04 18:59:33,898 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4060 X Black [46NSL8MD8MEK]
+2025-05-04 18:59:33,898 - INFO - Processing URL 20/100: https://www.dns-shop.ru/product/3e9973b9d4b9d582/videokarta-gigabyte-geforce-rtx-5070-windforce-oc-sff-gv-n5070wf3oc-12gd/
+2025-05-04 18:59:33,899 - INFO - Processing URL: https://www.dns-shop.ru/product/3e9973b9d4b9d582/videokarta-gigabyte-geforce-rtx-5070-windforce-oc-sff-gv-n5070wf3oc-12gd/
+2025-05-04 19:00:28,992 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF [GV-N5070WF3OC-12GD]
+2025-05-04 19:00:29,081 - INFO - Added new product data for https://www.dns-shop.ru/product/3e9973b9d4b9d582/videokarta-gigabyte-geforce-rtx-5070-windforce-oc-sff-gv-n5070wf3oc-12gd/
+2025-05-04 19:00:29,098 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF [GV-N5070WF3OC-12GD]
+2025-05-04 19:00:29,099 - INFO - Processing URL 21/100: https://www.dns-shop.ru/product/5256129b85e7d21a/videokarta-asus-geforce-rtx-4060-dual-evo-oc-dual-rtx4060-o8g-evo/
+2025-05-04 19:00:29,100 - INFO - Processing URL: https://www.dns-shop.ru/product/5256129b85e7d21a/videokarta-asus-geforce-rtx-4060-dual-evo-oc-dual-rtx4060-o8g-evo/
+2025-05-04 19:01:03,554 - INFO - Parsed product: Видеокарта ASUS GeForce RTX 4060 DUAL EVO OC [DUAL-RTX4060-O8G-EVO]
+2025-05-04 19:01:03,564 - INFO - Added new product data for https://www.dns-shop.ru/product/5256129b85e7d21a/videokarta-asus-geforce-rtx-4060-dual-evo-oc-dual-rtx4060-o8g-evo/
+2025-05-04 19:01:03,583 - INFO - Saved data for product: Видеокарта ASUS GeForce RTX 4060 DUAL EVO OC [DUAL-RTX4060-O8G-EVO]
+2025-05-04 19:01:03,583 - INFO - Processing URL 22/100: https://www.dns-shop.ru/product/55cc9b9165b71b80/videokarta-msi-geforce-rtx-3060-ventus-2x-oc-lhr-rtx-3060-ventus-2x-12g-oc/
+2025-05-04 19:01:03,584 - INFO - Processing URL: https://www.dns-shop.ru/product/55cc9b9165b71b80/videokarta-msi-geforce-rtx-3060-ventus-2x-oc-lhr-rtx-3060-ventus-2x-12g-oc/
+2025-05-04 19:01:19,829 - INFO - Parsed product: Видеокарта MSI GeForce RTX 3060 VENTUS 2X OC (LHR) [RTX 3060 VENTUS 2X 12G OC]
+2025-05-04 19:01:19,835 - INFO - Added new product data for https://www.dns-shop.ru/product/55cc9b9165b71b80/videokarta-msi-geforce-rtx-3060-ventus-2x-oc-lhr-rtx-3060-ventus-2x-12g-oc/
+2025-05-04 19:01:19,854 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 3060 VENTUS 2X OC (LHR) [RTX 3060 VENTUS 2X 12G OC]
+2025-05-04 19:01:19,854 - INFO - Processing URL 23/100: https://www.dns-shop.ru/product/81c18b2f0b23ed20/videokarta-gigabyte-geforce-rtx-4060-gaming-oc-gv-n4060gaming-oc-8gd/
+2025-05-04 19:01:19,855 - INFO - Processing URL: https://www.dns-shop.ru/product/81c18b2f0b23ed20/videokarta-gigabyte-geforce-rtx-4060-gaming-oc-gv-n4060gaming-oc-8gd/
+2025-05-04 19:01:35,182 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4060 GAMING OC [GV-N4060GAMING OC-8GD]
+2025-05-04 19:01:35,189 - INFO - Added new product data for https://www.dns-shop.ru/product/81c18b2f0b23ed20/videokarta-gigabyte-geforce-rtx-4060-gaming-oc-gv-n4060gaming-oc-8gd/
+2025-05-04 19:01:35,208 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4060 GAMING OC [GV-N4060GAMING OC-8GD]
+2025-05-04 19:01:35,209 - INFO - Processing URL 24/100: https://www.dns-shop.ru/product/62d91971ef0ded20/videokarta-msi-geforce-rtx-4060-ti-gaming-x-geforce-rtx-4060-ti-gaming-x-8g/
+2025-05-04 19:01:35,209 - INFO - Processing URL: https://www.dns-shop.ru/product/62d91971ef0ded20/videokarta-msi-geforce-rtx-4060-ti-gaming-x-geforce-rtx-4060-ti-gaming-x-8g/
+2025-05-04 19:01:54,466 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 Ti GAMING X [GeForce RTX 4060 Ti GAMING X 8G]
+2025-05-04 19:01:54,473 - INFO - Added new product data for https://www.dns-shop.ru/product/62d91971ef0ded20/videokarta-msi-geforce-rtx-4060-ti-gaming-x-geforce-rtx-4060-ti-gaming-x-8g/
+2025-05-04 19:01:54,494 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 Ti GAMING X [GeForce RTX 4060 Ti GAMING X 8G]
+2025-05-04 19:01:54,494 - INFO - Processing URL 25/100: https://www.dns-shop.ru/product/7503feffde6fed20/videokarta-palit-geforce-rtx-4060-ti-dual-ne6406t019p1-1060d/
+2025-05-04 19:01:54,494 - INFO - Processing URL: https://www.dns-shop.ru/product/7503feffde6fed20/videokarta-palit-geforce-rtx-4060-ti-dual-ne6406t019p1-1060d/
+2025-05-04 19:02:11,376 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Ti Dual [NE6406T019P1-1060D]
+2025-05-04 19:02:11,383 - INFO - Updated existing product data for https://www.dns-shop.ru/product/7503feffde6fed20/videokarta-palit-geforce-rtx-4060-ti-dual-ne6406t019p1-1060d/
+2025-05-04 19:02:11,403 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Ti Dual [NE6406T019P1-1060D]
+2025-05-04 19:02:11,404 - INFO - Processing URL 26/100: https://www.dns-shop.ru/product/75db5ab00b1bed20/videokarta-msi-geforce-rtx-4060-ventus-2x-black-oc-geforce-rtx-4060-ventus-2x/
+2025-05-04 19:02:11,404 - INFO - Processing URL: https://www.dns-shop.ru/product/75db5ab00b1bed20/videokarta-msi-geforce-rtx-4060-ventus-2x-black-oc-geforce-rtx-4060-ventus-2x/
+2025-05-04 19:02:29,244 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X BLACK OC [GeForce RTX 4060 VENTUS 2X]
+2025-05-04 19:02:29,250 - INFO - Updated existing product data for https://www.dns-shop.ru/product/75db5ab00b1bed20/videokarta-msi-geforce-rtx-4060-ventus-2x-black-oc-geforce-rtx-4060-ventus-2x/
+2025-05-04 19:02:29,274 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 VENTUS 2X BLACK OC [GeForce RTX 4060 VENTUS 2X]
+2025-05-04 19:02:29,274 - INFO - Processing URL 27/100: https://www.dns-shop.ru/product/13206ee93b0aed20/videokarta-msi-geforce-gtx-1650-d6-ventus-xs-ocv3-geforce-gtx-1650-d6-ventus-xs-ocv3/
+2025-05-04 19:02:29,275 - INFO - Processing URL: https://www.dns-shop.ru/product/13206ee93b0aed20/videokarta-msi-geforce-gtx-1650-d6-ventus-xs-ocv3-geforce-gtx-1650-d6-ventus-xs-ocv3/
+2025-05-04 19:02:45,914 - INFO - Parsed product: Видеокарта MSI GeForce GTX 1650 D6 VENTUS XS OCV3 [GeForce GTX 1650 D6 VENTUS XS OCV3]
+2025-05-04 19:02:45,921 - INFO - Added new product data for https://www.dns-shop.ru/product/13206ee93b0aed20/videokarta-msi-geforce-gtx-1650-d6-ventus-xs-ocv3-geforce-gtx-1650-d6-ventus-xs-ocv3/
+2025-05-04 19:02:45,941 - INFO - Saved data for product: Видеокарта MSI GeForce GTX 1650 D6 VENTUS XS OCV3 [GeForce GTX 1650 D6 VENTUS XS OCV3]
+2025-05-04 19:02:45,941 - INFO - Processing URL 28/100: https://www.dns-shop.ru/product/5058d787c0eed582/videokarta-palit-geforce-rtx-5080-gamerock-ne75080019t2-gb2030g/
+2025-05-04 19:02:45,943 - INFO - Processing URL: https://www.dns-shop.ru/product/5058d787c0eed582/videokarta-palit-geforce-rtx-5080-gamerock-ne75080019t2-gb2030g/
+2025-05-04 19:03:01,965 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5080 GameRock [NE75080019T2-GB2030G]
+2025-05-04 19:03:01,973 - INFO - Updated existing product data for https://www.dns-shop.ru/product/5058d787c0eed582/videokarta-palit-geforce-rtx-5080-gamerock-ne75080019t2-gb2030g/
+2025-05-04 19:03:01,993 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5080 GameRock [NE75080019T2-GB2030G]
+2025-05-04 19:03:01,993 - INFO - Processing URL 29/100: https://www.dns-shop.ru/product/0f22a4dacef2d582/videokarta-msi-geforce-rtx-5080-vanguard-soc-rtx-5080-16g-vanguard-soc/
+2025-05-04 19:03:01,993 - INFO - Processing URL: https://www.dns-shop.ru/product/0f22a4dacef2d582/videokarta-msi-geforce-rtx-5080-vanguard-soc-rtx-5080-16g-vanguard-soc/
+2025-05-04 19:03:19,287 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5080 VANGUARD SOC [RTX 5080 16G VANGUARD SOC]
+2025-05-04 19:03:19,293 - INFO - Added new product data for https://www.dns-shop.ru/product/0f22a4dacef2d582/videokarta-msi-geforce-rtx-5080-vanguard-soc-rtx-5080-16g-vanguard-soc/
+2025-05-04 19:03:19,317 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5080 VANGUARD SOC [RTX 5080 16G VANGUARD SOC]
+2025-05-04 19:03:19,318 - INFO - Processing URL 30/100: https://www.dns-shop.ru/product/e9ebbaa5b6a5d9cb/videokarta-kfa2-geforce-rtx-3050-x-black-35nrldhp9odk/
+2025-05-04 19:03:19,318 - INFO - Processing URL: https://www.dns-shop.ru/product/e9ebbaa5b6a5d9cb/videokarta-kfa2-geforce-rtx-3050-x-black-35nrldhp9odk/
+2025-05-04 19:03:34,816 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 3050 X Black [35NRLDHP9ODK]
+2025-05-04 19:03:34,823 - INFO - Added new product data for https://www.dns-shop.ru/product/e9ebbaa5b6a5d9cb/videokarta-kfa2-geforce-rtx-3050-x-black-35nrldhp9odk/
+2025-05-04 19:03:34,844 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 3050 X Black [35NRLDHP9ODK]
+2025-05-04 19:03:34,845 - INFO - Processing URL 31/100: https://www.dns-shop.ru/product/6745c3805607ed20/videokarta-kfa2-geforce-rtx-4060-x-white-46nsl8md8nwk/
+2025-05-04 19:03:34,845 - INFO - Processing URL: https://www.dns-shop.ru/product/6745c3805607ed20/videokarta-kfa2-geforce-rtx-4060-x-white-46nsl8md8nwk/
+2025-05-04 19:03:50,738 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4060 X White [46NSL8MD8NWK]
+2025-05-04 19:03:50,746 - INFO - Added new product data for https://www.dns-shop.ru/product/6745c3805607ed20/videokarta-kfa2-geforce-rtx-4060-x-white-46nsl8md8nwk/
+2025-05-04 19:03:50,767 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4060 X White [46NSL8MD8NWK]
+2025-05-04 19:03:50,767 - INFO - Processing URL 32/100: https://www.dns-shop.ru/product/b3ea0184cef1d582/videokarta-msi-geforce-rtx-5080-gaming-trio-oc-rtx-5080-16g-gaming-trio-oc/
+2025-05-04 19:03:50,767 - INFO - Processing URL: https://www.dns-shop.ru/product/b3ea0184cef1d582/videokarta-msi-geforce-rtx-5080-gaming-trio-oc-rtx-5080-16g-gaming-trio-oc/
+2025-05-04 19:04:07,464 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5080 GAMING TRIO OC [RTX 5080 16G GAMING TRIO OC]
+2025-05-04 19:04:07,469 - INFO - Added new product data for https://www.dns-shop.ru/product/b3ea0184cef1d582/videokarta-msi-geforce-rtx-5080-gaming-trio-oc-rtx-5080-16g-gaming-trio-oc/
+2025-05-04 19:04:07,492 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5080 GAMING TRIO OC [RTX 5080 16G GAMING TRIO OC]
+2025-05-04 19:04:07,492 - INFO - Processing URL 33/100: https://www.dns-shop.ru/product/61691ccea2e4ed20/videokarta-palit-geforce-rtx-4070-super-dual-oc-ned407ss19k9-1043d/
+2025-05-04 19:04:07,493 - INFO - Processing URL: https://www.dns-shop.ru/product/61691ccea2e4ed20/videokarta-palit-geforce-rtx-4070-super-dual-oc-ned407ss19k9-1043d/
+2025-05-04 19:04:23,160 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4070 SUPER Dual OC [NED407SS19K9-1043D]
+2025-05-04 19:04:23,167 - INFO - Added new product data for https://www.dns-shop.ru/product/61691ccea2e4ed20/videokarta-palit-geforce-rtx-4070-super-dual-oc-ned407ss19k9-1043d/
+2025-05-04 19:04:23,195 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4070 SUPER Dual OC [NED407SS19K9-1043D]
+2025-05-04 19:04:23,196 - INFO - Processing URL 34/100: https://www.dns-shop.ru/product/d4bc40ceceecd9cb/videokarta-gigabyte-amd-radeon-9070-xt-gaming-oc-gv-r9070xtgaming-oc-16gd/
+2025-05-04 19:04:23,196 - INFO - Processing URL: https://www.dns-shop.ru/product/d4bc40ceceecd9cb/videokarta-gigabyte-amd-radeon-9070-xt-gaming-oc-gv-r9070xtgaming-oc-16gd/
+2025-05-04 19:04:37,716 - INFO - Parsed product: Видеокарта GIGABYTE AMD Radeon 9070 XT GAMING OC [GV-R9070XTGAMING OC-16GD]
+2025-05-04 19:04:37,727 - INFO - Added new product data for https://www.dns-shop.ru/product/d4bc40ceceecd9cb/videokarta-gigabyte-amd-radeon-9070-xt-gaming-oc-gv-r9070xtgaming-oc-16gd/
+2025-05-04 19:04:37,752 - INFO - Saved data for product: Видеокарта GIGABYTE AMD Radeon 9070 XT GAMING OC [GV-R9070XTGAMING OC-16GD]
+2025-05-04 19:04:37,753 - INFO - Processing URL 35/100: https://www.dns-shop.ru/product/12d0fed31355d9cb/videokarta-gigabyte-geforce-rtx-3060-windforce-oc-rev-20-gv-n3060wf2oc-12gd-20/
+2025-05-04 19:04:37,753 - INFO - Processing URL: https://www.dns-shop.ru/product/12d0fed31355d9cb/videokarta-gigabyte-geforce-rtx-3060-windforce-oc-rev-20-gv-n3060wf2oc-12gd-20/
+2025-05-04 19:04:53,252 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 3060 WINDFORCE OC (rev. 2.0) [GV-N3060WF2OC-12GD 2.0]
+2025-05-04 19:04:53,259 - INFO - Added new product data for https://www.dns-shop.ru/product/12d0fed31355d9cb/videokarta-gigabyte-geforce-rtx-3060-windforce-oc-rev-20-gv-n3060wf2oc-12gd-20/
+2025-05-04 19:04:53,298 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 3060 WINDFORCE OC (rev. 2.0) [GV-N3060WF2OC-12GD 2.0]
+2025-05-04 19:04:53,299 - INFO - Processing URL 36/100: https://www.dns-shop.ru/product/86977d190b22ed20/videokarta-gigabyte-geforce-rtx-4060-windforce-oc-gv-n4060wf2oc-8gd/
+2025-05-04 19:04:53,299 - INFO - Processing URL: https://www.dns-shop.ru/product/86977d190b22ed20/videokarta-gigabyte-geforce-rtx-4060-windforce-oc-gv-n4060wf2oc-8gd/
+2025-05-04 19:05:09,642 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4060 WINDFORCE OC [GV-N4060WF2OC-8GD]
+2025-05-04 19:05:09,649 - INFO - Added new product data for https://www.dns-shop.ru/product/86977d190b22ed20/videokarta-gigabyte-geforce-rtx-4060-windforce-oc-gv-n4060wf2oc-8gd/
+2025-05-04 19:05:09,674 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4060 WINDFORCE OC [GV-N4060WF2OC-8GD]
+2025-05-04 19:05:09,675 - INFO - Processing URL 37/100: https://www.dns-shop.ru/product/66129102f08ad582/videokarta-msi-geforce-rtx-4070-super-gaming-x-slim-geforce-rtx-4070-super-12g-gaming-x-slim/
+2025-05-04 19:05:09,675 - INFO - Processing URL: https://www.dns-shop.ru/product/66129102f08ad582/videokarta-msi-geforce-rtx-4070-super-gaming-x-slim-geforce-rtx-4070-super-12g-gaming-x-slim/
+2025-05-04 19:05:25,407 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4070 SUPER GAMING X SLIM [GeForce RTX 4070 SUPER 12G GAMING X SLIM]
+2025-05-04 19:05:25,416 - INFO - Added new product data for https://www.dns-shop.ru/product/66129102f08ad582/videokarta-msi-geforce-rtx-4070-super-gaming-x-slim-geforce-rtx-4070-super-12g-gaming-x-slim/
+2025-05-04 19:05:25,441 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4070 SUPER GAMING X SLIM [GeForce RTX 4070 SUPER 12G GAMING X SLIM]
+2025-05-04 19:05:25,442 - INFO - Processing URL 38/100: https://www.dns-shop.ru/product/bcef83cb1e36ed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-16g-oc/
+2025-05-04 19:05:25,442 - INFO - Processing URL: https://www.dns-shop.ru/product/bcef83cb1e36ed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-16g-oc/
+2025-05-04 19:05:47,757 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 Ti VENTUS 2X BLACK OC [GeForce RTX 4060 Ti VENTUS 2X BLACK 16G OC]
+2025-05-04 19:05:47,767 - INFO - Updated existing product data for https://www.dns-shop.ru/product/bcef83cb1e36ed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-16g-oc/
+2025-05-04 19:05:47,792 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 Ti VENTUS 2X BLACK OC [GeForce RTX 4060 Ti VENTUS 2X BLACK 16G OC]
+2025-05-04 19:05:47,792 - INFO - Processing URL 39/100: https://www.dns-shop.ru/product/0f5a9f8b1520ed20/videokarta-sapphire-amd-radeon-rx-6600-pulse-11310-01-20g/
+2025-05-04 19:05:47,793 - INFO - Processing URL: https://www.dns-shop.ru/product/0f5a9f8b1520ed20/videokarta-sapphire-amd-radeon-rx-6600-pulse-11310-01-20g/
+2025-05-04 19:06:06,939 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 6600 PULSE [11310-01-20G]
+2025-05-04 19:06:06,945 - INFO - Added new product data for https://www.dns-shop.ru/product/0f5a9f8b1520ed20/videokarta-sapphire-amd-radeon-rx-6600-pulse-11310-01-20g/
+2025-05-04 19:06:06,971 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 6600 PULSE [11310-01-20G]
+2025-05-04 19:06:06,971 - INFO - Processing URL 40/100: https://www.dns-shop.ru/product/5b2f3ca6ef0eed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-8g-oc/
+2025-05-04 19:06:06,973 - INFO - Processing URL: https://www.dns-shop.ru/product/5b2f3ca6ef0eed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-8g-oc/
+2025-05-04 19:06:25,159 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 Ti VENTUS 2X BLACK OC [GeForce RTX 4060 Ti VENTUS 2X BLACK 8G OC]
+2025-05-04 19:06:25,169 - INFO - Added new product data for https://www.dns-shop.ru/product/5b2f3ca6ef0eed20/videokarta-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-geforce-rtx-4060-ti-ventus-2x-black-8g-oc/
+2025-05-04 19:06:25,200 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 Ti VENTUS 2X BLACK OC [GeForce RTX 4060 Ti VENTUS 2X BLACK 8G OC]
+2025-05-04 19:06:25,201 - INFO - Processing URL 41/100: https://www.dns-shop.ru/product/337858f9d4b5d582/videokarta-gigabyte-geforce-rtx-5070-ti-windforce-oc-sff-gv-n507twf3oc-16gd/
+2025-05-04 19:06:25,201 - INFO - Processing URL: https://www.dns-shop.ru/product/337858f9d4b5d582/videokarta-gigabyte-geforce-rtx-5070-ti-windforce-oc-sff-gv-n507twf3oc-16gd/
+2025-05-04 19:06:46,706 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 5070 Ti WINDFORCE OC SFF [GV-N507TWF3OC-16GD]
+2025-05-04 19:06:46,717 - INFO - Added new product data for https://www.dns-shop.ru/product/337858f9d4b5d582/videokarta-gigabyte-geforce-rtx-5070-ti-windforce-oc-sff-gv-n507twf3oc-16gd/
+2025-05-04 19:06:46,744 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 5070 Ti WINDFORCE OC SFF [GV-N507TWF3OC-16GD]
+2025-05-04 19:06:46,744 - INFO - Processing URL 42/100: https://www.dns-shop.ru/product/1110e3f5aef22eb1/videokarta-gigabyte-geforce-rtx-3060-gaming-oc-lhr-gv-n3060gaming-oc-12gd-rev20/
+2025-05-04 19:06:46,745 - INFO - Processing URL: https://www.dns-shop.ru/product/1110e3f5aef22eb1/videokarta-gigabyte-geforce-rtx-3060-gaming-oc-lhr-gv-n3060gaming-oc-12gd-rev20/
+2025-05-04 19:07:05,828 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 3060 GAMING OC (LHR) [GV-N3060GAMING OC-12GD Rev2.0]
+2025-05-04 19:07:05,837 - INFO - Added new product data for https://www.dns-shop.ru/product/1110e3f5aef22eb1/videokarta-gigabyte-geforce-rtx-3060-gaming-oc-lhr-gv-n3060gaming-oc-12gd-rev20/
+2025-05-04 19:07:05,871 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 3060 GAMING OC (LHR) [GV-N3060GAMING OC-12GD Rev2.0]
+2025-05-04 19:07:05,872 - INFO - Processing URL 43/100: https://www.dns-shop.ru/product/72372f3cd49ad9cb/videokarta-palit-geforce-rtx-5080-gamingpro-ne75080019t2-gb2031a/
+2025-05-04 19:07:05,872 - INFO - Processing URL: https://www.dns-shop.ru/product/72372f3cd49ad9cb/videokarta-palit-geforce-rtx-5080-gamingpro-ne75080019t2-gb2031a/
+2025-05-04 19:07:26,909 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5080 GamingPro [NE75080019T2-GB2031A]
+2025-05-04 19:07:26,992 - INFO - Updated existing product data for https://www.dns-shop.ru/product/72372f3cd49ad9cb/videokarta-palit-geforce-rtx-5080-gamingpro-ne75080019t2-gb2031a/
+2025-05-04 19:07:27,019 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5080 GamingPro [NE75080019T2-GB2031A]
+2025-05-04 19:07:27,020 - INFO - Processing URL 44/100: https://www.dns-shop.ru/product/4a37c3abcef2d582/videokarta-msi-geforce-rtx-5080-ventus-3x-oc-plus-rtx-5080-16g-ventus-3x-oc-plus/
+2025-05-04 19:07:27,020 - INFO - Processing URL: https://www.dns-shop.ru/product/4a37c3abcef2d582/videokarta-msi-geforce-rtx-5080-ventus-3x-oc-plus-rtx-5080-16g-ventus-3x-oc-plus/
+2025-05-04 19:07:46,252 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5080 VENTUS 3X OC PLUS [RTX 5080 16G VENTUS 3X OC PLUS]
+2025-05-04 19:07:46,260 - INFO - Added new product data for https://www.dns-shop.ru/product/4a37c3abcef2d582/videokarta-msi-geforce-rtx-5080-ventus-3x-oc-plus-rtx-5080-16g-ventus-3x-oc-plus/
+2025-05-04 19:07:46,288 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5080 VENTUS 3X OC PLUS [RTX 5080 16G VENTUS 3X OC PLUS]
+2025-05-04 19:07:46,289 - INFO - Processing URL 45/100: https://www.dns-shop.ru/product/774b56ee5796ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-pure-oc-11330-03/
+2025-05-04 19:07:46,290 - INFO - Processing URL: https://www.dns-shop.ru/product/774b56ee5796ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-pure-oc-11330-03/
+2025-05-04 19:08:01,382 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7800 XT PURE OC [11330-03]
+2025-05-04 19:08:01,391 - INFO - Added new product data for https://www.dns-shop.ru/product/774b56ee5796ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-pure-oc-11330-03/
+2025-05-04 19:08:01,419 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7800 XT PURE OC [11330-03]
+2025-05-04 19:08:01,420 - INFO - Processing URL 46/100: https://www.dns-shop.ru/product/a820bab67eecd0a4/videokarta-palit-geforce-rtx-4070-ti-super-infinity-3-oc-ned47tss19t2-1043s/
+2025-05-04 19:08:01,420 - INFO - Processing URL: https://www.dns-shop.ru/product/a820bab67eecd0a4/videokarta-palit-geforce-rtx-4070-ti-super-infinity-3-oc-ned47tss19t2-1043s/
+2025-05-04 19:08:16,113 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4070 Ti SUPER INFINITY 3 OC [NED47TSS19T2-1043S]
+2025-05-04 19:08:16,123 - INFO - Added new product data for https://www.dns-shop.ru/product/a820bab67eecd0a4/videokarta-palit-geforce-rtx-4070-ti-super-infinity-3-oc-ned47tss19t2-1043s/
+2025-05-04 19:08:16,155 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4070 Ti SUPER INFINITY 3 OC [NED47TSS19T2-1043S]
+2025-05-04 19:08:16,155 - INFO - Processing URL 47/100: https://www.dns-shop.ru/product/86357c17e448d582/videokarta-msi-geforce-rtx-5070-ti-ventus-3x-oc-rtx-5070-ti-16g-ventus-3x-oc/
+2025-05-04 19:08:16,156 - INFO - Processing URL: https://www.dns-shop.ru/product/86357c17e448d582/videokarta-msi-geforce-rtx-5070-ti-ventus-3x-oc-rtx-5070-ti-16g-ventus-3x-oc/
+2025-05-04 19:08:38,294 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 Ti VENTUS 3X OC [RTX 5070 Ti 16G VENTUS 3X OC]
+2025-05-04 19:08:38,304 - INFO - Added new product data for https://www.dns-shop.ru/product/86357c17e448d582/videokarta-msi-geforce-rtx-5070-ti-ventus-3x-oc-rtx-5070-ti-16g-ventus-3x-oc/
+2025-05-04 19:08:38,340 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 Ti VENTUS 3X OC [RTX 5070 Ti 16G VENTUS 3X OC]
+2025-05-04 19:08:38,341 - INFO - Processing URL 48/100: https://www.dns-shop.ru/product/ef42e95e5af71b80/videokarta-palit-geforce-rtx-3060-dual-lhr-ne63060019k9-190ad/
+2025-05-04 19:08:38,341 - INFO - Processing URL: https://www.dns-shop.ru/product/ef42e95e5af71b80/videokarta-palit-geforce-rtx-3060-dual-lhr-ne63060019k9-190ad/
+2025-05-04 19:09:00,808 - INFO - Parsed product: Видеокарта Palit GeForce RTX 3060 Dual (LHR) [NE63060019K9-190AD]
+2025-05-04 19:09:00,817 - INFO - Updated existing product data for https://www.dns-shop.ru/product/ef42e95e5af71b80/videokarta-palit-geforce-rtx-3060-dual-lhr-ne63060019k9-190ad/
+2025-05-04 19:09:00,846 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 3060 Dual (LHR) [NE63060019K9-190AD]
+2025-05-04 19:09:00,847 - INFO - Processing URL 49/100: https://www.dns-shop.ru/product/72c0586fc409ed20/videokarta-kfa2-geforce-rtx-4070-ti-super-sg-black-47uzm6md6mek/
+2025-05-04 19:09:00,847 - INFO - Processing URL: https://www.dns-shop.ru/product/72c0586fc409ed20/videokarta-kfa2-geforce-rtx-4070-ti-super-sg-black-47uzm6md6mek/
+2025-05-04 19:09:22,082 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER SG Black [47UZM6MD6MEK]
+2025-05-04 19:09:22,092 - INFO - Updated existing product data for https://www.dns-shop.ru/product/72c0586fc409ed20/videokarta-kfa2-geforce-rtx-4070-ti-super-sg-black-47uzm6md6mek/
+2025-05-04 19:09:22,121 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER SG Black [47UZM6MD6MEK]
+2025-05-04 19:09:22,123 - INFO - Processing URL 50/100: https://www.dns-shop.ru/product/9da8c79802dbd9cb/videokarta-kfa2-geforce-rtx-4070-ti-super-x-3-fan-black-47uzm6md7jdk/
+2025-05-04 19:09:22,123 - INFO - Processing URL: https://www.dns-shop.ru/product/9da8c79802dbd9cb/videokarta-kfa2-geforce-rtx-4070-ti-super-x-3-fan-black-47uzm6md7jdk/
+2025-05-04 19:09:42,532 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER X 3 FAN Black [47UZM6MD7JDK]
+2025-05-04 19:09:42,542 - INFO - Added new product data for https://www.dns-shop.ru/product/9da8c79802dbd9cb/videokarta-kfa2-geforce-rtx-4070-ti-super-x-3-fan-black-47uzm6md7jdk/
+2025-05-04 19:09:42,579 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER X 3 FAN Black [47UZM6MD7JDK]
+2025-05-04 19:09:42,580 - INFO - Processing URL 51/100: https://www.dns-shop.ru/product/295c324602d6d9cb/videokarta-msi-geforce-rtx-5070-ti-shadow-3x-oc-rtx-5070-ti-16g-shadow-3x-oc/
+2025-05-04 19:09:42,580 - INFO - Processing URL: https://www.dns-shop.ru/product/295c324602d6d9cb/videokarta-msi-geforce-rtx-5070-ti-shadow-3x-oc-rtx-5070-ti-16g-shadow-3x-oc/
+2025-05-04 19:10:02,551 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 Ti SHADOW 3X OC [RTX 5070 Ti 16G SHADOW 3X OC]
+2025-05-04 19:10:02,560 - INFO - Added new product data for https://www.dns-shop.ru/product/295c324602d6d9cb/videokarta-msi-geforce-rtx-5070-ti-shadow-3x-oc-rtx-5070-ti-16g-shadow-3x-oc/
+2025-05-04 19:10:02,596 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 Ti SHADOW 3X OC [RTX 5070 Ti 16G SHADOW 3X OC]
+2025-05-04 19:10:02,597 - INFO - Processing URL 52/100: https://www.dns-shop.ru/product/19a2d6e059ffd582/videokarta-gigabyte-geforce-rtx-4070-ti-super-windforce-max-oc-gv-n407tswf3max-oc-16gd/
+2025-05-04 19:10:02,597 - INFO - Processing URL: https://www.dns-shop.ru/product/19a2d6e059ffd582/videokarta-gigabyte-geforce-rtx-4070-ti-super-windforce-max-oc-gv-n407tswf3max-oc-16gd/
+2025-05-04 19:10:21,981 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4070 Ti SUPER WINDFORCE MAX OC [GV-N407TSWF3MAX OC-16GD]
+2025-05-04 19:10:21,992 - INFO - Added new product data for https://www.dns-shop.ru/product/19a2d6e059ffd582/videokarta-gigabyte-geforce-rtx-4070-ti-super-windforce-max-oc-gv-n407tswf3max-oc-16gd/
+2025-05-04 19:10:22,024 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4070 Ti SUPER WINDFORCE MAX OC [GV-N407TSWF3MAX OC-16GD]
+2025-05-04 19:10:22,025 - INFO - Processing URL 53/100: https://www.dns-shop.ru/product/507f4b2fe449d582/videokarta-msi-geforce-rtx-5070-ti-vanguard-soc-launch-edition-rtx-5070-ti-16g-vanguard-soc-launch-edition/
+2025-05-04 19:10:22,025 - INFO - Processing URL: https://www.dns-shop.ru/product/507f4b2fe449d582/videokarta-msi-geforce-rtx-5070-ti-vanguard-soc-launch-edition-rtx-5070-ti-16g-vanguard-soc-launch-edition/
+2025-05-04 19:10:41,381 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 Ti VANGUARD SOC LAUNCH EDITION [RTX 5070 Ti 16G VANGUARD SOC LAUNCH EDITION]
+2025-05-04 19:10:41,390 - INFO - Added new product data for https://www.dns-shop.ru/product/507f4b2fe449d582/videokarta-msi-geforce-rtx-5070-ti-vanguard-soc-launch-edition-rtx-5070-ti-16g-vanguard-soc-launch-edition/
+2025-05-04 19:10:41,421 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 Ti VANGUARD SOC LAUNCH EDITION [RTX 5070 Ti 16G VANGUARD SOC LAUNCH EDITION]
+2025-05-04 19:10:41,421 - INFO - Processing URL 54/100: https://www.dns-shop.ru/product/0447724eeaacd582/videokarta-msi-geforce-rtx-5070-ti-vanguard-soc-rtx-5070-ti-16g-vanguard-soc/
+2025-05-04 19:10:41,421 - INFO - Processing URL: https://www.dns-shop.ru/product/0447724eeaacd582/videokarta-msi-geforce-rtx-5070-ti-vanguard-soc-rtx-5070-ti-16g-vanguard-soc/
+2025-05-04 19:11:05,106 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 Ti VANGUARD SOC [RTX 5070 Ti 16G VANGUARD SOC]
+2025-05-04 19:11:05,117 - INFO - Added new product data for https://www.dns-shop.ru/product/0447724eeaacd582/videokarta-msi-geforce-rtx-5070-ti-vanguard-soc-rtx-5070-ti-16g-vanguard-soc/
+2025-05-04 19:11:05,149 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 Ti VANGUARD SOC [RTX 5070 Ti 16G VANGUARD SOC]
+2025-05-04 19:11:05,149 - INFO - Processing URL 55/100: https://www.dns-shop.ru/product/8f0eced0eaa9d582/videokarta-msi-geforce-rtx-5070-ventus-3x-oc-rtx-5070-12g-ventus-3x-oc/
+2025-05-04 19:11:05,149 - INFO - Processing URL: https://www.dns-shop.ru/product/8f0eced0eaa9d582/videokarta-msi-geforce-rtx-5070-ventus-3x-oc-rtx-5070-12g-ventus-3x-oc/
+2025-05-04 19:11:28,711 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 VENTUS 3X OC [RTX 5070 12G VENTUS 3X OC]
+2025-05-04 19:11:28,721 - INFO - Added new product data for https://www.dns-shop.ru/product/8f0eced0eaa9d582/videokarta-msi-geforce-rtx-5070-ventus-3x-oc-rtx-5070-12g-ventus-3x-oc/
+2025-05-04 19:11:28,752 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 VENTUS 3X OC [RTX 5070 12G VENTUS 3X OC]
+2025-05-04 19:11:28,753 - INFO - Processing URL 56/100: https://www.dns-shop.ru/product/3439d87ae77ed582/videokarta-palit-geforce-rtx-5070-ti-gamerock-ne7507t019t2-gb2030g/
+2025-05-04 19:11:28,753 - INFO - Processing URL: https://www.dns-shop.ru/product/3439d87ae77ed582/videokarta-palit-geforce-rtx-5070-ti-gamerock-ne7507t019t2-gb2030g/
+2025-05-04 19:11:46,300 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5070 Ti GameRock [NE7507T019T2-GB2030G]
+2025-05-04 19:11:46,310 - INFO - Added new product data for https://www.dns-shop.ru/product/3439d87ae77ed582/videokarta-palit-geforce-rtx-5070-ti-gamerock-ne7507t019t2-gb2030g/
+2025-05-04 19:11:46,343 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5070 Ti GameRock [NE7507T019T2-GB2030G]
+2025-05-04 19:11:46,344 - INFO - Processing URL 57/100: https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/
+2025-05-04 19:11:46,344 - INFO - Processing URL: https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/
+2025-05-04 19:12:09,556 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7800 XT NITRO+ [11330-01-20G]
+2025-05-04 19:12:09,564 - INFO - Updated existing product data for https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/
+2025-05-04 19:12:09,599 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7800 XT NITRO+ [11330-01-20G]
+2025-05-04 19:12:09,600 - INFO - Processing URL 58/100: https://www.dns-shop.ru/product/30bd04fb7f63ed20/videokarta-kfa2-geforce-gtx-1650-x-black-65sql8ds93ek/
+2025-05-04 19:12:09,601 - INFO - Processing URL: https://www.dns-shop.ru/product/30bd04fb7f63ed20/videokarta-kfa2-geforce-gtx-1650-x-black-65sql8ds93ek/
+2025-05-04 19:14:09,604 - ERROR - Error processing URL https://www.dns-shop.ru/product/30bd04fb7f63ed20/videokarta-kfa2-geforce-gtx-1650-x-black-65sql8ds93ek/: HTTPConnectionPool(host='localhost', port=62318): Read timed out. (read timeout=120)
+2025-05-04 19:14:09,696 - INFO - Processing URL 59/100: https://www.dns-shop.ru/product/18c9e6587e2ded20/videokarta-asrock-amd-radeon-rx-6600-challenger-white-rx6600-clw-8g/
+2025-05-04 19:14:09,697 - INFO - Processing URL: https://www.dns-shop.ru/product/18c9e6587e2ded20/videokarta-asrock-amd-radeon-rx-6600-challenger-white-rx6600-clw-8g/
+2025-05-04 19:16:09,711 - ERROR - Error processing URL https://www.dns-shop.ru/product/18c9e6587e2ded20/videokarta-asrock-amd-radeon-rx-6600-challenger-white-rx6600-clw-8g/: HTTPConnectionPool(host='localhost', port=62318): Read timed out. (read timeout=120)
+2025-05-04 19:16:09,724 - INFO - Processing URL 60/100: https://www.dns-shop.ru/product/49b77a8077562eb0/videokarta-kfa2-geforce-rtx-3060-core-lhr-36nol7md1vok/
+2025-05-04 19:16:09,725 - INFO - Processing URL: https://www.dns-shop.ru/product/49b77a8077562eb0/videokarta-kfa2-geforce-rtx-3060-core-lhr-36nol7md1vok/
+2025-05-04 19:18:09,732 - ERROR - Error processing URL https://www.dns-shop.ru/product/49b77a8077562eb0/videokarta-kfa2-geforce-rtx-3060-core-lhr-36nol7md1vok/: HTTPConnectionPool(host='localhost', port=62318): Read timed out. (read timeout=120)
+2025-05-04 19:18:09,746 - INFO - Processing URL 61/100: https://www.dns-shop.ru/product/3bdb9e0bd2f2d9cb/videokarta-kfa2-geforce-rtx-5080-core-oc-3fan-rgb-black-58nzn6mdbbok/
+2025-05-04 19:18:09,746 - INFO - Processing URL: https://www.dns-shop.ru/product/3bdb9e0bd2f2d9cb/videokarta-kfa2-geforce-rtx-5080-core-oc-3fan-rgb-black-58nzn6mdbbok/
+2025-05-04 19:19:29,863 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 5080 CORE OC 3FAN RGB Black [58NZN6MDBBOK]
+2025-05-04 19:19:29,871 - INFO - Added new product data for https://www.dns-shop.ru/product/3bdb9e0bd2f2d9cb/videokarta-kfa2-geforce-rtx-5080-core-oc-3fan-rgb-black-58nzn6mdbbok/
+2025-05-04 19:19:29,904 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 5080 CORE OC 3FAN RGB Black [58NZN6MDBBOK]
+2025-05-04 19:19:29,905 - INFO - Processing URL 62/100: https://www.dns-shop.ru/product/7de11280c0ebed20/videokarta-sapphire-amd-radeon-rx-7600-xt-pulse-gaming-oc-11339-04-20g/
+2025-05-04 19:19:29,905 - INFO - Processing URL: https://www.dns-shop.ru/product/7de11280c0ebed20/videokarta-sapphire-amd-radeon-rx-7600-xt-pulse-gaming-oc-11339-04-20g/
+2025-05-04 19:20:22,581 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7600 XT PULSE GAMING OC [11339-04-20G]
+2025-05-04 19:20:22,590 - INFO - Added new product data for https://www.dns-shop.ru/product/7de11280c0ebed20/videokarta-sapphire-amd-radeon-rx-7600-xt-pulse-gaming-oc-11339-04-20g/
+2025-05-04 19:20:22,625 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7600 XT PULSE GAMING OC [11339-04-20G]
+2025-05-04 19:20:22,626 - INFO - Processing URL 63/100: https://www.dns-shop.ru/product/33261ed8c400ed20/videokarta-asus-geforce-rtx-4070-super-tuf-gaming-oc-edition-tuf-rtx4070s-o12g-gaming/
+2025-05-04 19:20:22,627 - INFO - Processing URL: https://www.dns-shop.ru/product/33261ed8c400ed20/videokarta-asus-geforce-rtx-4070-super-tuf-gaming-oc-edition-tuf-rtx4070s-o12g-gaming/
+2025-05-04 19:21:15,025 - INFO - Parsed product: Видеокарта ASUS GeForce RTX 4070 SUPER TUF Gaming OC Edition [TUF-RTX4070S-O12G-GAMING]
+2025-05-04 19:21:15,034 - INFO - Added new product data for https://www.dns-shop.ru/product/33261ed8c400ed20/videokarta-asus-geforce-rtx-4070-super-tuf-gaming-oc-edition-tuf-rtx4070s-o12g-gaming/
+2025-05-04 19:21:15,068 - INFO - Saved data for product: Видеокарта ASUS GeForce RTX 4070 SUPER TUF Gaming OC Edition [TUF-RTX4070S-O12G-GAMING]
+2025-05-04 19:21:15,068 - INFO - Processing URL 64/100: https://www.dns-shop.ru/product/f4289d71cef2d582/videokarta-msi-geforce-rtx-5080-gaming-trio-oc-white-rtx-5080-16g-gaming-trio-oc-white/
+2025-05-04 19:21:15,069 - INFO - Processing URL: https://www.dns-shop.ru/product/f4289d71cef2d582/videokarta-msi-geforce-rtx-5080-gaming-trio-oc-white-rtx-5080-16g-gaming-trio-oc-white/
+2025-05-04 19:22:16,635 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5080 GAMING TRIO OC WHITE [RTX 5080 16G GAMING TRIO OC WHITE]
+2025-05-04 19:22:16,644 - INFO - Added new product data for https://www.dns-shop.ru/product/f4289d71cef2d582/videokarta-msi-geforce-rtx-5080-gaming-trio-oc-white-rtx-5080-16g-gaming-trio-oc-white/
+2025-05-04 19:22:16,678 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5080 GAMING TRIO OC WHITE [RTX 5080 16G GAMING TRIO OC WHITE]
+2025-05-04 19:22:16,678 - INFO - Processing URL 65/100: https://www.dns-shop.ru/product/fe3b6907e449d582/videokarta-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-rtx-5070-ti-16g-gaming-trio-oc-plus/
+2025-05-04 19:22:16,679 - INFO - Processing URL: https://www.dns-shop.ru/product/fe3b6907e449d582/videokarta-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-rtx-5070-ti-16g-gaming-trio-oc-plus/
+2025-05-04 19:23:10,331 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 Ti GAMING TRIO OC PLUS [RTX 5070 Ti 16G GAMING TRIO OC PLUS]
+2025-05-04 19:23:10,342 - INFO - Updated existing product data for https://www.dns-shop.ru/product/fe3b6907e449d582/videokarta-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-rtx-5070-ti-16g-gaming-trio-oc-plus/
+2025-05-04 19:23:10,395 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 Ti GAMING TRIO OC PLUS [RTX 5070 Ti 16G GAMING TRIO OC PLUS]
+2025-05-04 19:23:10,395 - INFO - Processing URL 66/100: https://www.dns-shop.ru/product/a941a417a2e4ed20/videokarta-palit-geforce-rtx-4070-super-dual-ned407s019k9-1043d/
+2025-05-04 19:23:10,396 - INFO - Processing URL: https://www.dns-shop.ru/product/a941a417a2e4ed20/videokarta-palit-geforce-rtx-4070-super-dual-ned407s019k9-1043d/
+2025-05-04 19:25:10,409 - ERROR - Error processing URL https://www.dns-shop.ru/product/a941a417a2e4ed20/videokarta-palit-geforce-rtx-4070-super-dual-ned407s019k9-1043d/: HTTPConnectionPool(host='localhost', port=62318): Read timed out. (read timeout=120)
+2025-05-04 19:25:10,423 - INFO - Processing URL 67/100: https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/
+2025-05-04 19:25:10,423 - INFO - Processing URL: https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/
+2025-05-04 19:27:10,438 - ERROR - Error processing URL https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/: HTTPConnectionPool(host='localhost', port=62318): Read timed out. (read timeout=120)
+2025-05-04 19:27:10,452 - INFO - Processing URL 68/100: https://www.dns-shop.ru/product/6ef13a69c0c6ed20/videokarta-gigabyte-geforce-rtx-4080-super-windforce-v2-gv-n408swf3v2-16gd/
+2025-05-04 19:27:10,452 - INFO - Processing URL: https://www.dns-shop.ru/product/6ef13a69c0c6ed20/videokarta-gigabyte-geforce-rtx-4080-super-windforce-v2-gv-n408swf3v2-16gd/
+2025-05-04 19:28:47,291 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4080 SUPER WINDFORCE V2 [GV-N408SWF3V2-16GD]
+2025-05-04 19:28:47,300 - INFO - Added new product data for https://www.dns-shop.ru/product/6ef13a69c0c6ed20/videokarta-gigabyte-geforce-rtx-4080-super-windforce-v2-gv-n408swf3v2-16gd/
+2025-05-04 19:28:47,336 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4080 SUPER WINDFORCE V2 [GV-N408SWF3V2-16GD]
+2025-05-04 19:28:47,337 - INFO - Processing URL 69/100: https://www.dns-shop.ru/product/7c767bd1144bed20/videokarta-powercolor-amd-radeon-rx-6600-fighter-axrx-6600-8gbd6-3dh/
+2025-05-04 19:28:47,337 - INFO - Processing URL: https://www.dns-shop.ru/product/7c767bd1144bed20/videokarta-powercolor-amd-radeon-rx-6600-fighter-axrx-6600-8gbd6-3dh/
+2025-05-04 19:29:06,369 - INFO - Parsed product: Видеокарта PowerColor AMD Radeon RX 6600 Fighter [AXRX 6600 8GBD6-3DH]
+2025-05-04 19:29:06,379 - INFO - Added new product data for https://www.dns-shop.ru/product/7c767bd1144bed20/videokarta-powercolor-amd-radeon-rx-6600-fighter-axrx-6600-8gbd6-3dh/
+2025-05-04 19:29:06,417 - INFO - Saved data for product: Видеокарта PowerColor AMD Radeon RX 6600 Fighter [AXRX 6600 8GBD6-3DH]
+2025-05-04 19:29:06,417 - INFO - Processing URL 70/100: https://www.dns-shop.ru/product/f915196e33faed20/videokarta-msi-geforce-rtx-4090-gaming-x-trio-rtx-4090-gaming-x-trio-24g/
+2025-05-04 19:29:06,418 - INFO - Processing URL: https://www.dns-shop.ru/product/f915196e33faed20/videokarta-msi-geforce-rtx-4090-gaming-x-trio-rtx-4090-gaming-x-trio-24g/
+2025-05-04 19:29:23,410 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4090 GAMING X TRIO [RTX 4090 GAMING X TRIO 24G]
+2025-05-04 19:29:23,419 - INFO - Added new product data for https://www.dns-shop.ru/product/f915196e33faed20/videokarta-msi-geforce-rtx-4090-gaming-x-trio-rtx-4090-gaming-x-trio-24g/
+2025-05-04 19:29:23,455 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4090 GAMING X TRIO [RTX 4090 GAMING X TRIO 24G]
+2025-05-04 19:29:23,456 - INFO - Processing URL 71/100: https://www.dns-shop.ru/product/a8002d751e3aed20/videokarta-sapphire-amd-radeon-rx-7600-pulse-gaming-oc-11324-01-20g/
+2025-05-04 19:29:23,456 - INFO - Processing URL: https://www.dns-shop.ru/product/a8002d751e3aed20/videokarta-sapphire-amd-radeon-rx-7600-pulse-gaming-oc-11324-01-20g/
+2025-05-04 19:29:44,544 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7600 PULSE GAMING OC [11324-01-20G]
+2025-05-04 19:29:44,553 - INFO - Added new product data for https://www.dns-shop.ru/product/a8002d751e3aed20/videokarta-sapphire-amd-radeon-rx-7600-pulse-gaming-oc-11324-01-20g/
+2025-05-04 19:29:44,604 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7600 PULSE GAMING OC [11324-01-20G]
+2025-05-04 19:29:44,605 - INFO - Processing URL 72/100: https://www.dns-shop.ru/product/966d790e1e35ed20/videokarta-msi-geforce-rtx-4060-ventus-3x-oc-geforce-rtx-4060-ventus-3x-8g-oc/
+2025-05-04 19:29:44,605 - INFO - Processing URL: https://www.dns-shop.ru/product/966d790e1e35ed20/videokarta-msi-geforce-rtx-4060-ventus-3x-oc-geforce-rtx-4060-ventus-3x-8g-oc/
+2025-05-04 19:30:06,753 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4060 VENTUS 3X OC [GeForce RTX 4060 VENTUS 3X 8G OC]
+2025-05-04 19:30:06,763 - INFO - Added new product data for https://www.dns-shop.ru/product/966d790e1e35ed20/videokarta-msi-geforce-rtx-4060-ventus-3x-oc-geforce-rtx-4060-ventus-3x-8g-oc/
+2025-05-04 19:30:06,799 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4060 VENTUS 3X OC [GeForce RTX 4060 VENTUS 3X 8G OC]
+2025-05-04 19:30:06,799 - INFO - Processing URL 73/100: https://www.dns-shop.ru/product/c455f512e73aed20/videokarta-palit-geforce-rtx-4060-infinity-2-ne64060019p1-1070l/
+2025-05-04 19:30:06,801 - INFO - Processing URL: https://www.dns-shop.ru/product/c455f512e73aed20/videokarta-palit-geforce-rtx-4060-infinity-2-ne64060019p1-1070l/
+2025-05-04 19:30:24,714 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Infinity 2 [NE64060019P1-1070L]
+2025-05-04 19:30:24,723 - INFO - Updated existing product data for https://www.dns-shop.ru/product/c455f512e73aed20/videokarta-palit-geforce-rtx-4060-infinity-2-ne64060019p1-1070l/
+2025-05-04 19:30:24,762 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Infinity 2 [NE64060019P1-1070L]
+2025-05-04 19:30:24,762 - INFO - Processing URL 74/100: https://www.dns-shop.ru/product/f691526d5ac6d9cb/videokarta-palit-geforce-rtx-4070-dual-oc-ne64070s19k9-1048d/
+2025-05-04 19:30:24,763 - INFO - Processing URL: https://www.dns-shop.ru/product/f691526d5ac6d9cb/videokarta-palit-geforce-rtx-4070-dual-oc-ne64070s19k9-1048d/
+2025-05-04 19:30:41,618 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4070 Dual OC [NE64070S19K9-1048D]
+2025-05-04 19:30:41,627 - INFO - Added new product data for https://www.dns-shop.ru/product/f691526d5ac6d9cb/videokarta-palit-geforce-rtx-4070-dual-oc-ne64070s19k9-1048d/
+2025-05-04 19:30:41,665 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4070 Dual OC [NE64070S19K9-1048D]
+2025-05-04 19:30:41,665 - INFO - Processing URL 75/100: https://www.dns-shop.ru/product/f6a696bd3b11ed20/videokarta-msi-geforce-rtx-3050-ventus-2x-xs-oc-rtx-3050-ventus-2x-xs-8g-oc/
+2025-05-04 19:30:41,666 - INFO - Processing URL: https://www.dns-shop.ru/product/f6a696bd3b11ed20/videokarta-msi-geforce-rtx-3050-ventus-2x-xs-oc-rtx-3050-ventus-2x-xs-8g-oc/
+2025-05-04 19:31:03,969 - INFO - Parsed product: Видеокарта MSI GeForce RTX 3050 VENTUS 2X XS OC [RTX 3050 VENTUS 2X XS 8G OC]
+2025-05-04 19:31:03,979 - INFO - Added new product data for https://www.dns-shop.ru/product/f6a696bd3b11ed20/videokarta-msi-geforce-rtx-3050-ventus-2x-xs-oc-rtx-3050-ventus-2x-xs-8g-oc/
+2025-05-04 19:31:04,018 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 3050 VENTUS 2X XS OC [RTX 3050 VENTUS 2X XS 8G OC]
+2025-05-04 19:31:04,018 - INFO - Processing URL 76/100: https://www.dns-shop.ru/product/fe5cfcefe77fd582/videokarta-palit-geforce-rtx-5070-ti-gamingpro-ne7507t019t2-gb2031a/
+2025-05-04 19:31:04,019 - INFO - Processing URL: https://www.dns-shop.ru/product/fe5cfcefe77fd582/videokarta-palit-geforce-rtx-5070-ti-gamingpro-ne7507t019t2-gb2031a/
+2025-05-04 19:31:19,261 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5070 Ti GamingPro [NE7507T019T2-GB2031A]
+2025-05-04 19:31:19,272 - INFO - Updated existing product data for https://www.dns-shop.ru/product/fe5cfcefe77fd582/videokarta-palit-geforce-rtx-5070-ti-gamingpro-ne7507t019t2-gb2031a/
+2025-05-04 19:31:19,319 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5070 Ti GamingPro [NE7507T019T2-GB2031A]
+2025-05-04 19:31:19,320 - INFO - Processing URL 77/100: https://www.dns-shop.ru/product/07e96c1fcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-windforce-oc-gv-n407swf3oc-12gd/
+2025-05-04 19:31:19,320 - INFO - Processing URL: https://www.dns-shop.ru/product/07e96c1fcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-windforce-oc-gv-n407swf3oc-12gd/
+2025-05-04 19:31:41,698 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC [GV-N407SWF3OC-12GD]
+2025-05-04 19:31:41,706 - INFO - Updated existing product data for https://www.dns-shop.ru/product/07e96c1fcf16ed20/videokarta-gigabyte-geforce-rtx-4070-super-windforce-oc-gv-n407swf3oc-12gd/
+2025-05-04 19:31:41,746 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC [GV-N407SWF3OC-12GD]
+2025-05-04 19:31:41,747 - INFO - Processing URL 78/100: https://www.dns-shop.ru/product/254f0e37a2d0ed20/videokarta-msi-geforce-rtx-4080-super-gaming-x-slim-912-v511-231/
+2025-05-04 19:31:41,747 - INFO - Processing URL: https://www.dns-shop.ru/product/254f0e37a2d0ed20/videokarta-msi-geforce-rtx-4080-super-gaming-x-slim-912-v511-231/
+2025-05-04 19:31:58,747 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4080 SUPER GAMING X SLIM [912-V511-231]
+2025-05-04 19:31:58,759 - INFO - Added new product data for https://www.dns-shop.ru/product/254f0e37a2d0ed20/videokarta-msi-geforce-rtx-4080-super-gaming-x-slim-912-v511-231/
+2025-05-04 19:31:58,797 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4080 SUPER GAMING X SLIM [912-V511-231]
+2025-05-04 19:31:58,797 - INFO - Processing URL 79/100: https://www.dns-shop.ru/product/c472ac3f7e39ed20/videokarta-sapphire-amd-radeon-rx-7900-xtx-nitro-vapor-x-11322-01/
+2025-05-04 19:31:58,798 - INFO - Processing URL: https://www.dns-shop.ru/product/c472ac3f7e39ed20/videokarta-sapphire-amd-radeon-rx-7900-xtx-nitro-vapor-x-11322-01/
+2025-05-04 19:32:15,659 - INFO - Parsed product: Видеокарта Sapphire AMD Radeon RX 7900 XTX NITRO+ Vapor-X [11322-01]
+2025-05-04 19:32:15,671 - INFO - Added new product data for https://www.dns-shop.ru/product/c472ac3f7e39ed20/videokarta-sapphire-amd-radeon-rx-7900-xtx-nitro-vapor-x-11322-01/
+2025-05-04 19:32:15,710 - INFO - Saved data for product: Видеокарта Sapphire AMD Radeon RX 7900 XTX NITRO+ Vapor-X [11322-01]
+2025-05-04 19:32:15,710 - INFO - Processing URL 80/100: https://www.dns-shop.ru/product/0fc2eff8538ed582/videokarta-msi-geforce-rtx-3050-ventus-2x-xs-white-oc-rtx-3050-ventus-2x-xs-white-8g-oc/
+2025-05-04 19:32:15,711 - INFO - Processing URL: https://www.dns-shop.ru/product/0fc2eff8538ed582/videokarta-msi-geforce-rtx-3050-ventus-2x-xs-white-oc-rtx-3050-ventus-2x-xs-white-8g-oc/
+2025-05-04 19:32:38,740 - INFO - Parsed product: Видеокарта MSI Geforce RTX 3050 VENTUS 2X XS WHITE OC [RTX 3050 VENTUS 2X XS WHITE 8G OC]
+2025-05-04 19:32:38,749 - INFO - Added new product data for https://www.dns-shop.ru/product/0fc2eff8538ed582/videokarta-msi-geforce-rtx-3050-ventus-2x-xs-white-oc-rtx-3050-ventus-2x-xs-white-8g-oc/
+2025-05-04 19:32:38,793 - INFO - Saved data for product: Видеокарта MSI Geforce RTX 3050 VENTUS 2X XS WHITE OC [RTX 3050 VENTUS 2X XS WHITE 8G OC]
+2025-05-04 19:32:38,793 - INFO - Processing URL 81/100: https://www.dns-shop.ru/product/69e7970e7e14ed20/videokarta-palit-geforce-rtx-4060-ti-jetstream-ne6406t019t1-1061j/
+2025-05-04 19:32:38,793 - INFO - Processing URL: https://www.dns-shop.ru/product/69e7970e7e14ed20/videokarta-palit-geforce-rtx-4060-ti-jetstream-ne6406t019t1-1061j/
+2025-05-04 19:32:59,182 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Ti JetStream [NE6406T019T1-1061J]
+2025-05-04 19:32:59,195 - INFO - Added new product data for https://www.dns-shop.ru/product/69e7970e7e14ed20/videokarta-palit-geforce-rtx-4060-ti-jetstream-ne6406t019t1-1061j/
+2025-05-04 19:32:59,241 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Ti JetStream [NE6406T019T1-1061J]
+2025-05-04 19:32:59,241 - INFO - Processing URL 82/100: https://www.dns-shop.ru/product/38f0e0bcbc210923/videokarta-gigabyte-geforce-rtx-4070-super-eagle-oc-gv-n407seagle-oc-12gd/
+2025-05-04 19:32:59,242 - INFO - Processing URL: https://www.dns-shop.ru/product/38f0e0bcbc210923/videokarta-gigabyte-geforce-rtx-4070-super-eagle-oc-gv-n407seagle-oc-12gd/
+2025-05-04 19:33:17,044 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER EAGLE OC [GV-N407SEAGLE OC-12GD]
+2025-05-04 19:33:17,055 - INFO - Added new product data for https://www.dns-shop.ru/product/38f0e0bcbc210923/videokarta-gigabyte-geforce-rtx-4070-super-eagle-oc-gv-n407seagle-oc-12gd/
+2025-05-04 19:33:17,097 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4070 SUPER EAGLE OC [GV-N407SEAGLE OC-12GD]
+2025-05-04 19:33:17,097 - INFO - Processing URL 83/100: https://www.dns-shop.ru/product/084381ea3ff6ed20/videokarta-inno3d-geforce-rtx-4060-twin-x2-n40602-08d6-173051n/
+2025-05-04 19:33:17,097 - INFO - Processing URL: https://www.dns-shop.ru/product/084381ea3ff6ed20/videokarta-inno3d-geforce-rtx-4060-twin-x2-n40602-08d6-173051n/
+2025-05-04 19:33:36,415 - INFO - Parsed product: Видеокарта INNO3D GeForce RTX 4060 TWIN X2 [N40602-08D6-173051N]
+2025-05-04 19:33:36,427 - INFO - Added new product data for https://www.dns-shop.ru/product/084381ea3ff6ed20/videokarta-inno3d-geforce-rtx-4060-twin-x2-n40602-08d6-173051n/
+2025-05-04 19:33:36,469 - INFO - Saved data for product: Видеокарта INNO3D GeForce RTX 4060 TWIN X2 [N40602-08D6-173051N]
+2025-05-04 19:33:36,470 - INFO - Processing URL 84/100: https://www.dns-shop.ru/product/69f0bca5b8eaed20/videokarta-msi-geforce-rtx-4070-super-ventus-2x-oc-geforce-rtx-4070-super-12g-ventus-2x-oc/
+2025-05-04 19:33:36,470 - INFO - Processing URL: https://www.dns-shop.ru/product/69f0bca5b8eaed20/videokarta-msi-geforce-rtx-4070-super-ventus-2x-oc-geforce-rtx-4070-super-12g-ventus-2x-oc/
+2025-05-04 19:33:57,240 - INFO - Parsed product: Видеокарта MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC]
+2025-05-04 19:33:57,250 - INFO - Updated existing product data for https://www.dns-shop.ru/product/69f0bca5b8eaed20/videokarta-msi-geforce-rtx-4070-super-ventus-2x-oc-geforce-rtx-4070-super-12g-ventus-2x-oc/
+2025-05-04 19:33:57,292 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC]
+2025-05-04 19:33:57,292 - INFO - Processing URL 85/100: https://www.dns-shop.ru/product/a356cf29eaa7d9cb/videokarta-msi-geforce-rtx-5070-gaming-trio-oc-rtx-5070-12g-gaming-trio-oc/
+2025-05-04 19:33:57,294 - INFO - Processing URL: https://www.dns-shop.ru/product/a356cf29eaa7d9cb/videokarta-msi-geforce-rtx-5070-gaming-trio-oc-rtx-5070-12g-gaming-trio-oc/
+2025-05-04 19:34:13,650 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5070 GAMING TRIO OC [RTX 5070 12G GAMING TRIO OC]
+2025-05-04 19:34:13,660 - INFO - Added new product data for https://www.dns-shop.ru/product/a356cf29eaa7d9cb/videokarta-msi-geforce-rtx-5070-gaming-trio-oc-rtx-5070-12g-gaming-trio-oc/
+2025-05-04 19:34:13,703 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5070 GAMING TRIO OC [RTX 5070 12G GAMING TRIO OC]
+2025-05-04 19:34:13,704 - INFO - Processing URL 86/100: https://www.dns-shop.ru/product/47734b26520bed20/videokarta-powercolor-amd-radeon-rx-7800-xt-hellhound-rx7800xt-16g-loc/
+2025-05-04 19:34:13,704 - INFO - Processing URL: https://www.dns-shop.ru/product/47734b26520bed20/videokarta-powercolor-amd-radeon-rx-7800-xt-hellhound-rx7800xt-16g-loc/
+2025-05-04 19:34:29,835 - INFO - Parsed product: Видеокарта PowerColor AMD Radeon RX 7800 XT Hellhound [RX7800XT 16G-L/OC]
+2025-05-04 19:34:29,846 - INFO - Added new product data for https://www.dns-shop.ru/product/47734b26520bed20/videokarta-powercolor-amd-radeon-rx-7800-xt-hellhound-rx7800xt-16g-loc/
+2025-05-04 19:34:29,888 - INFO - Saved data for product: Видеокарта PowerColor AMD Radeon RX 7800 XT Hellhound [RX7800XT 16G-L/OC]
+2025-05-04 19:34:29,889 - INFO - Processing URL 87/100: https://www.dns-shop.ru/product/dc960af1ce37d9cb/videokarta-asus-geforce-rtx-4090-tuf-gaming-og-oc-edition-tuf-rtx4090-o24g-og-gaming/
+2025-05-04 19:34:29,889 - INFO - Processing URL: https://www.dns-shop.ru/product/dc960af1ce37d9cb/videokarta-asus-geforce-rtx-4090-tuf-gaming-og-oc-edition-tuf-rtx4090-o24g-og-gaming/
+2025-05-04 19:34:47,657 - INFO - Parsed product: Видеокарта ASUS GeForce RTX 4090 TUF Gaming OG OC Edition [TUF-RTX4090-O24G-OG-GAMING]
+2025-05-04 19:34:47,668 - INFO - Added new product data for https://www.dns-shop.ru/product/dc960af1ce37d9cb/videokarta-asus-geforce-rtx-4090-tuf-gaming-og-oc-edition-tuf-rtx4090-o24g-og-gaming/
+2025-05-04 19:34:47,711 - INFO - Saved data for product: Видеокарта ASUS GeForce RTX 4090 TUF Gaming OG OC Edition [TUF-RTX4090-O24G-OG-GAMING]
+2025-05-04 19:34:47,711 - INFO - Processing URL 88/100: https://www.dns-shop.ru/product/9bcd02bbc0c3ed20/videokarta-gigabyte-geforce-rtx-4080-super-gaming-oc-gv-n408sgaming-oc-16gd/
+2025-05-04 19:34:47,712 - INFO - Processing URL: https://www.dns-shop.ru/product/9bcd02bbc0c3ed20/videokarta-gigabyte-geforce-rtx-4080-super-gaming-oc-gv-n408sgaming-oc-16gd/
+2025-05-04 19:35:08,511 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 4080 SUPER GAMING OC [GV-N408SGAMING OC-16GD]
+2025-05-04 19:35:08,523 - INFO - Added new product data for https://www.dns-shop.ru/product/9bcd02bbc0c3ed20/videokarta-gigabyte-geforce-rtx-4080-super-gaming-oc-gv-n408sgaming-oc-16gd/
+2025-05-04 19:35:08,568 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 4080 SUPER GAMING OC [GV-N408SGAMING OC-16GD]
+2025-05-04 19:35:08,568 - INFO - Processing URL 89/100: https://www.dns-shop.ru/product/df050ef102d3d9cb/videokarta-kfa2-geforce-rtx-4070-super-core-black-47som7mdabck/
+2025-05-04 19:35:08,569 - INFO - Processing URL: https://www.dns-shop.ru/product/df050ef102d3d9cb/videokarta-kfa2-geforce-rtx-4070-super-core-black-47som7mdabck/
+2025-05-04 19:35:28,423 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4070 SUPER CORE Black [47SOM7MDABCK]
+2025-05-04 19:35:28,435 - INFO - Updated existing product data for https://www.dns-shop.ru/product/df050ef102d3d9cb/videokarta-kfa2-geforce-rtx-4070-super-core-black-47som7mdabck/
+2025-05-04 19:35:28,479 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4070 SUPER CORE Black [47SOM7MDABCK]
+2025-05-04 19:35:28,479 - INFO - Processing URL 90/100: https://www.dns-shop.ru/product/9fdccd56d49cd9cb/videokarta-msi-geforce-rtx-5080-ventus-3x-oc-rtx-5080-16g-ventus-3x-oc/
+2025-05-04 19:35:28,480 - INFO - Processing URL: https://www.dns-shop.ru/product/9fdccd56d49cd9cb/videokarta-msi-geforce-rtx-5080-ventus-3x-oc-rtx-5080-16g-ventus-3x-oc/
+2025-05-04 19:35:50,071 - INFO - Parsed product: Видеокарта MSI GeForce RTX 5080 VENTUS 3X OC [RTX 5080 16G VENTUS 3X OC]
+2025-05-04 19:35:50,082 - INFO - Added new product data for https://www.dns-shop.ru/product/9fdccd56d49cd9cb/videokarta-msi-geforce-rtx-5080-ventus-3x-oc-rtx-5080-16g-ventus-3x-oc/
+2025-05-04 19:35:50,127 - INFO - Saved data for product: Видеокарта MSI GeForce RTX 5080 VENTUS 3X OC [RTX 5080 16G VENTUS 3X OC]
+2025-05-04 19:35:50,128 - INFO - Processing URL 91/100: https://www.dns-shop.ru/product/96dfe7f6df90d582/videokarta-palit-geforce-rtx-5090-gamerock-oc-ne75090s19r5-gb2020g/
+2025-05-04 19:35:50,128 - INFO - Processing URL: https://www.dns-shop.ru/product/96dfe7f6df90d582/videokarta-palit-geforce-rtx-5090-gamerock-oc-ne75090s19r5-gb2020g/
+2025-05-04 19:36:10,020 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5090 GameRock OC [NE75090S19R5-GB2020G]
+2025-05-04 19:36:10,034 - INFO - Updated existing product data for https://www.dns-shop.ru/product/96dfe7f6df90d582/videokarta-palit-geforce-rtx-5090-gamerock-oc-ne75090s19r5-gb2020g/
+2025-05-04 19:36:10,079 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5090 GameRock OC [NE75090S19R5-GB2020G]
+2025-05-04 19:36:10,079 - INFO - Processing URL 92/100: https://www.dns-shop.ru/product/5d1db06aa879d582/videokarta-kfa2-geforce-rtx-4070-ti-super-grand-edition-3fan-rgb-black-oc-47uzm5mdak3k/
+2025-05-04 19:36:10,080 - INFO - Processing URL: https://www.dns-shop.ru/product/5d1db06aa879d582/videokarta-kfa2-geforce-rtx-4070-ti-super-grand-edition-3fan-rgb-black-oc-47uzm5mdak3k/
+2025-05-04 19:36:31,244 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER Grand Edition 3FAN RGB Black OC [47UZM5MDAK3K]
+2025-05-04 19:36:31,256 - INFO - Added new product data for https://www.dns-shop.ru/product/5d1db06aa879d582/videokarta-kfa2-geforce-rtx-4070-ti-super-grand-edition-3fan-rgb-black-oc-47uzm5mdak3k/
+2025-05-04 19:36:31,306 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4070 Ti SUPER Grand Edition 3FAN RGB Black OC [47UZM5MDAK3K]
+2025-05-04 19:36:31,306 - INFO - Processing URL 93/100: https://www.dns-shop.ru/product/be6c7d353ed3ed20/videokarta-palit-geforce-rtx-4090-gamerock-ned4090019sb-1020g/
+2025-05-04 19:36:31,307 - INFO - Processing URL: https://www.dns-shop.ru/product/be6c7d353ed3ed20/videokarta-palit-geforce-rtx-4090-gamerock-ned4090019sb-1020g/
+2025-05-04 19:36:53,285 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4090 GameRock [NED4090019SB-1020G]
+2025-05-04 19:36:53,296 - INFO - Added new product data for https://www.dns-shop.ru/product/be6c7d353ed3ed20/videokarta-palit-geforce-rtx-4090-gamerock-ned4090019sb-1020g/
+2025-05-04 19:36:53,343 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4090 GameRock [NED4090019SB-1020G]
+2025-05-04 19:36:53,344 - INFO - Processing URL 94/100: https://www.dns-shop.ru/product/db789f5be780d582/videokarta-palit-geforce-rtx-5070-gamingpro-ne75070019k9-gb2050a/
+2025-05-04 19:36:53,344 - INFO - Processing URL: https://www.dns-shop.ru/product/db789f5be780d582/videokarta-palit-geforce-rtx-5070-gamingpro-ne75070019k9-gb2050a/
+2025-05-04 19:37:14,287 - INFO - Parsed product: Видеокарта Palit GeForce RTX 5070 GamingPro [NE75070019K9-GB2050A]
+2025-05-04 19:37:14,392 - INFO - Added new product data for https://www.dns-shop.ru/product/db789f5be780d582/videokarta-palit-geforce-rtx-5070-gamingpro-ne75070019k9-gb2050a/
+2025-05-04 19:37:14,444 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 5070 GamingPro [NE75070019K9-GB2050A]
+2025-05-04 19:37:14,445 - INFO - Processing URL 95/100: https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/
+2025-05-04 19:37:14,445 - INFO - Processing URL: https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/
+2025-05-04 19:37:33,607 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 4060 CORE Black [46NSL8MD9NXK]
+2025-05-04 19:37:33,618 - INFO - Updated existing product data for https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/
+2025-05-04 19:37:33,663 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 4060 CORE Black [46NSL8MD9NXK]
+2025-05-04 19:37:33,664 - INFO - Processing URL 96/100: https://www.dns-shop.ru/product/bf41006e0b2fed20/videokarta-palit-geforce-rtx-4060-dual-ne64060019p1-1070d/
+2025-05-04 19:37:33,664 - INFO - Processing URL: https://www.dns-shop.ru/product/bf41006e0b2fed20/videokarta-palit-geforce-rtx-4060-dual-ne64060019p1-1070d/
+2025-05-04 19:37:54,365 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4060 Dual [NE64060019P1-1070D]
+2025-05-04 19:37:54,376 - INFO - Updated existing product data for https://www.dns-shop.ru/product/bf41006e0b2fed20/videokarta-palit-geforce-rtx-4060-dual-ne64060019p1-1070d/
+2025-05-04 19:37:54,432 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4060 Dual [NE64060019P1-1070D]
+2025-05-04 19:37:54,432 - INFO - Processing URL 97/100: https://www.dns-shop.ru/product/f9117e0677552eb0/videokarta-kfa2-geforce-rtx-3060-x-black-lhr-36nol7md2nek/
+2025-05-04 19:37:54,432 - INFO - Processing URL: https://www.dns-shop.ru/product/f9117e0677552eb0/videokarta-kfa2-geforce-rtx-3060-x-black-lhr-36nol7md2nek/
+2025-05-04 19:38:11,460 - INFO - Parsed product: Видеокарта KFA2 GeForce RTX 3060 X Black (LHR) [36NOL7MD2NEK]
+2025-05-04 19:38:11,472 - INFO - Added new product data for https://www.dns-shop.ru/product/f9117e0677552eb0/videokarta-kfa2-geforce-rtx-3060-x-black-lhr-36nol7md2nek/
+2025-05-04 19:38:11,518 - INFO - Saved data for product: Видеокарта KFA2 GeForce RTX 3060 X Black (LHR) [36NOL7MD2NEK]
+2025-05-04 19:38:11,519 - INFO - Processing URL 98/100: https://www.dns-shop.ru/product/96496a515ac7d9cb/videokarta-palit-geforce-rtx-4070-dual-ne64070019k9-1048d/
+2025-05-04 19:38:11,520 - INFO - Processing URL: https://www.dns-shop.ru/product/96496a515ac7d9cb/videokarta-palit-geforce-rtx-4070-dual-ne64070019k9-1048d/
+2025-05-04 19:38:26,011 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4070 Dual [NE64070019K9-1048D]
+2025-05-04 19:38:26,024 - INFO - Added new product data for https://www.dns-shop.ru/product/96496a515ac7d9cb/videokarta-palit-geforce-rtx-4070-dual-ne64070019k9-1048d/
+2025-05-04 19:38:26,072 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4070 Dual [NE64070019K9-1048D]
+2025-05-04 19:38:26,072 - INFO - Processing URL 99/100: https://www.dns-shop.ru/product/a1441ef7d4b5d582/videokarta-gigabyte-geforce-rtx-5070-ti-aero-oc-gv-n507taero-oc-16gd/
+2025-05-04 19:38:26,073 - INFO - Processing URL: https://www.dns-shop.ru/product/a1441ef7d4b5d582/videokarta-gigabyte-geforce-rtx-5070-ti-aero-oc-gv-n507taero-oc-16gd/
+2025-05-04 19:38:43,485 - INFO - Parsed product: Видеокарта GIGABYTE GeForce RTX 5070 Ti AERO OC [GV-N507TAERO OC-16GD]
+2025-05-04 19:38:43,496 - INFO - Added new product data for https://www.dns-shop.ru/product/a1441ef7d4b5d582/videokarta-gigabyte-geforce-rtx-5070-ti-aero-oc-gv-n507taero-oc-16gd/
+2025-05-04 19:38:43,544 - INFO - Saved data for product: Видеокарта GIGABYTE GeForce RTX 5070 Ti AERO OC [GV-N507TAERO OC-16GD]
+2025-05-04 19:38:43,545 - INFO - Processing URL 100/100: https://www.dns-shop.ru/product/c91d3b665abbd9cb/videokarta-palit-geforce-rtx-4070-white-oc-ne64070s19k9-1048l/
+2025-05-04 19:38:43,545 - INFO - Processing URL: https://www.dns-shop.ru/product/c91d3b665abbd9cb/videokarta-palit-geforce-rtx-4070-white-oc-ne64070s19k9-1048l/
+2025-05-04 19:39:00,272 - INFO - Parsed product: Видеокарта Palit GeForce RTX 4070 White OC [NE64070S19K9-1048L]
+2025-05-04 19:39:00,356 - INFO - Added new product data for https://www.dns-shop.ru/product/c91d3b665abbd9cb/videokarta-palit-geforce-rtx-4070-white-oc-ne64070s19k9-1048l/
+2025-05-04 19:39:00,403 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4070 White OC [NE64070S19K9-1048L]
+2025-05-04 19:39:02,134 - INFO - Product details parsing complete!

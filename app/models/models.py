@@ -45,7 +45,8 @@ class PowerSupply(db.Model):
     price = db.Column(db.Float, nullable=False)
     power = db.Column(db.Integer, nullable=False)  # Мощность в ваттах
     type = db.Column(db.String(50), nullable=False)
-
+    certificate = db.Column(db.String(50), nullable=False)
+    
 class Processor(db.Model):
     __tablename__ = 'processors'
     
@@ -53,7 +54,10 @@ class Processor(db.Model):
     name = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Float, nullable=False)
     soket = db.Column(db.String(50), nullable=False)
-    frequency = db.Column(db.Float, nullable=False)  # Частота в ГГц
+    base_clock = db.Column(db.Float, nullable=False)
+    turbo_clock = db.Column(db.Float, nullable=False)
+    cores = db.Column(db.Integer, nullable=False)
+    threads = db.Column(db.Integer, nullable=False)
     power_use = db.Column(db.Integer, nullable=False)  # Потребляемая мощность в ваттах
 
 class GraphicsCard(db.Model):
