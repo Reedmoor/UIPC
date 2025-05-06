@@ -320,7 +320,7 @@ class PriceComparison:
                     best_match = dns_product
             
             # If we found a good match
-            if best_match and best_score >= 0.4:
+            if best_match and best_score >= 0.5:  # Increased threshold for better accuracy
                 matched_count += 1
                 dns_name = best_match.get('name', '').lower()
                 logging.info(f"Found match: {citi_name} <==> {dns_name} (score: {best_score:.2f})")
@@ -344,6 +344,15 @@ class PriceComparison:
                 
                 dns_category = best_match.get('category', '')
                 
+                # Get ratings if available
+                citi_rating = citi_product.get('rating', {})
+                if isinstance(citi_rating, dict):
+                    citi_rating_value = citi_rating.get('value', 0)
+                else:
+                    citi_rating_value = 0
+                    
+                dns_rating = best_match.get('rating', 0)
+                
                 # Create a more descriptive name for the product
                 display_name = citi_name
                 if citi_model and citi_model.lower() in citi_name.lower():
@@ -364,12 +373,14 @@ class PriceComparison:
                     'citilink_category': citi_category,
                     'dns_category': dns_category,
                     'model_number': citi_model or dns_model,
-                    'similarity_score': best_score
+                    'similarity_score': best_score,
+                    'citilink_rating': citi_rating_value,
+                    'dns_rating': dns_rating
                 })
         
         logging.info(f"Matched {matched_count} products from different stores")
         
-        # Sort by price difference percent
+        # Sort by price difference percent by default
         self.comparison_results.sort(key=lambda x: abs(x['price_difference_percent']), reverse=True)
         
         logging.info(f"Found {len(self.comparison_results)} matching products with valid prices")
@@ -383,21 +394,63 @@ class PriceComparison:
         # If both have model numbers and they match, high score
         if model1 and model2:
             if model1.lower() == model2.lower():
-                score += 0.8
+                score += 0.9  # Exact model match is very strong evidence
             elif len(model1) >= 5 and model1.lower() in model2.lower():
-                score += 0.6
+                score += 0.7
             elif len(model2) >= 5 and model2.lower() in model1.lower():
-                score += 0.6
+                score += 0.7
         
-        # Extract GPU model numbers (RTX/GTX series)
-        rtx_match1 = re.search(r'((?:rtx|gtx)\s*\d{4}\s*(?:ti|super)?)', name1, re.IGNORECASE)
-        rtx_match2 = re.search(r'((?:rtx|gtx)\s*\d{4}\s*(?:ti|super)?)', name2, re.IGNORECASE)
+        # Extract key product identifiers - GPU models and CPU models
+        # For RTX/GTX series and other GPU types
+        gpu_patterns = [
+            r'((?:rtx|gtx)\s*\d{4}\s*(?:ti|super)?)', # NVIDIA cards
+            r'(rx\s*\d{4}\s*(?:xt)?)', # AMD cards
+            r'(arc\s*\w+\s*\d+)' # Intel Arc cards
+        ]
         
-        if rtx_match1 and rtx_match2:
-            gpu1 = rtx_match1.group(1).lower().replace(' ', '')
-            gpu2 = rtx_match2.group(1).lower().replace(' ', '')
-            if gpu1 == gpu2:
-                score += 0.5
+        for pattern in gpu_patterns:
+            match1 = re.search(pattern, name1, re.IGNORECASE)
+            match2 = re.search(pattern, name2, re.IGNORECASE)
+            
+            if match1 and match2:
+                gpu1 = match1.group(1).lower().replace(' ', '')
+                gpu2 = match2.group(1).lower().replace(' ', '')
+                if gpu1 == gpu2:
+                    score += 0.6
+                    break
+                
+        # For CPU models (Intel Core i5/i7/i9, AMD Ryzen)
+        cpu_patterns = [
+            r'(i\d-\d{4,5}[a-z]*)', # Intel Core
+            r'(ryzen\s*\d\s*\d{4}[a-z]*)', # AMD Ryzen
+        ]
+        
+        for pattern in cpu_patterns:
+            match1 = re.search(pattern, name1, re.IGNORECASE)
+            match2 = re.search(pattern, name2, re.IGNORECASE)
+            
+            if match1 and match2:
+                cpu1 = match1.group(1).lower().replace(' ', '')
+                cpu2 = match2.group(1).lower().replace(' ', '')
+                if cpu1 == cpu2:
+                    score += 0.6
+                    break
+        
+        # Manufacturer match gives a bonus
+        manufacturers = ['gigabyte', 'asus', 'msi', 'palit', 'gainward', 'evga', 'zotac', 
+                       'sapphire', 'asrock', 'inno3d', 'pny', 'amd', 'intel', 'nvidia']
+        
+        for mfr in manufacturers:
+            if mfr in name1.lower() and mfr in name2.lower():
+                score += 0.2
+                break
+                
+        # Memory size match for GPUs/RAM (e.g., 8GB, 16GB)
+        mem_match1 = re.search(r'(\d+)\s*(?:gb|гб)', name1, re.IGNORECASE)
+        mem_match2 = re.search(r'(\d+)\s*(?:gb|гб)', name2, re.IGNORECASE)
+        
+        if mem_match1 and mem_match2 and mem_match1.group(1) == mem_match2.group(1):
+            score += 0.2
         
         # Clean and compare names
         clean_name1 = self._clean_product_name(name1)
@@ -414,10 +467,12 @@ class PriceComparison:
         min_name_len = min(len(words1), len(words2))
         if min_name_len > 0:
             overlap_ratio = len(common_words) / min_name_len
-            score += overlap_ratio * 0.5
+            score += overlap_ratio * 0.3
         
         # Bonus for having multiple common words
         if len(common_words) >= 3:
+            score += 0.1
+        if len(common_words) >= 5:
             score += 0.2
         
         return score
@@ -431,6 +486,14 @@ class PriceComparison:
             # Normalize model number format (remove spaces, convert to lowercase)
             model = re.sub(r'\s+', '', model).lower()
             return model
+        
+        # Look for text in parentheses
+        paren_match = re.search(r'\((.*?)\)', name)
+        if paren_match:
+            model = paren_match.group(1).strip()
+            # If it looks like a model number (contains digits and letters)
+            if re.search(r'[a-z].*\d|\d.*[a-z]', model, re.IGNORECASE):
+                return model.lower().replace(' ', '')
         
         # Special case for RTX/GTX series - look for common patterns
         rtx_match = re.search(r'(rtx\s*\d{4}\s*(?:ti|super)?)', name, re.IGNORECASE)

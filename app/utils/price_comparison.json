@@ -12,22 +12,26 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "11305-02-20g",
-        "similarity_score": 0.6000000000000001
+        "similarity_score": 0.54,
+        "citilink_rating": 0,
+        "dns_rating": 4.79
     },
     {
-        "name": "Powercolor Radeon Rx 7700Xt Rx7700Xt 12G-L/ Hellhound, , ,",
-        "citilink_price": 65700.0,
+        "name": "Asus Radeon Rx 6650Xt -Rx6650Xt-O8G , , ,",
+        "citilink_price": 43390.0,
         "dns_price": 22999.0,
-        "price_difference": 42701.0,
-        "price_difference_percent": 185.6645941127875,
-        "citilink_url": "https://www.citilink.ru/product/videokarta-powercolor-amd-radeon-rx-7700xt-rx7700xt-12g-l-oc-12gb-hell-1989937/",
+        "price_difference": 20391.0,
+        "price_difference_percent": 88.66037653811036,
+        "citilink_url": "https://www.citilink.ru/product/videokarta-asus-amd-radeon-rx-6650xt-dual-rx6650xt-o8g-8gb-dual-gddr6-1781223/",
         "dns_url": "https://www.dns-shop.ru/product/7c767bd1144bed20/videokarta-powercolor-amd-radeon-rx-6600-fighter-axrx-6600-8gbd6-3dh/",
-        "citilink_id": 1989937,
+        "citilink_id": 1781223,
         "dns_id": "4866716",
         "citilink_category": "Видеокарты",
         "dns_category": "",
-        "model_number": "12g-l",
-        "similarity_score": 0.5
+        "model_number": "dual-rx6650xt-o8g",
+        "similarity_score": 0.52,
+        "citilink_rating": 0,
+        "dns_rating": 4.71
     },
     {
         "name": "Palit Geforce Rtx 5060Ti Rtx5060Ti , ,",
@@ -42,37 +46,26 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne7506t019p1-gb2062d",
-        "similarity_score": 0.575
+        "similarity_score": 0.525,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
-        "name": "Palit Geforce Rtx 5060Ti Rtx5060Ti Infinity 3 Infinity 3, ,",
-        "citilink_price": 53310.0,
-        "dns_price": 299999.0,
-        "price_difference": -246689.0,
-        "price_difference_percent": -82.22994076646923,
-        "citilink_url": "https://www.citilink.ru/product/videokarta-palit-pci-e-rtx5060ti-infinity-3-nv-geforce-rtx-5060ti-16gb-2092142/",
-        "dns_url": "https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/",
-        "citilink_id": 2092142,
-        "dns_id": "5615107",
+        "name": "Asus Radeon Rx 6600 -Rx6600-8G , ,",
+        "citilink_price": 39850.0,
+        "dns_price": 22999.0,
+        "price_difference": 16851.0,
+        "price_difference_percent": 73.26840297404235,
+        "citilink_url": "https://www.citilink.ru/product/videokarta-asus-amd-radeon-rx-6600-dual-rx6600-8g-8gb-dual-gddr6-ret-d-1994433/",
+        "dns_url": "https://www.dns-shop.ru/product/7c767bd1144bed20/videokarta-powercolor-amd-radeon-rx-6600-fighter-axrx-6600-8gbd6-3dh/",
+        "citilink_id": 1994433,
+        "dns_id": "4866716",
         "citilink_category": "Видеокарты",
         "dns_category": "",
-        "model_number": "ne7506t019t1-gb2061s",
-        "similarity_score": 0.575
-    },
-    {
-        "name": "Palit Geforce Rtx 5060Ti Rtx5060Ti Infinity 3 Infinity 3, , ,",
-        "citilink_price": 54150.0,
-        "dns_price": 299999.0,
-        "price_difference": -245849.0,
-        "price_difference_percent": -81.94993983313277,
-        "citilink_url": "https://www.citilink.ru/product/videokarta-palit-pci-e-rtx5060ti-infinity-3-oc-nv-rtx-5060ti-16gb-128b-2094781/",
-        "dns_url": "https://www.dns-shop.ru/product/dab5d7dedf90d582/videokarta-palit-geforce-rtx-5090-gamerock-ne75090019r5-gb2020g/",
-        "citilink_id": 2094781,
-        "dns_id": "5615107",
-        "citilink_category": "Видеокарты",
-        "dns_category": "",
-        "model_number": "ne7506ts19t1-gb2061s",
-        "similarity_score": 0.575
+        "model_number": "dual-rx6600-8g-v2",
+        "similarity_score": 1.28,
+        "citilink_rating": 0,
+        "dns_rating": 4.71
     },
     {
         "name": "Gigabyte Geforce Rtx 5060Ti Gv-N506Twf2-16Gd 1.0 Windforce, ,",
@@ -87,22 +80,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5060ti",
-        "similarity_score": 0.575
-    },
-    {
-        "name": "Asus Radeon Rx 6600 -Rx6600-8G , ,",
-        "citilink_price": 39850.0,
-        "dns_price": 24999.0,
-        "price_difference": 14851.0,
-        "price_difference_percent": 59.4063762550502,
-        "citilink_url": "https://www.citilink.ru/product/videokarta-asus-amd-radeon-rx-6600-dual-rx6600-8g-8gb-dual-gddr6-ret-d-1994433/",
-        "dns_url": "https://www.dns-shop.ru/product/0f5a9f8b1520ed20/videokarta-sapphire-amd-radeon-rx-6600-pulse-11310-01-20g/",
-        "citilink_id": 1994433,
-        "dns_id": "4867261",
-        "citilink_category": "Видеокарты",
-        "dns_category": "",
-        "model_number": "dual-rx6600-8g-v2",
-        "similarity_score": 0.5
+        "similarity_score": 0.525,
+        "citilink_rating": 0,
+        "dns_rating": 4.94
     },
     {
         "name": "Sapphire Radeon Rx 9070Xt 11348-01-20G Nitro+ Radeon Rx 9070 Xt Nitro+, , ,",
@@ -117,22 +97,26 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "11348-01-20g",
-        "similarity_score": 0.6166666666666667
+        "similarity_score": 0.75,
+        "citilink_rating": 0,
+        "dns_rating": 4.87
     },
     {
-        "name": "Sapphire Radeon Rx 6400 11315-01-20G Rx 6400 Pulse, ,",
-        "citilink_price": 13660.0,
-        "dns_price": 24999.0,
-        "price_difference": -11339.0,
-        "price_difference_percent": -45.3578143125725,
-        "citilink_url": "https://www.citilink.ru/product/videokarta-sapphire-pci-e-4-0-11315-01-20g-rx-6400-gaming-amd-rx6400-4-2044103/",
-        "dns_url": "https://www.dns-shop.ru/product/0f5a9f8b1520ed20/videokarta-sapphire-amd-radeon-rx-6600-pulse-11310-01-20g/",
-        "citilink_id": 2044103,
-        "dns_id": "4867261",
+        "name": "Palit Geforce Rtx 5060Ti Rtx5060Ti Infinity 3 Infinity 3, ,",
+        "citilink_price": 53310.0,
+        "dns_price": 84999.0,
+        "price_difference": -31689.0,
+        "price_difference_percent": -37.28161507782444,
+        "citilink_url": "https://www.citilink.ru/product/videokarta-palit-pci-e-rtx5060ti-infinity-3-nv-geforce-rtx-5060ti-16gb-2092142/",
+        "dns_url": "https://www.dns-shop.ru/product/a820bab67eecd0a4/videokarta-palit-geforce-rtx-4070-ti-super-infinity-3-oc-ned47tss19t2-1043s/",
+        "citilink_id": 2092142,
+        "dns_id": "5494545",
         "citilink_category": "Видеокарты",
         "dns_category": "",
-        "model_number": "11315-01-20g",
-        "similarity_score": 0.5
+        "model_number": "ne7506t019t1-gb2061s",
+        "similarity_score": 0.6875,
+        "citilink_rating": 0,
+        "dns_rating": 4.84
     },
     {
         "name": "Asus Radeon Rx 7600 -Rx7600-O8G-Evo , , ,",
@@ -147,7 +131,26 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "dual-rx7600-o8g-evo",
-        "similarity_score": 0.5
+        "similarity_score": 1.08,
+        "citilink_rating": 0,
+        "dns_rating": 4.61
+    },
+    {
+        "name": "Palit Geforce Rtx 5060Ti Rtx5060Ti Infinity 3 Infinity 3, , ,",
+        "citilink_price": 54150.0,
+        "dns_price": 84999.0,
+        "price_difference": -30849.0,
+        "price_difference_percent": -36.29336815727244,
+        "citilink_url": "https://www.citilink.ru/product/videokarta-palit-pci-e-rtx5060ti-infinity-3-oc-nv-rtx-5060ti-16gb-128b-2094781/",
+        "dns_url": "https://www.dns-shop.ru/product/a820bab67eecd0a4/videokarta-palit-geforce-rtx-4070-ti-super-infinity-3-oc-ned47tss19t2-1043s/",
+        "citilink_id": 2094781,
+        "dns_id": "5494545",
+        "citilink_category": "Видеокарты",
+        "dns_category": "",
+        "model_number": "ne7506ts19t1-gb2061s",
+        "similarity_score": 0.6875,
+        "citilink_rating": 0,
+        "dns_rating": 4.84
     },
     {
         "name": "Gigabyte Geforce Rtx 4070Ti Super Gv-N407Tswf3Max -16Gd Windforce Max, , ,",
@@ -162,7 +165,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 4070ti",
-        "similarity_score": 1.0125
+        "similarity_score": 1.2875,
+        "citilink_rating": 0,
+        "dns_rating": 4.96
     },
     {
         "name": "Asus Geforce Rtx 3050 Tuf-Rtx3050-O8G- , ,",
@@ -177,7 +182,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Sapphire Radeon Rx 6500Xt 11314-07-20G Rx 6500Xt Pulse Pulse, , ,",
@@ -192,7 +199,26 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "11314-07-20g",
-        "similarity_score": 0.6000000000000001
+        "similarity_score": 0.54,
+        "citilink_rating": 0,
+        "dns_rating": 4.79
+    },
+    {
+        "name": "Asus Radeon Rx 7800Xt Tuf-Rx7800Xt-O16G- , , ,",
+        "citilink_price": 80520.0,
+        "dns_price": 65499.0,
+        "price_difference": 15021.0,
+        "price_difference_percent": 22.93317455228324,
+        "citilink_url": "https://www.citilink.ru/product/videokarta-asus-amd-radeon-rx-7800xt-tuf-rx7800xt-o16g-gaming-16gb-gam-1997689/",
+        "dns_url": "https://www.dns-shop.ru/product/390d92eb55f2ed20/videokarta-sapphire-amd-radeon-rx-7800-xt-nitro-11330-01-20g/",
+        "citilink_id": 1997689,
+        "dns_id": "5432677",
+        "citilink_category": "Видеокарты",
+        "dns_category": "",
+        "model_number": "tuf-rx7800xt-o16g-gaming",
+        "similarity_score": 0.9,
+        "citilink_rating": 0,
+        "dns_rating": 4.87
     },
     {
         "name": "Afox Geforce Rtx 3060 Af3060-8Gd6H4 ,",
@@ -207,7 +233,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.0
+        "similarity_score": 0.88,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Palit Geforce Rtx 4060Ti Rtx4060Ti Stormx Stormx, , ,",
@@ -222,7 +250,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne6406ts19p1-1060f",
-        "similarity_score": 1.0
+        "similarity_score": 1.08,
+        "citilink_rating": 0,
+        "dns_rating": 4.84
     },
     {
         "name": "видеокарта asrock amd  radeon rx 7600 rx7600 cl 8go 8гб challenger, gddr6, oc,  ret",
@@ -237,7 +267,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne64070s19k9-1048l",
-        "similarity_score": 0.5
+        "similarity_score": 1.08,
+        "citilink_rating": 0,
+        "dns_rating": 4.61
     },
     {
         "name": "Inno3D Geforce Rtx 3060 Rtx3060 Twin X2 Twin X2, ,",
@@ -252,7 +284,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "n30602-12d6-119032ah",
-        "similarity_score": 1.0
+        "similarity_score": 0.88,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Msi Geforce Rtx 5080 Rtx 5080 16G Shadow 3X Shadow, , ,",
@@ -267,7 +301,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5080",
-        "similarity_score": 1.1166666666666667
+        "similarity_score": 1.35,
+        "citilink_rating": 0,
+        "dns_rating": 4.71
     },
     {
         "name": "Palit Geforce Rtx 4060Ti Rtx4060Ti ,",
@@ -282,7 +318,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne6406t019p1-1060d",
-        "similarity_score": 1.8
+        "similarity_score": 1.98,
+        "citilink_rating": 0,
+        "dns_rating": 4.84
     },
     {
         "name": "Gigabyte Geforce Rtx 5070 Gv-N5070Eagleoc Ice-12Gd 1.0 , , ,",
@@ -297,7 +335,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0333333333333332
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Sapphire Radeon Rx 7600 11324-01-20G Pulse Rx 7600 Pulse, ,",
@@ -312,7 +352,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "11324-01-20g",
-        "similarity_score": 1.5
+        "similarity_score": 2.3000000000000003,
+        "citilink_rating": 0,
+        "dns_rating": 4.61
     },
     {
         "name": "Sapphire Radeon Rx 7900Xtx 11322-01-40G Nitro+ Rx 7900 Xtx Vapor-X Nitro+, , ,",
@@ -327,7 +369,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "11322-01-40g",
-        "similarity_score": 1.3
+        "similarity_score": 2.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.85
     },
     {
         "name": "Msi Geforce Rtx 5070 Rtx 5070 12G Shadow 2X Shadow 2X, , ,",
@@ -342,7 +386,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.1
+        "similarity_score": 1.1400000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.87
     },
     {
         "name": "Gigabyte Geforce Rtx 3060 Gv-N3060Gaming -8Gd 2.0 , , ,",
@@ -357,7 +403,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.1
+        "similarity_score": 1.1400000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
         "name": "Palit Geforce Rtx 5070 Rtx5070 Gamingpro Gamingpro, , ,",
@@ -372,7 +420,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne75070t19k9-gb2050a",
-        "similarity_score": 1.2
+        "similarity_score": 1.4000000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.58
     },
     {
         "name": "Gigabyte Geforce Rtx 5070 Gv-N5070Gaming -12Gd 1.0 , , ,",
@@ -387,7 +437,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0333333333333332
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Asus Geforce Rtx 3050 -Rtx3050-O6G , , ,",
@@ -402,7 +454,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Gigabyte Geforce Rtx 3060 Gv-N3060Wf2Oc-12Gd 2.0 Windforce, , ,",
@@ -417,7 +471,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.1
+        "similarity_score": 1.1400000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
         "name": "Asus Geforce Rtx 3050 -Rtx3050-O8G-V2 , , ,",
@@ -432,7 +488,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Gigabyte Geforce Rtx 4060 Gv-N4060D6-8Gd ,",
@@ -447,7 +505,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 4060",
-        "similarity_score": 1.2
+        "similarity_score": 1.2000000000000002,
+        "citilink_rating": 0,
+        "dns_rating": 4.94
     },
     {
         "name": "Msi Geforce Rtx 4060Ti Rtx 4060 Ti X 8G X, ,",
@@ -462,7 +522,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 4060ti",
-        "similarity_score": 1.2
+        "similarity_score": 1.4000000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.82
     },
     {
         "name": "Gigabyte Radeon Rx 7600 Gv-R76Gaming -8Gd , , ,",
@@ -477,7 +539,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "gv-r76gaming",
-        "similarity_score": 0.5
+        "similarity_score": 1.08,
+        "citilink_rating": 0,
+        "dns_rating": 4.61
     },
     {
         "name": "Palit Geforce Rtx 3050 Rtx3050 Stormx Stormx, , ,",
@@ -492,7 +556,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne63050s18je-1070f/1072f",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Sapphire Radeon Rx 7700Xt 11335-03-20G Pure Rx 7700 Xt Pure, , ,",
@@ -507,7 +573,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "11335-03-20g",
-        "similarity_score": 0.6166666666666667
+        "similarity_score": 0.75,
+        "citilink_rating": 0,
+        "dns_rating": 4.85
     },
     {
         "name": "Gigabyte Geforce Rtx 3050 Gv-N3050Wf2Oc-6Gd Windforce, , ,",
@@ -522,7 +590,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Palit Geforce Rtx 5070 Rtx5070 Gamingpro Gamingpro, ,",
@@ -537,7 +607,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne75070019k9-gb2050a",
-        "similarity_score": 2.0
+        "similarity_score": 2.3000000000000003,
+        "citilink_rating": 0,
+        "dns_rating": 4.58
     },
     {
         "name": "Gigabyte Radeon Rx 9070 Gv-R9070 -16Gd 1.0 , , ,",
@@ -552,7 +624,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "gv-r9070",
-        "similarity_score": 1.175
+        "similarity_score": 1.225,
+        "citilink_rating": 0,
+        "dns_rating": 4.91
     },
     {
         "name": "Asus Geforce Rtx 5070 Tuf-Rtx5070-O12G- , , ,",
@@ -567,7 +641,26 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0
+        "similarity_score": 0.88,
+        "citilink_rating": 0,
+        "dns_rating": 4.87
+    },
+    {
+        "name": "Msi Geforce Rtx 4060 Rtx 4060 Aero Itx 8G Aero, , ,",
+        "citilink_price": 34000.0,
+        "dns_price": 36999.0,
+        "price_difference": -2999.0,
+        "price_difference_percent": -8.105624476337198,
+        "citilink_url": "https://www.citilink.ru/product/videokarta-msi-pci-e-4-0-rtx-4060-aero-itx-8g-oc-nv-rtx4060-8gb-128bit-2019099/",
+        "dns_url": "https://www.dns-shop.ru/product/966d790e1e35ed20/videokarta-msi-geforce-rtx-4060-ventus-3x-oc-geforce-rtx-4060-ventus-3x-8g-oc/",
+        "citilink_id": 2019099,
+        "dns_id": "5423683",
+        "citilink_category": "Видеокарты",
+        "dns_category": "",
+        "model_number": "rtx 4060",
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.91
     },
     {
         "name": "Gigabyte Geforce Rtx 5070 Gv-N5070Eagle -12Gd 1.0 , , ,",
@@ -582,7 +675,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0333333333333332
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Palit Geforce Rtx 5070 Rtx5070 Infinity 3 Infinity 3, ,",
@@ -597,7 +692,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne75070019k9-gb2050s",
-        "similarity_score": 1.1
+        "similarity_score": 1.1400000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.58
     },
     {
         "name": "Msi Geforce Rtx 5070 Rtx 5070 12G Ventus 2X Ventus 2X, , ,",
@@ -612,7 +709,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.1166666666666667
+        "similarity_score": 1.35,
+        "citilink_rating": 0,
+        "dns_rating": 4.87
     },
     {
         "name": "Biostar Geforce Rtx 3060 Rtx3060- ,",
@@ -627,7 +726,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "vn3606rml9",
-        "similarity_score": 1.0
+        "similarity_score": 0.88,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Palit Geforce Rtx 4060 Rtx4060 Stormx Stormx, ,",
@@ -642,22 +743,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne64060019p1-1070f",
-        "similarity_score": 1.2
-    },
-    {
-        "name": "Msi Geforce Rtx 4060 Rtx 4060 Aero Itx 8G Aero, , ,",
-        "citilink_price": 34000.0,
-        "dns_price": 35999.0,
-        "price_difference": -1999.0,
-        "price_difference_percent": -5.552932025889608,
-        "citilink_url": "https://www.citilink.ru/product/videokarta-msi-pci-e-4-0-rtx-4060-aero-itx-8g-oc-nv-rtx4060-8gb-128bit-2019099/",
-        "dns_url": "https://www.dns-shop.ru/product/eb3a3ed60b22ed20/videokarta-gigabyte-geforce-rtx-4060-eagle-oc-gv-n4060eagle-oc-8gd/",
-        "citilink_id": 2019099,
-        "dns_id": "5421183",
-        "citilink_category": "Видеокарты",
-        "dns_category": "",
-        "model_number": "rtx 4060",
-        "similarity_score": 1.075
+        "similarity_score": 1.2000000000000002,
+        "citilink_rating": 0,
+        "dns_rating": 4.9
     },
     {
         "name": "Afox Geforce Rtx 3060 Af3060-12Gd6H7-V2 , Lhr,",
@@ -672,7 +760,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.0
+        "similarity_score": 0.88,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Gigabyte Geforce Rtx 5070Ti Gv-N507Tgaming -16Gd 1.0 , , ,",
@@ -687,7 +777,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070ti",
-        "similarity_score": 1.0
+        "similarity_score": 1.08,
+        "citilink_rating": 0,
+        "dns_rating": 4.91
     },
     {
         "name": "Asus Geforce Rtx 5070 Prime-Rtx5070-O12G Prime, , ,",
@@ -702,7 +794,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0
+        "similarity_score": 0.88,
+        "citilink_rating": 0,
+        "dns_rating": 4.87
     },
     {
         "name": "Asus Geforce Rtx 3050 Rtx3050-O6G-Lp-Brk , Low Profile, ,",
@@ -717,7 +811,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Asus Geforce Rtx 3050 Ph-Rtx3050-8G-V2 ,",
@@ -732,7 +828,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Gigabyte Geforce Rtx 3060 Gv-N3060Wf2-12Gd Windforce, ,",
@@ -747,7 +845,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.1
+        "similarity_score": 1.1400000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
         "name": "Gigabyte Geforce Rtx 5070 Gv-N5070Wf3Oc-12Gd 1.0 Windforce, , ,",
@@ -762,7 +862,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0333333333333332
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Palit Geforce Rtx 3050 Rtx3050 Stormx Stormx, ,",
@@ -777,7 +879,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne63050018p1-1070f",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Gigabyte Geforce Rtx 3050 Gv-N3050Oc-6Gl , Low Profile, ,",
@@ -792,7 +896,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Palit Geforce Rtx 5070Ti Rtx5070Ti Gamingpro Gamingpro, ,",
@@ -807,7 +913,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne7507t019t2-gb2031y",
-        "similarity_score": 1.0333333333333332
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.78
     },
     {
         "name": "Palit Geforce Rtx 5070Ti Rtx5070Ti Gamingpro Gamingpro, ,",
@@ -822,7 +930,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne7507t019t2-gb2031a",
-        "similarity_score": 1.8333333333333333
+        "similarity_score": 2.0,
+        "citilink_rating": 0,
+        "dns_rating": 4.78
     },
     {
         "name": "Palit Geforce Rtx 4060 Rtx4060 , ,",
@@ -837,7 +947,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne64060019p1-1070d",
-        "similarity_score": 2.0
+        "similarity_score": 2.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.9
     },
     {
         "name": "Palit Geforce Rtx 5090 Rtx5090 , , ,",
@@ -852,7 +964,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne75090s19r5-gb2020g",
-        "similarity_score": 2.0
+        "similarity_score": 2.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.62
     },
     {
         "name": "Gigabyte Geforce Rtx 5070 Gv-N5070Wf3-12Gd 1.0 Windforce, ,",
@@ -867,7 +981,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070",
-        "similarity_score": 1.0333333333333332
+        "similarity_score": 1.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Msi Geforce Rtx 5080 Rtx 5080 16G Trio Trio, , ,",
@@ -882,7 +998,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5080",
-        "similarity_score": 1.2
+        "similarity_score": 1.4000000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.91
     },
     {
         "name": "Msi Geforce Rtx 5080 Rtx 5080 16G Vanguard Soc Vanguard, ,",
@@ -897,7 +1015,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5080",
-        "similarity_score": 1.2
+        "similarity_score": 1.4000000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.77
     },
     {
         "name": "Palit Geforce Rtx 3050 Pa-Rtx3050 , ,",
@@ -912,7 +1032,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne63050018p1-1070d",
-        "similarity_score": 0.95
+        "similarity_score": 0.85,
+        "citilink_rating": 0,
+        "dns_rating": 4.83
     },
     {
         "name": "Gigabyte Geforce Rtx 4060 Gv-N4060Oc-8Gl , ,",
@@ -927,7 +1049,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 4060",
-        "similarity_score": 1.2
+        "similarity_score": 1.2000000000000002,
+        "citilink_rating": 0,
+        "dns_rating": 4.94
     },
     {
         "name": "Msi Geforce Rtx 3060 Rtx 3060 Ventus 2X 12G Ventus 2X, , , Lhr,",
@@ -942,7 +1066,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.1285714285714286
+        "similarity_score": 1.3571428571428572,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
         "name": "Gigabyte Geforce Rtx 5070Ti Gv-N507Twf3-16Gd 1.0 Windforce, ,",
@@ -957,7 +1083,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 5070ti",
-        "similarity_score": 1.0
+        "similarity_score": 1.08,
+        "citilink_rating": 0,
+        "dns_rating": 4.91
     },
     {
         "name": "Msi Geforce Rtx 3050 Rtx 3050 Ventus 2X Xs 8G Ventus 2X, , ,",
@@ -972,7 +1100,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3050",
-        "similarity_score": 1.2
+        "similarity_score": 1.4000000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
         "name": "Palit Geforce Rtx 5090 Rtx5090 , ,",
@@ -987,7 +1117,9 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "ne75090019r5-gb2020g",
-        "similarity_score": 2.0
+        "similarity_score": 2.1,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     },
     {
         "name": "Gigabyte Geforce Rtx 3060 Gv-N3060Gaming -12Gd 2.0 Lhr , , Lhr,",
@@ -1002,6 +1134,8 @@
         "citilink_category": "Видеокарты",
         "dns_category": "",
         "model_number": "rtx 3060",
-        "similarity_score": 1.1
+        "similarity_score": 1.1400000000000001,
+        "citilink_rating": 0,
+        "dns_rating": 4.86
     }
 ]

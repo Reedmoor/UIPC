@@ -26,7 +26,7 @@
             <div class="card-body">
                 <form method="POST" action="{{ url_for('admin.price_comparison') }}">
                     <div class="row">
-                        <div class="col-md-12 mb-3">
+                        <div class="col-md-8 mb-3">
                             <label for="category" class="form-label">Категория товаров</label>
                             <select class="form-select" id="category" name="category">
                                 <option value="" selected>Выберите категорию для сравнения</option>
@@ -41,6 +41,18 @@
                                 <option value="korpusa">Корпуса</option>
                             </select>
                             <div class="form-text">Выберите категорию товаров для сравнения цен между DNS и Citilink</div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <label for="sort_by" class="form-label">Сортировка</label>
+                            <select class="form-select" id="sort_by" name="sort_by">
+                                <option value="price_diff" {% if sort_by == 'price_diff' %}selected{% endif %}>По разнице в цене (₽)</option>
+                                <option value="price_diff_percent" {% if sort_by == 'price_diff_percent' %}selected{% endif %}>По разнице в цене (%)</option>
+                                <option value="lowest_price" {% if sort_by == 'lowest_price' %}selected{% endif %}>По возрастанию цены</option>
+                                <option value="highest_price" {% if sort_by == 'highest_price' %}selected{% endif %}>По убыванию цены</option>
+                                <option value="rating" {% if sort_by == 'rating' %}selected{% endif %}>По рейтингу</option>
+                                <option value="similarity" {% if sort_by == 'similarity' %}selected{% endif %}>По точности сопоставления</option>
+                            </select>
                         </div>
                     </div>
                     
@@ -77,6 +89,8 @@
                                 <th>Цена DNS</th>
                                 <th>Разница</th>
                                 <th>Разница %</th>
+                                <th>Рейтинг</th>
+                                <th>Точность</th>
                                 <th>Действия</th>
                             </tr>
                         </thead>
@@ -110,6 +124,33 @@
                                     {% else %}
                                         0%
                                     {% endif %}
+                                </td>
+                                <td>
+                                    {% if product.citilink_rating or product.dns_rating %}
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-1">
+                                                {% if product.citilink_rating %}
+                                                    <small class="badge bg-primary">{{ product.citilink_rating }}</small>
+                                                {% endif %}
+                                            </div>
+                                            <div>
+                                                {% if product.dns_rating %}
+                                                    <small class="badge bg-danger">{{ product.dns_rating }}</small>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% else %}
+                                        -
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar bg-info" role="progressbar" 
+                                             style="width: {{ (product.similarity_score * 100)|round|int }}%;" 
+                                             aria-valuenow="{{ (product.similarity_score * 100)|round|int }}" 
+                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small class="text-muted">{{ (product.similarity_score * 100)|round|int }}%</small>
                                 </td>
                                 <td>
                                     <div class="btn-group" role="group">

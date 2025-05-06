@@ -619,9 +619,11 @@ def run_citilink_parser():
 @admin_required
 def price_comparison():
     results = []
+    sort_by = request.args.get('sort_by', 'price_diff')  # Default sorting by price difference
     
     if request.method == 'POST':
         category = request.form.get('category')
+        sort_by = request.form.get('sort_by', sort_by)
         
         if category:
             try:
@@ -646,8 +648,28 @@ def price_comparison():
                 # Run price comparison with selected category for both stores
                 results = run_price_comparison(category, dns_category)
                 
+                # Sort results based on user selection
                 if results:
-                    logger.info(f"Found {len(results)} matching products between Citilink and DNS.")
+                    if sort_by == 'price_diff':
+                        # Sort by absolute price difference (default)
+                        results.sort(key=lambda x: abs(x['price_difference']), reverse=True)
+                    elif sort_by == 'price_diff_percent':
+                        # Sort by percentage price difference
+                        results.sort(key=lambda x: abs(x['price_difference_percent']), reverse=True)
+                    elif sort_by == 'lowest_price':
+                        # Sort by lowest price (from either store)
+                        results.sort(key=lambda x: min(x['citilink_price'], x['dns_price']))
+                    elif sort_by == 'highest_price':
+                        # Sort by highest price (from either store)
+                        results.sort(key=lambda x: max(x['citilink_price'], x['dns_price']), reverse=True)
+                    elif sort_by == 'rating':
+                        # Sort by average rating if available
+                        results.sort(key=lambda x: (x['citilink_rating'] + x['dns_rating'])/2 if x['citilink_rating'] and x['dns_rating'] else 0, reverse=True)
+                    elif sort_by == 'similarity':
+                        # Sort by match confidence/similarity score
+                        results.sort(key=lambda x: x['similarity_score'], reverse=True)
+                    
+                    logger.info(f"Found {len(results)} matching products between Citilink and DNS. Sorted by: {sort_by}")
                     flash(f'Найдено {len(results)} товаров с разницей в цене', 'success')
                 else:
                     logger.warning(f"No matching products found for category: {category}")
@@ -658,7 +680,7 @@ def price_comparison():
         else:
             flash('Необходимо указать категорию товаров', 'danger')
     
-    return render_template('admin/price_comparison.html', results=results)
+    return render_template('admin/price_comparison.html', results=results, sort_by=sort_by)
 
 @admin_bp.route('/dns-parser')
 @login_required
