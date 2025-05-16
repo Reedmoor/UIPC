@@ -71,9 +71,9 @@
             <div class="card mb-4">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                     <h5 class="mb-0"><i class="fas fa-microchip me-2"></i>Материнская плата</h5>
-                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="collapse" data-bs-target="#motherboardFilters">
-                        <i class="fas fa-filter"></i> Фильтры
-                    </button>
+<!--                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="collapse" data-bs-target="#motherboardFilters">-->
+<!--                        <i class="fas fa-filter"></i> Фильтры-->
+<!--                    </button>-->
                 </div>
                 
                 <div class="collapse filter-panel" id="motherboardFilters">
@@ -119,9 +119,9 @@
             <div class="card mb-4">
                 <div class="card-header bg-danger text-white d-flex justify-content-between align-items-center">
                     <h5 class="mb-0"><i class="fas fa-microchip me-2"></i>Процессор</h5>
-                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="collapse" data-bs-target="#cpuFilters">
-                        <i class="fas fa-filter"></i> Фильтры
-                    </button>
+<!--                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="collapse" data-bs-target="#cpuFilters">-->
+<!--                        <i class="fas fa-filter"></i> Фильтры-->
+<!--                    </button>-->
                 </div>
                 
                 <div class="collapse filter-panel" id="cpuFilters">
@@ -254,59 +254,105 @@
         $('#motherboardPriceFilter').on('input', function() {
             $('#motherboardPriceValue').text($(this).val());
         });
-        
+
         // Фильтры процессора
         $('#cpuPriceFilter').on('input', function() {
             $('#cpuPriceValue').text($(this).val());
         });
-        
-        // Расчет итоговой стоимости
-        function calculateTotalPrice() {
-            // В реальном проекте тут был бы AJAX-запрос или расчет на основе цен компонентов
-            // Упрощенный пример:
-            let total = 0;
-            // Просто условный расчет для демонстрации
-            total += Number($('#motherboard_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#cpu_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#gpu_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#ram_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#hdd_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#supply_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#cooler_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            total += Number($('#frame_id option:selected').text().match(/(\d+) руб/)?.[1] || 0);
-            
-            $('#totalPrice').text(total + ' ₽');
+
+        // Получение данных всех компонентов формы
+        function getComponents() {
+            return {
+                motherboard_id: $('#motherboard_id').val() || null,
+                cpu_id: $('#cpu_id').val() || null,
+                gpu_id: $('#gpu_id').val() || null,
+                ram_id: $('#ram_id').val() || null,
+                hdd_id: $('#hdd_id').val() || null,
+                supply_id: $('#supply_id').val() || null,
+                cooler_id: $('#cooler_id').val() || null,
+                frame_id: $('#frame_id').val() || null
+            };
         }
-        
-        // Проверка совместимости
-        function checkCompatibility() {
-            // В реальном проекте тут был бы AJAX-запрос
-            // Упрощенный пример:
-            const motherboard = $('#motherboard_id').val();
-            const cpu = $('#cpu_id').val();
-            const ram = $('#ram_id').val();
+
+        // Динамический расчет итоговой стоимости с помощью AJAX
+        function calculateTotalPrice() {
+            const components = getComponents();
             
-            if (motherboard && cpu && ram) {
-                // Просто для демонстрации условная проверка
-                $('#compatibilityCheck')
-                    .removeClass('alert-info alert-danger')
-                    .addClass('alert-success')
-                    .html('<i class="fas fa-check-circle me-2"></i>Все компоненты совместимы');
-            } else {
+            // Показываем индикатор загрузки
+            $('#totalPrice').html('<i class="fas fa-spinner fa-spin"></i>');
+            
+            // Отправляем AJAX запрос на сервер
+            $.ajax({
+                url: '{{ url_for("config.calculate_price") }}',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(components),
+                success: function(response) {
+                    $('#totalPrice').text(response.formatted_price);
+                },
+                error: function() {
+                    $('#totalPrice').text('Ошибка расчета');
+                }
+            });
+        }
+
+        // Динамическая проверка совместимости с помощью AJAX
+        function checkCompatibility() {
+            const components = getComponents();
+            
+            // Показываем индикатор загрузки
+            $('#compatibilityCheck').html('<i class="fas fa-spinner fa-spin me-2"></i>Проверка совместимости...');
+            
+            // Проверяем только если есть основные компоненты
+            if (!components.motherboard_id && !components.cpu_id && !components.ram_id) {
                 $('#compatibilityCheck')
                     .removeClass('alert-success alert-danger')
                     .addClass('alert-info')
-                    .html('<i class="fas fa-info-circle me-2"></i>Выберите все основные компоненты для проверки');
+                    .html('<i class="fas fa-info-circle me-2"></i>Выберите компоненты для проверки');
+                return;
             }
+            
+            // Отправляем AJAX запрос на сервер
+            $.ajax({
+                url: '{{ url_for("config.check_compatibility") }}',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(components),
+                success: function(response) {
+                    if (response.status === 'success') {
+                        $('#compatibilityCheck')
+                            .removeClass('alert-info alert-danger')
+                            .addClass('alert-success')
+                            .html(response.html);
+                    } else {
+                        let issuesHtml = '<i class="fas fa-exclamation-triangle me-2"></i>Проблемы совместимости:<ul class="mb-0 mt-2">';
+                        response.issues.forEach(function(issue) {
+                            issuesHtml += '<li>' + issue + '</li>';
+                        });
+                        issuesHtml += '</ul>';
+                        
+                        $('#compatibilityCheck')
+                            .removeClass('alert-info alert-success')
+                            .addClass('alert-warning')
+                            .html(issuesHtml);
+                    }
+                },
+                error: function() {
+                    $('#compatibilityCheck')
+                        .removeClass('alert-info alert-success')
+                        .addClass('alert-danger')
+                        .html('<i class="fas fa-times-circle me-2"></i>Ошибка проверки совместимости');
+                }
+            });
         }
-        
+
         // Обработчики событий для выбора компонентов
         $('form select').change(function() {
             calculateTotalPrice();
             checkCompatibility();
         });
-        
-        // Инициализация
+
+        // Инициализация при загрузке страницы
         calculateTotalPrice();
         checkCompatibility();
     });

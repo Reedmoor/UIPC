@@ -176,4 +176,106 @@ def filter_components():
         'price': c.price
     } for c in components]
     
-    return jsonify(result) 
+    return jsonify(result)
+
+@config_bp.route('/check_compatibility', methods=['POST'])
+@login_required
+def check_compatibility():
+    # Получаем данные компонентов из запроса
+    data = request.json
+    
+    # Создаем временную конфигурацию для проверки совместимости
+    temp_config = Configuration(
+        name="temp",
+        user_id=current_user.id,
+        motherboard_id=data.get('motherboard_id'),
+        cpu_id=data.get('cpu_id'),
+        ram_id=data.get('ram_id'),
+        gpu_id=data.get('gpu_id'),
+        supply_id=data.get('supply_id'),
+        cooler_id=data.get('cooler_id'),
+        hdd_id=data.get('hdd_id'),
+        frame_id=data.get('frame_id')
+    )
+    
+    # Загружаем связанные объекты, которые могут понадобиться для проверки
+    if temp_config.motherboard_id:
+        temp_config.motherboard = Motherboard.query.get(temp_config.motherboard_id)
+    if temp_config.cpu_id:
+        temp_config.processor = Processor.query.get(temp_config.cpu_id)
+    if temp_config.ram_id:
+        temp_config.ram = RAM.query.get(temp_config.ram_id)
+    if temp_config.gpu_id:
+        temp_config.graphics_card = GraphicsCard.query.get(temp_config.gpu_id)
+    if temp_config.supply_id:
+        temp_config.power_supply = PowerSupply.query.get(temp_config.supply_id)
+    if temp_config.cooler_id:
+        temp_config.cooler = Cooler.query.get(temp_config.cooler_id)
+    if temp_config.hdd_id:
+        temp_config.hard_drive = HardDrive.query.get(temp_config.hdd_id)
+    if temp_config.frame_id:
+        temp_config.case = Case.query.get(temp_config.frame_id)
+    
+    # Проверяем совместимость
+    issues = temp_config.compatibility_check()
+    
+    # Возвращаем результат
+    if issues:
+        return jsonify({
+            'status': 'warning',
+            'issues': issues,
+            'html': '<i class="fas fa-exclamation-triangle me-2"></i>Обнаружены проблемы совместимости!'
+        })
+    else:
+        return jsonify({
+            'status': 'success',
+            'issues': [],
+            'html': '<i class="fas fa-check-circle me-2"></i>Все компоненты совместимы'
+        })
+
+@config_bp.route('/calculate_price', methods=['POST'])
+@login_required
+def calculate_price():
+    # Получаем данные компонентов из запроса
+    data = request.json
+    
+    # Создаем временную конфигурацию для расчета стоимости
+    temp_config = Configuration(
+        name="temp",
+        user_id=current_user.id,
+        motherboard_id=data.get('motherboard_id'),
+        cpu_id=data.get('cpu_id'),
+        ram_id=data.get('ram_id'),
+        gpu_id=data.get('gpu_id'),
+        supply_id=data.get('supply_id'),
+        cooler_id=data.get('cooler_id'),
+        hdd_id=data.get('hdd_id'),
+        frame_id=data.get('frame_id')
+    )
+    
+    # Загружаем связанные объекты, которые необходимы для расчета цены
+    if temp_config.motherboard_id:
+        temp_config.motherboard = Motherboard.query.get(temp_config.motherboard_id)
+    if temp_config.cpu_id:
+        temp_config.processor = Processor.query.get(temp_config.cpu_id)
+    if temp_config.ram_id:
+        temp_config.ram = RAM.query.get(temp_config.ram_id)
+    if temp_config.gpu_id:
+        temp_config.graphics_card = GraphicsCard.query.get(temp_config.gpu_id)
+    if temp_config.supply_id:
+        temp_config.power_supply = PowerSupply.query.get(temp_config.supply_id)
+    if temp_config.cooler_id:
+        temp_config.cooler = Cooler.query.get(temp_config.cooler_id)
+    if temp_config.hdd_id:
+        temp_config.hard_drive = HardDrive.query.get(temp_config.hdd_id)
+    if temp_config.frame_id:
+        temp_config.case = Case.query.get(temp_config.frame_id)
+    
+    # Рассчитываем общую стоимость
+    total_price = temp_config.total_price()
+    
+    # Возвращаем результат
+    return jsonify({
+        'total_price': total_price,
+        'formatted_price': f"{total_price} ₽"
+    }) 

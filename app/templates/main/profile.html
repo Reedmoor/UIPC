@@ -32,12 +32,12 @@
                     </div>
 
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-outline-primary">
+                        <a href="{{ url_for('auth.edit_profile') }}" class="btn btn-outline-primary">
                             <i class="fas fa-edit me-1"></i>Изменить профиль
-                        </button>
-                        <button type="button" class="btn btn-outline-danger">
+                        </a>
+                        <a href="{{ url_for('auth.change_password') }}" class="btn btn-outline-danger">
                             <i class="fas fa-key me-1"></i>Сменить пароль
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

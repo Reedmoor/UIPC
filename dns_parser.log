@@ -1168,3 +1168,4 @@ Stacktrace:
 2025-05-04 19:39:00,356 - INFO - Added new product data for https://www.dns-shop.ru/product/c91d3b665abbd9cb/videokarta-palit-geforce-rtx-4070-white-oc-ne64070s19k9-1048l/
 2025-05-04 19:39:00,403 - INFO - Saved data for product: Видеокарта Palit GeForce RTX 4070 White OC [NE64070S19K9-1048L]
 2025-05-04 19:39:02,134 - INFO - Product details parsing complete!
+2025-05-13 13:48:53,726 - INFO - patching driver executable C:\Users\lime_\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
