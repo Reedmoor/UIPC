@@ -23,7 +23,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-primary">{{ counts.motherboards }}</h1>
                                 <h5>Материнские платы</h5>
-                                <a href="{{ url_for('admin.motherboards') }}" class="btn btn-sm btn-outline-primary mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='motherboard') }}" class="btn btn-sm btn-outline-primary mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-danger">{{ counts.processors }}</h1>
                                 <h5>Процессоры</h5>
-                                <a href="{{ url_for('admin.processors') }}" class="btn btn-sm btn-outline-danger mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='processor') }}" class="btn btn-sm btn-outline-danger mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-success">{{ counts.gpus }}</h1>
                                 <h5>Видеокарты</h5>
-                                <a href="{{ url_for('admin.graphics_cards') }}" class="btn btn-sm btn-outline-success mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='graphics_card') }}" class="btn btn-sm btn-outline-success mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-info">{{ counts.rams }}</h1>
                                 <h5>Оперативная память</h5>
-                                <a href="{{ url_for('admin.rams') }}" class="btn btn-sm btn-outline-info mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='ram') }}" class="btn btn-sm btn-outline-info mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-warning">{{ counts.hdds }}</h1>
                                 <h5>Жесткие диски</h5>
-                                <a href="{{ url_for('admin.hard_drives') }}" class="btn btn-sm btn-outline-warning mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='hard_drive') }}" class="btn btn-sm btn-outline-warning mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-secondary">{{ counts.power_supplies }}</h1>
                                 <h5>Блоки питания</h5>
-                                <a href="{{ url_for('admin.power_supplies') }}" class="btn btn-sm btn-outline-secondary mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='power_supply') }}" class="btn btn-sm btn-outline-secondary mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-dark">{{ counts.coolers }}</h1>
                                 <h5>Кулеры</h5>
-                                <a href="{{ url_for('admin.coolers') }}" class="btn btn-sm btn-outline-dark mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='cooler') }}" class="btn btn-sm btn-outline-dark mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                             <div class="card-body text-center">
                                 <h1 class="display-4 text-secondary">{{ counts.cases }}</h1>
                                 <h5>Корпуса</h5>
-                                <a href="{{ url_for('admin.cases') }}" class="btn btn-sm btn-outline-secondary mt-2">Управление</a>
+                                <a href="{{ url_for('admin.products', type='case') }}" class="btn btn-sm btn-outline-secondary mt-2">Управление</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             <i class="fas fa-arrow-right"></i>
                         </span>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.users') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-users-cog me-2"></i>
                             <strong>Управление пользователями</strong>
@@ -137,11 +137,11 @@
                             <i class="fas fa-arrow-right"></i>
                         </span>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.import_data') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-database me-2"></i>
-                            <strong>Резервное копирование БД</strong>
-                            <p class="mb-0 text-muted small">Создание и восстановление резервных копий</p>
+                            <strong>Импорт данных</strong>
+                            <p class="mb-0 text-muted small">Импорт и стандартизация данных о продуктах</p>
                         </div>
                         <span class="badge bg-primary rounded-pill">
                             <i class="fas fa-arrow-right"></i>
@@ -159,7 +159,7 @@
             </div>
             <div class="card-body">
                 <div class="list-group">
-                    <a href="{{ url_for('admin.add_motherboard') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='motherboard') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-microchip me-2"></i>
                             <strong>Добавить материнскую плату</strong>
@@ -168,7 +168,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_processor') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='processor') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-microchip me-2"></i>
                             <strong>Добавить процессор</strong>
@@ -177,7 +177,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_graphics_card') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='graphics_card') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-tv me-2"></i>
                             <strong>Добавить видеокарту</strong>
@@ -186,7 +186,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_ram') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='ram') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-memory me-2"></i>
                             <strong>Добавить оперативную память</strong>
@@ -195,7 +195,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_hard_drive') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='hard_drive') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-hdd me-2"></i>
                             <strong>Добавить жесткий диск</strong>
@@ -204,7 +204,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_power_supply') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='power_supply') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-plug me-2"></i>
                             <strong>Добавить блок питания</strong>
@@ -213,7 +213,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_cooler') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='cooler') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-fan me-2"></i>
                             <strong>Добавить кулер</strong>
@@ -222,7 +222,7 @@
                             <i class="fas fa-plus"></i>
                         </span>
                     </a>
-                    <a href="{{ url_for('admin.add_case') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('admin.add_product', type='case') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <div>
                             <i class="fas fa-desktop me-2"></i>
                             <strong>Добавить корпус</strong>

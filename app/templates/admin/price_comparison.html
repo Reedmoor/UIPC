@@ -31,7 +31,7 @@
                             <select class="form-select" id="category" name="category">
                                 <option value="" selected>Выберите категорию для сравнения</option>
                                 <option value="videokarty">Видеокарты</option>
-                                <option value="protsessory">Процессоры</option>
+                                <option value="processory">Процессоры</option>
                                 <option value="materinskie-platy">Материнские платы</option>
                                 <option value="operativnaya-pamyat">Оперативная память</option>
                                 <option value="bloki-pitaniya">Блоки питания</option>
@@ -146,7 +146,7 @@
                                 <td>
                                     <div class="progress" style="height: 5px;">
                                         <div class="progress-bar bg-info" role="progressbar" 
-                                             style="width: {{ (product.similarity_score * 100)|round|int }}%;" 
+                                             
                                              aria-valuenow="{{ (product.similarity_score * 100)|round|int }}" 
                                              aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>

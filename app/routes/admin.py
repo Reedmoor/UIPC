@@ -1,14 +1,8 @@
-from flask import Blueprint, render_template, redirect, url_for, flash, request, jsonify, current_app
+from flask import Blueprint, render_template, redirect, url_for, flash, request, jsonify, current_app, send_file
 from flask_login import login_required, current_user
 from app import db
-from app.models.models import (
-    Motherboard, PowerSupply, Processor, GraphicsCard, 
-    Cooler, RAM, HardDrive, Case
-)
-from app.forms.components import (
-    MotherboardForm, PowerSupplyForm, ProcessorForm, GraphicsCardForm,
-    CoolerForm, RAMForm, HardDriveForm, CaseForm
-)
+from app.models.models import User, UnifiedProduct
+from app.forms.admin import UnifiedProductForm
 from app.utils.price_comparison import run_price_comparison
 from functools import wraps
 from datetime import datetime
@@ -44,14 +38,15 @@ def admin_required(f):
 @login_required
 @admin_required
 def dashboard():
-    motherboards_count = Motherboard.query.count()
-    power_supplies_count = PowerSupply.query.count()
-    processors_count = Processor.query.count()
-    gpus_count = GraphicsCard.query.count()
-    coolers_count = Cooler.query.count()
-    rams_count = RAM.query.count()
-    hdds_count = HardDrive.query.count()
-    cases_count = Case.query.count()
+    # Count products by type using the UnifiedProduct model
+    motherboards_count = UnifiedProduct.query.filter_by(product_type='motherboard').count()
+    power_supplies_count = UnifiedProduct.query.filter_by(product_type='power_supply').count()
+    processors_count = UnifiedProduct.query.filter_by(product_type='processor').count()
+    gpus_count = UnifiedProduct.query.filter_by(product_type='graphics_card').count()
+    coolers_count = UnifiedProduct.query.filter_by(product_type='cooler').count()
+    rams_count = UnifiedProduct.query.filter_by(product_type='ram').count()
+    hdds_count = UnifiedProduct.query.filter_by(product_type='hard_drive').count()
+    cases_count = UnifiedProduct.query.filter_by(product_type='case').count()
     
     return render_template('admin/dashboard.html', 
                           counts={
@@ -65,349 +60,422 @@ def dashboard():
                               'cases': cases_count
                           })
 
-# Маршруты для материнских плат
-@admin_bp.route('/motherboards')
+@admin_bp.route('/users')
+@login_required
+@admin_required
+def users():
+    users = User.query.all()
+    return render_template('admin/users.html', users=users)
+
+@admin_bp.route('/users/<int:user_id>/toggle_admin', methods=['POST'])
+@login_required
+@admin_required
+def toggle_admin(user_id):
+    user = User.query.get_or_404(user_id)
+    if user == current_user:
+        flash('Вы не можете изменить свои права администратора', 'danger')
+    else:
+        if user.role == 'admin':
+            user.role = 'user'
+            flash(f'Пользователь {user.name} больше не администратор', 'success')
+        else:
+            user.role = 'admin'
+            flash(f'Пользователь {user.name} теперь администратор', 'success')
+        db.session.commit()
+    return redirect(url_for('admin.users'))
+
+@admin_bp.route('/users/<int:user_id>/delete', methods=['POST'])
+@login_required
+@admin_required
+def delete_user(user_id):
+    user = User.query.get_or_404(user_id)
+    if user == current_user:
+        flash('Вы не можете удалить самого себя', 'danger')
+    else:
+        db.session.delete(user)
+        db.session.commit()
+        flash(f'Пользователь {user.name} успешно удален', 'success')
+    return redirect(url_for('admin.users'))
+
+# Unified product routes for all components
+@admin_bp.route('/products')
+@login_required
+@admin_required
+def products():
+    product_type = request.args.get('type', 'all')
+    
+    if product_type == 'all':
+        products = UnifiedProduct.query.all()
+    else:
+        products = UnifiedProduct.query.filter_by(product_type=product_type).all()
+    
+    return render_template('admin/products/index.html', products=products, current_type=product_type)
+
+@admin_bp.route('/products/motherboards')
 @login_required
 @admin_required
 def motherboards():
-    motherboards = Motherboard.query.all()
-    return render_template('admin/components/motherboards.html', motherboards=motherboards)
+    return redirect(url_for('admin.products', type='motherboard'))
 
-@admin_bp.route('/motherboards/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_motherboard():
-    form = MotherboardForm()
-    if form.validate_on_submit():
-        motherboard = Motherboard(
-            name=form.name.data,
-            price=form.price.data,
-            form=form.form.data,
-            soket=form.soket.data,
-            memory_type=form.memory_type.data,
-            interface=form.interface.data
-        )
-        db.session.add(motherboard)
-        db.session.commit()
-        flash('Материнская плата успешно добавлена', 'success')
-        return redirect(url_for('admin.motherboards'))
-    return render_template('admin/components/add_motherboard.html', form=form)
-
-@admin_bp.route('/motherboards/edit/<int:motherboard_id>', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def edit_motherboard(motherboard_id):
-    motherboard = Motherboard.query.get_or_404(motherboard_id)
-    form = MotherboardForm(obj=motherboard)
-
-    if form.validate_on_submit():
-        form.populate_obj(motherboard)
-        db.session.commit()
-        flash('Материнская плата успешно обновлена!', 'success')
-        return redirect(url_for('admin.motherboards'))
-
-    return render_template('admin//components/edit_motherboard.html', form=form, motherboard=motherboard)
-
-
-@admin_bp.route('/motherboards/delete/<int:motherboard_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_motherboard(motherboard_id):
-    motherboard = Motherboard.query.get_or_404(motherboard_id)
-    db.session.delete(motherboard)
-    db.session.commit()
-    flash('Материнская плата успешно удалена', 'success')
-    return redirect(url_for('admin.motherboards'))
-
-# Маршруты для процессоров
-@admin_bp.route('/processors')
+@admin_bp.route('/products/processors')
 @login_required
 @admin_required
 def processors():
-    processors = Processor.query.all()
-    return render_template('admin/components/processors.html', processors=processors)
+    return redirect(url_for('admin.products', type='processor'))
 
-@admin_bp.route('/processors/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_processor():
-    form = ProcessorForm()
-    if form.validate_on_submit():
-        processor = Processor(
-            name=form.name.data,
-            price=form.price.data,
-            soket=form.soket.data,
-            base_clock=form.base_clock.data,
-            turbo_clock=form.turbo_clock.data,
-            cores=form.cores.data,
-            threads=form.threads.data,
-            power_use=form.power_use.data
-        )
-        db.session.add(processor)
-        db.session.commit()
-        flash('Процессор успешно добавлен', 'success')
-        return redirect(url_for('admin.processors'))
-    return render_template('admin/components/add_processor.html', form=form)
-
-@admin_bp.route('/processors/edit/<int:processor_id>', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def edit_processor(processor_id):
-    processor = Processor.query.get_or_404(processor_id)
-    form = ProcessorForm(obj=processor)
-    
-    if form.validate_on_submit():
-        form.populate_obj(processor)
-        db.session.commit()
-        flash('Процессор успешно обновлен!', 'success')
-        return redirect(url_for('admin.processors'))
-    
-    return render_template('admin/components/edit_processor.html', form=form, processor=processor)
-
-@admin_bp.route('/processors/delete/<int:processor_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_processor(processor_id):
-    processor = Processor.query.get_or_404(processor_id)
-    db.session.delete(processor)
-    db.session.commit()
-    flash('Процессор успешно удален', 'success')
-    return redirect(url_for('admin.processors'))
-
-# Маршруты для видеокарт
-@admin_bp.route('/graphics_cards')
+@admin_bp.route('/products/graphics_cards')
 @login_required
 @admin_required
 def graphics_cards():
-    graphics_cards = GraphicsCard.query.all()
-    return render_template('admin/components/graphics_cards.html', graphics_cards=graphics_cards)
+    return redirect(url_for('admin.products', type='graphics_card'))
 
-@admin_bp.route('/graphics_cards/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_graphics_card():
-    form = GraphicsCardForm()
-    if form.validate_on_submit():
-        graphics_card = GraphicsCard(
-            name=form.name.data,
-            price=form.price.data,
-            frequency=form.frequency.data,
-            soket=form.soket.data,
-            power_use=form.power_use.data
-        )
-        db.session.add(graphics_card)
-        db.session.commit()
-        flash('Видеокарта успешно добавлена', 'success')
-        return redirect(url_for('admin.graphics_cards'))
-    return render_template('admin/components/add_graphics_card.html', form=form)
-
-@admin_bp.route('/graphics_cards/delete/<int:graphics_card_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_graphics_card(graphics_card_id):
-    graphics_card = GraphicsCard.query.get_or_404(graphics_card_id)
-    db.session.delete(graphics_card)
-    db.session.commit()
-    flash('Видеокарта успешно удалена', 'success')
-    return redirect(url_for('admin.graphics_cards'))
-
-# Маршруты для оперативной памяти
-@admin_bp.route('/rams')
+@admin_bp.route('/products/rams')
 @login_required
 @admin_required
 def rams():
-    rams = RAM.query.all()
-    return render_template('admin/components/rams.html', rams=rams)
+    return redirect(url_for('admin.products', type='ram'))
 
-@admin_bp.route('/rams/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_ram():
-    form = RAMForm()
-    if form.validate_on_submit():
-        ram = RAM(
-            name=form.name.data,
-            price=form.price.data,
-            frequency=form.frequency.data,
-            memory_type=form.memory_type.data,
-            power_use=form.power_use.data,
-            capacity=form.capacity.data
-        )
-        db.session.add(ram)
-        db.session.commit()
-        flash('Оперативная память успешно добавлена', 'success')
-        return redirect(url_for('admin.rams'))
-    return render_template('admin/components/add_ram.html', form=form)
-
-@admin_bp.route('/rams/delete/<int:ram_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_ram(ram_id):
-    ram = RAM.query.get_or_404(ram_id)
-    db.session.delete(ram)
-    db.session.commit()
-    flash('Оперативная память успешно удалена', 'success')
-    return redirect(url_for('admin.rams'))
-
-# Маршруты для жестких дисков
-@admin_bp.route('/hard_drives')
+@admin_bp.route('/products/hard_drives')
 @login_required
 @admin_required
 def hard_drives():
-    hard_drives = HardDrive.query.all()
-    return render_template('admin/components/hard_drives.html', hard_drives=hard_drives)
+    return redirect(url_for('admin.products', type='hard_drive'))
 
-@admin_bp.route('/hard_drives/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_hard_drive():
-    form = HardDriveForm()
-    if form.validate_on_submit():
-        hard_drive = HardDrive(
-            name=form.name.data,
-            price=form.price.data,
-            capacity=form.capacity.data,
-            recording=form.recording.data,
-            reading=form.reading.data
-        )
-        db.session.add(hard_drive)
-        db.session.commit()
-        flash('Жесткий диск успешно добавлен', 'success')
-        return redirect(url_for('admin.hard_drives'))
-    return render_template('admin/components/add_hard_drive.html', form=form)
-
-@admin_bp.route('/hard_drives/delete/<int:hard_drive_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_hard_drive(hard_drive_id):
-    hard_drive = HardDrive.query.get_or_404(hard_drive_id)
-    db.session.delete(hard_drive)
-    db.session.commit()
-    flash('Жесткий диск успешно удален', 'success')
-    return redirect(url_for('admin.hard_drives'))
-
-# Маршруты для блоков питания
-@admin_bp.route('/power_supplies')
+@admin_bp.route('/products/power_supplies')
 @login_required
 @admin_required
 def power_supplies():
-    power_supplies = PowerSupply.query.all()
-    return render_template('admin/components/power_supplies.html', power_supplies=power_supplies)
+    return redirect(url_for('admin.products', type='power_supply'))
 
-@admin_bp.route('/power_supplies/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_power_supply():
-    form = PowerSupplyForm()
-    if form.validate_on_submit():
-        power_supply = PowerSupply(
-            name=form.name.data,
-            price=form.price.data,
-            power=form.power.data,
-            type=form.type.data,
-            certificate=form.certificate.data
-        )
-        db.session.add(power_supply)
-        db.session.commit()
-        flash('Блок питания успешно добавлен', 'success')
-        return redirect(url_for('admin.power_supplies'))
-    return render_template('admin/components/add_power_supply.html', form=form)
-
-@admin_bp.route('/power_supplies/edit/<int:power_supply_id>', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def edit_power_supply(power_supply_id):
-    power_supply = PowerSupply.query.get_or_404(power_supply_id)
-    form = PowerSupplyForm(obj=power_supply)
-    
-    if form.validate_on_submit():
-        form.populate_obj(power_supply)
-        db.session.commit()
-        flash('Блок питания успешно обновлен!', 'success')
-        return redirect(url_for('admin.power_supplies'))
-    
-    return render_template('admin/components/edit_power_supply.html', form=form, power_supply=power_supply)
-
-@admin_bp.route('/power_supplies/delete/<int:power_supply_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_power_supply(power_supply_id):
-    power_supply = PowerSupply.query.get_or_404(power_supply_id)
-    db.session.delete(power_supply)
-    db.session.commit()
-    flash('Блок питания успешно удален', 'success')
-    return redirect(url_for('admin.power_supplies'))
-
-# Маршруты для кулеров
-@admin_bp.route('/coolers')
+@admin_bp.route('/products/coolers')
 @login_required
 @admin_required
 def coolers():
-    coolers = Cooler.query.all()
-    return render_template('admin/components/coolers.html', coolers=coolers)
+    return redirect(url_for('admin.products', type='cooler'))
 
-@admin_bp.route('/coolers/add', methods=['GET', 'POST'])
-@login_required
-@admin_required
-def add_cooler():
-    form = CoolerForm()
-    if form.validate_on_submit():
-        cooler = Cooler(
-            name=form.name.data,
-            price=form.price.data,
-            speed=form.speed.data,
-            power_use=form.power_use.data
-        )
-        db.session.add(cooler)
-        db.session.commit()
-        flash('Кулер успешно добавлен', 'success')
-        return redirect(url_for('admin.coolers'))
-    return render_template('admin/components/add_cooler.html', form=form)
-
-@admin_bp.route('/coolers/delete/<int:cooler_id>', methods=['POST'])
-@login_required
-@admin_required
-def delete_cooler(cooler_id):
-    cooler = Cooler.query.get_or_404(cooler_id)
-    db.session.delete(cooler)
-    db.session.commit()
-    flash('Кулер успешно удален', 'success')
-    return redirect(url_for('admin.coolers'))
-
-# Маршруты для корпусов
-@admin_bp.route('/cases')
+@admin_bp.route('/products/cases')
 @login_required
 @admin_required
 def cases():
-    cases = Case.query.all()
-    return render_template('admin/components/cases.html', cases=cases)
+    return redirect(url_for('admin.products', type='case'))
 
-@admin_bp.route('/cases/add', methods=['GET', 'POST'])
+@admin_bp.route('/products/add', methods=['GET', 'POST'])
 @login_required
 @admin_required
-def add_case():
-    form = CaseForm()
+def add_product():
+    product_type = request.args.get('type', 'other')
+    form = UnifiedProductForm()
+    
     if form.validate_on_submit():
-        case = Case(
-            name=form.name.data,
-            price=form.price.data,
-            form=form.form.data
+        product = UnifiedProduct(
+            product_name=form.product_name.data,
+            price_discounted=form.price_discounted.data,
+            price_original=form.price_original.data,
+            vendor=form.vendor.data,
+            product_url=form.product_url.data,
+            availability=True,
+            product_type=product_type
         )
-        db.session.add(case)
+        
+        # Set characteristics based on product type
+        characteristics = {}
+        
+        # Common characteristics for all products
+        if form.brand.data:
+            characteristics['brand'] = form.brand.data
+        if form.model.data:
+            characteristics['model'] = form.model.data
+            
+        # Motherboard specific
+        if product_type == 'motherboard':
+            characteristics['socket'] = form.socket.data
+            characteristics['chipset'] = form.chipset.data
+            characteristics['form_factor'] = form.form_factor.data
+            characteristics['memory_type'] = form.memory_type.data
+            
+        # Processor specific
+        elif product_type == 'processor':
+            characteristics['socket'] = form.socket.data
+            characteristics['base_clock'] = form.base_clock.data
+            characteristics['boost_clock'] = form.boost_clock.data
+            characteristics['core_count'] = form.core_count.data
+            characteristics['thread_count'] = form.thread_count.data
+            characteristics['power_consumption'] = form.power_consumption.data
+            
+        # Graphics card specific
+        elif product_type == 'graphics_card':
+            characteristics['gpu_model'] = form.gpu_model.data
+            characteristics['memory_size'] = form.memory_size.data
+            characteristics['memory_type'] = form.memory_type.data
+            characteristics['base_clock'] = form.base_clock.data
+            characteristics['boost_clock'] = form.boost_clock.data
+            characteristics['power_consumption'] = form.power_consumption.data
+            characteristics['length'] = form.length.data
+            
+        # RAM specific
+        elif product_type == 'ram':
+            characteristics['memory_type'] = form.memory_type.data
+            characteristics['memory_size'] = form.memory_size.data
+            characteristics['memory_clock'] = form.memory_clock.data
+            characteristics['module_count'] = form.module_count.data
+            
+        # Storage specific
+        elif product_type == 'hard_drive':
+            characteristics['storage_capacity'] = form.storage_capacity.data
+            characteristics['interface'] = form.interface.data
+            characteristics['read_speed'] = form.read_speed.data
+            characteristics['write_speed'] = form.write_speed.data
+            
+        # Power supply specific
+        elif product_type == 'power_supply':
+            characteristics['wattage'] = form.wattage.data
+            characteristics['certification'] = form.certification.data
+            
+        # Cooler specific
+        elif product_type == 'cooler':
+            characteristics['cooling_type'] = form.cooling_type.data
+            characteristics['fan_count'] = form.fan_count.data
+            characteristics['power_consumption'] = form.power_consumption.data
+            
+        # Case specific
+        elif product_type == 'case':
+            characteristics['case_size'] = form.case_size.data
+            characteristics['supported_form_factors'] = form.supported_form_factors.data.split(',')
+            characteristics['max_gpu_length'] = form.max_gpu_length.data
+            characteristics['max_cooler_height'] = form.max_cooler_height.data
+            
+        # Set characteristics and other JSON fields
+        product.set_characteristics(characteristics)
+        product.set_images([form.image_url.data] if form.image_url.data else [])
+        product.set_category([product_type])
+        
+        db.session.add(product)
         db.session.commit()
-        flash('Корпус успешно добавлен', 'success')
-        return redirect(url_for('admin.cases'))
-    return render_template('admin/components/add_case.html', form=form)
+        
+        flash(f'Продукт успешно добавлен', 'success')
+        return redirect(url_for('admin.products', type=product_type))
+        
+    return render_template('admin/products/add_product.html', form=form, product_type=product_type)
 
-@admin_bp.route('/cases/delete/<int:case_id>', methods=['POST'])
+@admin_bp.route('/products/edit/<int:product_id>', methods=['GET', 'POST'])
 @login_required
 @admin_required
-def delete_case(case_id):
-    case = Case.query.get_or_404(case_id)
-    db.session.delete(case)
+def edit_product(product_id):
+    product = UnifiedProduct.query.get_or_404(product_id)
+    form = UnifiedProductForm()
+    characteristics = product.get_characteristics()
+    
+    if form.validate_on_submit():
+        # Update basic product information
+        product.product_name = form.product_name.data
+        product.price_discounted = form.price_discounted.data
+        product.price_original = form.price_original.data
+        product.vendor = form.vendor.data
+        product.product_url = form.product_url.data
+        
+        # Update characteristics based on product type
+        updated_characteristics = {}
+        
+        # Common characteristics for all products
+        if form.brand.data:
+            updated_characteristics['brand'] = form.brand.data
+        if form.model.data:
+            updated_characteristics['model'] = form.model.data
+            
+        # Motherboard specific
+        if product.product_type == 'motherboard':
+            updated_characteristics['socket'] = form.socket.data
+            updated_characteristics['chipset'] = form.chipset.data
+            updated_characteristics['form_factor'] = form.form_factor.data
+            updated_characteristics['memory_type'] = form.memory_type.data
+            
+        # Processor specific
+        elif product.product_type == 'processor':
+            updated_characteristics['socket'] = form.socket.data
+            updated_characteristics['base_clock'] = form.base_clock.data
+            updated_characteristics['boost_clock'] = form.boost_clock.data
+            updated_characteristics['core_count'] = form.core_count.data
+            updated_characteristics['thread_count'] = form.thread_count.data
+            updated_characteristics['power_consumption'] = form.power_consumption.data
+            
+        # Graphics card specific
+        elif product.product_type == 'graphics_card':
+            updated_characteristics['gpu_model'] = form.gpu_model.data
+            updated_characteristics['memory_size'] = form.memory_size.data
+            updated_characteristics['memory_type'] = form.memory_type.data
+            updated_characteristics['base_clock'] = form.base_clock.data
+            updated_characteristics['boost_clock'] = form.boost_clock.data
+            updated_characteristics['power_consumption'] = form.power_consumption.data
+            updated_characteristics['length'] = form.length.data
+            
+        # RAM specific
+        elif product.product_type == 'ram':
+            updated_characteristics['memory_type'] = form.memory_type.data
+            updated_characteristics['memory_size'] = form.memory_size.data
+            updated_characteristics['memory_clock'] = form.memory_clock.data
+            updated_characteristics['module_count'] = form.module_count.data
+            
+        # Storage specific
+        elif product.product_type == 'hard_drive':
+            updated_characteristics['storage_capacity'] = form.storage_capacity.data
+            updated_characteristics['interface'] = form.interface.data
+            updated_characteristics['read_speed'] = form.read_speed.data
+            updated_characteristics['write_speed'] = form.write_speed.data
+            
+        # Power supply specific
+        elif product.product_type == 'power_supply':
+            updated_characteristics['wattage'] = form.wattage.data
+            updated_characteristics['certification'] = form.certification.data
+            
+        # Cooler specific
+        elif product.product_type == 'cooler':
+            updated_characteristics['cooling_type'] = form.cooling_type.data
+            updated_characteristics['fan_count'] = form.fan_count.data
+            updated_characteristics['power_consumption'] = form.power_consumption.data
+            
+        # Case specific
+        elif product.product_type == 'case':
+            updated_characteristics['case_size'] = form.case_size.data
+            supported_form_factors = characteristics.get('supported_form_factors', [])
+            if isinstance(supported_form_factors, list):
+                updated_characteristics['supported_form_factors'] = ','.join(supported_form_factors)
+            else:
+                updated_characteristics['supported_form_factors'] = supported_form_factors
+            updated_characteristics['max_gpu_length'] = form.max_gpu_length.data
+            updated_characteristics['max_cooler_height'] = form.max_cooler_height.data
+        
+        # Update JSON fields
+        product.set_characteristics(updated_characteristics)
+        if form.image_url.data:
+            product.set_images([form.image_url.data])
+        
+        db.session.commit()
+        flash('Продукт успешно обновлен', 'success')
+        return redirect(url_for('admin.products', type=product.product_type))
+    
+    elif request.method == 'GET':
+        # Populate form with existing data
+        form.product_name.data = product.product_name
+        form.price_discounted.data = product.price_discounted
+        form.price_original.data = product.price_original
+        form.vendor.data = product.vendor
+        form.product_url.data = product.product_url
+        
+        # Set images
+        images = product.get_images()
+        if images:
+            form.image_url.data = images[0]
+        
+        # Set characteristics based on product type
+        form.brand.data = characteristics.get('brand', '')
+        form.model.data = characteristics.get('model', '')
+        
+        # Motherboard specific
+        if product.product_type == 'motherboard':
+            form.socket.data = characteristics.get('socket', '')
+            form.chipset.data = characteristics.get('chipset', '')
+            form.form_factor.data = characteristics.get('form_factor', '')
+            form.memory_type.data = characteristics.get('memory_type', '')
+            
+        # Processor specific
+        elif product.product_type == 'processor':
+            form.socket.data = characteristics.get('socket', '')
+            form.base_clock.data = characteristics.get('base_clock', '')
+            form.boost_clock.data = characteristics.get('boost_clock', '')
+            form.core_count.data = characteristics.get('core_count', '')
+            form.thread_count.data = characteristics.get('thread_count', '')
+            form.power_consumption.data = characteristics.get('power_consumption', '')
+            
+        # Graphics card specific
+        elif product.product_type == 'graphics_card':
+            form.gpu_model.data = characteristics.get('gpu_model', '')
+            form.memory_size.data = characteristics.get('memory_size', '')
+            form.memory_type.data = characteristics.get('memory_type', '')
+            form.base_clock.data = characteristics.get('base_clock', '')
+            form.boost_clock.data = characteristics.get('boost_clock', '')
+            form.power_consumption.data = characteristics.get('power_consumption', '')
+            form.length.data = characteristics.get('length', '')
+            
+        # RAM specific
+        elif product.product_type == 'ram':
+            form.memory_type.data = characteristics.get('memory_type', '')
+            form.memory_size.data = characteristics.get('memory_size', '')
+            form.memory_clock.data = characteristics.get('memory_clock', '')
+            form.module_count.data = characteristics.get('module_count', '')
+            
+        # Storage specific
+        elif product.product_type == 'hard_drive':
+            form.storage_capacity.data = characteristics.get('storage_capacity', '')
+            form.interface.data = characteristics.get('interface', '')
+            form.read_speed.data = characteristics.get('read_speed', '')
+            form.write_speed.data = characteristics.get('write_speed', '')
+            
+        # Power supply specific
+        elif product.product_type == 'power_supply':
+            form.wattage.data = characteristics.get('wattage', '')
+            form.certification.data = characteristics.get('certification', '')
+            
+        # Cooler specific
+        elif product.product_type == 'cooler':
+            form.cooling_type.data = characteristics.get('cooling_type', '')
+            form.fan_count.data = characteristics.get('fan_count', '')
+            form.power_consumption.data = characteristics.get('power_consumption', '')
+            
+        # Case specific
+        elif product.product_type == 'case':
+            form.case_size.data = characteristics.get('case_size', '')
+            supported_form_factors = characteristics.get('supported_form_factors', [])
+            if isinstance(supported_form_factors, list):
+                form.supported_form_factors.data = ','.join(supported_form_factors)
+            else:
+                form.supported_form_factors.data = supported_form_factors
+            form.max_gpu_length.data = characteristics.get('max_gpu_length', '')
+            form.max_cooler_height.data = characteristics.get('max_cooler_height', '')
+    
+    return render_template('admin/products/edit_product.html', form=form, product=product)
+
+@admin_bp.route('/products/delete/<int:product_id>', methods=['POST'])
+@login_required
+@admin_required
+def delete_product(product_id):
+    product = UnifiedProduct.query.get_or_404(product_id)
+    product_type = product.product_type
+    db.session.delete(product)
     db.session.commit()
-    flash('Корпус успешно удален', 'success')
-    return redirect(url_for('admin.cases'))
+    flash('Продукт успешно удален', 'success')
+    return redirect(url_for('admin.products', type=product_type))
+
+@admin_bp.route('/import')
+@login_required
+@admin_required
+def import_data():
+    return render_template('admin/import.html')
+
+@admin_bp.route('/run_import', methods=['POST'])
+@login_required
+@admin_required
+def run_import():
+    import_type = request.form.get('import_type')
+    
+    if import_type == 'create_db':
+        # Import and run the create_db script
+        try:
+            from app.utils.standardization.create_db import recreate_database
+            recreate_database()
+            flash('База данных успешно пересоздана', 'success')
+        except Exception as e:
+            flash(f'Ошибка при пересоздании базы данных: {str(e)}', 'danger')
+    
+    elif import_type == 'import_products':
+        # Import and run the import_products script
+        try:
+            from app.utils.standardization.import_products import import_products
+            import_products()
+            flash('Продукты успешно импортированы', 'success')
+        except Exception as e:
+            flash(f'Ошибка при импорте продуктов: {str(e)}', 'danger')
+    
+    return redirect(url_for('admin.import_data'))
 
 @admin_bp.route('/scrape', methods=['GET', 'POST'])
 @login_required
@@ -565,20 +633,16 @@ def run_citilink_parser():
         # Get path to Citilink parser directory
         citilink_parser_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'utils', 'Citi_parser')
         
-        # Convert short category to full URL path for the parser
-        category_map = {
-            'videokarty': 'videokarty',
-            'protsessory': 'protsessory',
-            'materinskie-platy': 'materinskie-platy',
-            'operativnaya-pamyat': 'operativnaya-pamyat'
-        }
-        full_category = category_map.get(category, category)
+        # Create the .env file with only the selected category
+        env_content = f"CATEGORY={category}"
         
         # Create a command to directly run the PowerShell command to create/update .env file
-        # This ensures it is created in the correct directory with proper encoding
-        env_setup_cmd = f'Set-Content -Path "{os.path.join(citilink_parser_dir, ".env")}" -Value "CATEGORY={full_category}"'
+        env_setup_cmd = f'Set-Content -Path "{os.path.join(citilink_parser_dir, ".env")}" -Value "{env_content}"'
         subprocess.run(['powershell', '-Command', env_setup_cmd], check=True)
             
+        # Set environment variable in the app environment too
+        os.environ['CATEGORY'] = category
+        
         # Run the Citilink parser directly from the main.py file
         main_py_path = os.path.join(citilink_parser_dir, 'main.py')
         
@@ -599,14 +663,25 @@ def run_citilink_parser():
         
         # Read results
         try:
-            with open(os.path.join(citilink_parser_dir, 'Товары.json'), 'r', encoding='utf-8') as f:
-                content = f.read()
-                # Handle potential JSON format issues
-                if content.endswith(',\n]'):
-                    content = content.replace(',\n]', '\n]')
-                results = json.loads(content)
-            
-            flash(f'Парсер Citilink успешно выполнен. Получено {len(results)} товаров.', 'success')
+            # First check for category-specific file
+            category_products_file = os.path.join(citilink_parser_dir, 'data', category, 'Товары.json')
+            if os.path.exists(category_products_file):
+                with open(category_products_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Handle potential JSON format issues
+                    if content.endswith(',\n]'):
+                        content = content.replace(',\n]', '\n]')
+                    results = json.loads(content)
+                flash(f'Парсер Citilink успешно выполнен. Получено {len(results)} товаров в категории {category}.', 'success')
+            else:
+                # Fallback to main file
+                with open(os.path.join(citilink_parser_dir, 'Товары.json'), 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Handle potential JSON format issues
+                    if content.endswith(',\n]'):
+                        content = content.replace(',\n]', '\n]')
+                    results = json.loads(content)
+                flash(f'Парсер Citilink успешно выполнен. Получено {len(results)} товаров.', 'success')
         except Exception as f:
             flash(f'Ошибка при чтении результатов: {str(f)}', 'danger')
     except Exception as e:
@@ -632,14 +707,16 @@ def price_comparison():
                 # Map category values to DNS category names
                 dns_category_mapping = {
                     'videokarty': 'Видеокарты',
-                    'protsessory': 'Процессоры',
+                    'processory': 'Процессоры',
                     'materinskie-platy': 'Материнские платы',
                     'operativnaya-pamyat': 'Оперативная память',
                     'bloki-pitaniya': 'Блоки питания',
-                    'kulery': 'Кулеры',
-                    'zhestkie-diski': 'Жесткие диски',
+                    'moduli-pamyati': 'Модули памяти',
+                    'korpusa': 'Корпуса',
+                    'ventilyatory-dlya-korpusa': 'Вентиляторы',
                     'ssd-nakopiteli': 'SSD накопители',
-                    'korpusa': 'Корпуса'
+                    'zhestkie-diski': 'Жесткие диски',
+                    'kulery': 'Кулеры'
                 }
                 
                 # Get the corresponding DNS category name
@@ -885,6 +962,23 @@ def clear_citilink_parser_results():
                 f.write("[]")
             logger.info("Файл с отзывами Citilink парсера очищен")
             
+        # Очищаем файлы категорий
+        data_dir = os.path.join(citilink_parser_dir, 'data')
+        if os.path.exists(data_dir):
+            for category_dir in os.listdir(data_dir):
+                category_path = os.path.join(data_dir, category_dir)
+                if os.path.isdir(category_path):
+                    # Очищаем файлы категории
+                    cat_products_file = os.path.join(category_path, 'Товары.json')
+                    cat_reviews_file = os.path.join(category_path, 'Отзывы.json')
+                    cat_articles_file = os.path.join(category_path, 'Обзоры.json')
+                    
+                    for file_path in [cat_products_file, cat_reviews_file, cat_articles_file]:
+                        if os.path.exists(file_path):
+                            with open(file_path, 'w', encoding='utf-8') as f:
+                                f.write("[]")
+                            logger.info(f"Файл {os.path.basename(file_path)} в категории {category_dir} очищен")
+            
         flash('Результаты Citilink парсера успешно очищены', 'success')
     except Exception as e:
         logger.error(f"Ошибка при очистке результатов Citilink парсера: {e}")
@@ -917,20 +1011,103 @@ def run_all_parsers():
         # Затем запускаем парсер Citilink
         citilink_parser_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'utils', 'Citi_parser')
         
-        # Создаем .env файл с категорией для Citilink парсера
-        env_setup_cmd = f'Set-Content -Path "{os.path.join(citilink_parser_dir, ".env")}" -Value "CATEGORY=videokarty"'
-        subprocess.run(['powershell', '-Command', env_setup_cmd], check=True)
+        # Получаем список категорий для парсинга Citilink
+        categories = ["videokarty", "processory", "materinskie-platy", "operativnaya-pamyat", "bloki-pitaniya"]
         
-        logger.info("Запуск Citilink парсера")
-        os.chdir(citilink_parser_dir)
+        for category in categories:
+            # Создаем .env файл с категорией для Citilink парсера
+            env_setup_cmd = f'Set-Content -Path "{os.path.join(citilink_parser_dir, ".env")}" -Value "CATEGORY={category}"'
+            subprocess.run(['powershell', '-Command', env_setup_cmd], check=True)
+            
+            # Устанавливаем переменную окружения
+            os.environ['CATEGORY'] = category
+            
+            logger.info(f"Запуск Citilink парсера для категории: {category}")
+            os.chdir(citilink_parser_dir)
+            
+            # Запускаем парсер
+            subprocess.run([python_executable, 'main.py'], check=True, cwd=citilink_parser_dir)
+            
+            # Возвращаемся в исходную директорию между запусками
+            os.chdir(current_dir)
         
-        subprocess.run([python_executable, 'main.py'], check=True, cwd=citilink_parser_dir)
-        
-        os.chdir(current_dir)
-        
-        flash('Оба парсера успешно выполнены', 'success')
+        flash('Все парсеры успешно выполнены', 'success')
     except Exception as e:
         logger.error(f"Ошибка при запуске парсеров: {e}")
         flash(f'Ошибка при запуске парсеров: {str(e)}', 'danger')
         
-    return redirect(url_for('admin.scrape')) 
+    return redirect(url_for('admin.scrape'))
+
+@admin_bp.route('/api/citilink-category-data')
+@login_required
+@admin_required
+def get_citilink_category_data():
+    """API endpoint для получения данных определенной категории из Citilink парсера"""
+    category = request.args.get('category', '')
+    
+    try:
+        # Получаем путь к директории Citilink парсера
+        citilink_parser_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'utils', 'Citi_parser')
+        
+        # Если указана категория, пытаемся загрузить данные из категории
+        if category:
+            category_file = os.path.join(citilink_parser_dir, 'data', category, 'Товары.json')
+            
+            if os.path.exists(category_file):
+                with open(category_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Обработка потенциальных проблем с форматом JSON
+                    if content.endswith(',\n]'):
+                        content = content.replace(',\n]', '\n]')
+                    products = json.loads(content)
+                    return jsonify({"success": True, "products": products, "category": category})
+            else:
+                # Если файл категории не найден, сообщаем об ошибке
+                return jsonify({"success": False, "error": f"Файл с данными для категории {category} не найден"}), 404
+        
+        # Если категория не указана, загружаем данные из основного файла
+        main_file = os.path.join(citilink_parser_dir, 'Товары.json')
+        if os.path.exists(main_file):
+            with open(main_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+                if content.endswith(',\n]'):
+                    content = content.replace(',\n]', '\n]')
+                products = json.loads(content)
+                return jsonify({"success": True, "products": products, "category": "all"})
+        else:
+            # Если основной файл не найден, сообщаем об ошибке
+            return jsonify({"success": False, "error": "Файл с общими данными не найден"}), 404
+    
+    except Exception as e:
+        logger.error(f"Ошибка при получении данных категории: {e}")
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@admin_bp.route('/download-parser-results/<parser>')
+@login_required
+@admin_required
+def download_parser_results(parser):
+    """Download parser results for the specified parser."""
+    if parser == 'dns':
+        file_path = os.path.join(current_app.root_path, 'utils', 'DNS_parsing', 'Товары.json')
+        filename = 'dns_products.json'
+    elif parser == 'citilink':
+        file_path = os.path.join(current_app.root_path, 'utils', 'Citi_parser', 'Товары.json')
+        filename = 'citilink_products.json'
+    else:
+        flash('Неверный тип парсера', 'error')
+        return redirect(url_for('admin.scrape'))
+    
+    if not os.path.exists(file_path):
+        flash(f'Файл с результатами парсера {parser} не найден', 'error')
+        return redirect(url_for('admin.scrape'))
+    
+    try:
+        return send_file(
+            file_path,
+            as_attachment=True,
+            download_name=filename,
+            mimetype='application/json'
+        )
+    except Exception as e:
+        flash(f'Ошибка при скачивании файла: {str(e)}', 'error')
+        return redirect(url_for('admin.scrape')) 

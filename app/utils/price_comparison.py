@@ -31,7 +31,27 @@ class PriceComparison:
     def load_citilink_data(self, category):
         """Load Citilink product data by running the parser for a specific category"""
         try:
-            # Check if we already have Citilink products from a file without running the parser
+            # First check if we have category-specific data
+            if category:
+                category_products_file = os.path.join(self.citilink_parser_dir, 'data', category, 'Товары.json')
+                if os.path.exists(category_products_file):
+                    try:
+                        logging.info(f"Trying to load category-specific data for: {category}")
+                        with open(category_products_file, 'r', encoding='utf-8') as f:
+                            try:
+                                content = f.read()
+                                # Remove the trailing comma if it exists
+                                if content.endswith(',\n]'):
+                                    content = content.replace(',\n]', '\n]')
+                                self.citilink_products = json.loads(content)
+                                logging.info(f"Loaded {len(self.citilink_products)} products from category-specific file: {category}")
+                                return self.citilink_products
+                            except json.JSONDecodeError as e:
+                                logging.error(f"JSON decode error when loading category data: {str(e)}")
+                    except Exception as e:
+                        logging.error(f"Error loading category-specific data: {str(e)}")
+
+            # If no category-specific data found, try loading from the main file
             try:
                 # First try to load existing data without running the parser
                 logging.info(f"Trying to load existing Citilink data for category: {category}")
@@ -52,7 +72,7 @@ class PriceComparison:
             except Exception as e:
                 logging.error(f"Error loading existing Citilink data: {str(e)}")
             
-            # If we don't have existing data, or need to filter by category, run the parser
+            # If we don't have existing data, run the parser for the specified category
             # Set environment variable for Citilink parser
             os.environ['CATEGORY'] = category
             
@@ -65,37 +85,51 @@ class PriceComparison:
             stdout, stderr = process.communicate()
             
             if stderr:
-                logging.error(f"Citilink parser error: {stderr.decode('utf-8')}")
+                stderr_text = stderr.decode('utf-8', errors='replace')
+                logging.error(f"Citilink parser error: {stderr_text}")
             
-            # Read the generated JSON file
-            try:
-                with open('Товары.json', 'r', encoding='utf-8') as f:
-                    content = f.read()
-                    # Remove the trailing comma if it exists
-                    if content.endswith(',\n]'):
-                        content = content.replace(',\n]', '\n]')
-                    self.citilink_products = json.loads(content)
-                
-                logging.info(f"Loaded {len(self.citilink_products)} products from Citilink")
-                
-                # Log the first product for debugging
-                if len(self.citilink_products) > 0:
-                    logging.info(f"First Citilink product: {self.citilink_products[0].get('name', 'No name')}")
-                    
-            except json.JSONDecodeError as e:
-                logging.error(f"JSON decode error: {str(e)}")
-                with open('Товары.json', 'r', encoding='utf-8') as f:
-                    logging.error(f"File content: {f.read()[:200]}...")
+            if stdout:
+                stdout_text = stdout.decode('utf-8', errors='replace')
+                logging.info(f"Citilink parser output: {stdout_text}")
             
             # Change back to original directory
             os.chdir(self.current_dir)
             
+            # Check for category-specific data first
+            if category:
+                category_products_file = os.path.join(self.citilink_parser_dir, 'data', category, 'Товары.json')
+                if os.path.exists(category_products_file):
+                    try:
+                        with open(category_products_file, 'r', encoding='utf-8') as f:
+                            content = f.read()
+                            # Handle potential JSON format issues
+                            if content.endswith(',\n]'):
+                                content = content.replace(',\n]', '\n]')
+                            self.citilink_products = json.loads(content)
+                            logging.info(f"Loaded {len(self.citilink_products)} products from category-specific file after parsing")
+                            return self.citilink_products
+                    except Exception as e:
+                        logging.error(f"Error reading category-specific parser results: {str(e)}")
+            
+            # Fall back to the main file
+            # Read the results from the JSON file
+            try:
+                with open(os.path.join(self.citilink_parser_dir, 'Товары.json'), 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Handle potential JSON format issues
+                    if content.endswith(',\n]'):
+                        content = content.replace(',\n]', '\n]')
+                    self.citilink_products = json.loads(content)
+                    logging.info(f"Loaded {len(self.citilink_products)} products from Citilink")
+            except Exception as e:
+                logging.error(f"Error reading Citilink parser results: {str(e)}")
+                self.citilink_products = []
+            
             return self.citilink_products
         except Exception as e:
-            logging.error(f"Error loading Citilink data: {str(e)}")
-            # Change back to original directory in case of error
-            os.chdir(self.current_dir)
-            return []
+            logging.error(f"Error in load_citilink_data: {str(e)}")
+            self.citilink_products = []
+            return self.citilink_products
     
     def load_dns_data(self, category_name=None):
         """
@@ -588,11 +622,13 @@ def run_price_comparison(citilink_category=None, dns_category=None):
     # Map between Citilink categories and DNS category names
     category_mapping = {
         'videokarty': 'Видеокарты',
-        'protsessory': 'Процессоры',
+        'processory': 'Процессоры',
         'materinskie-platy': 'Материнские платы',
         'operativnaya-pamyat': 'Оперативная память',
+        'moduli-pamyati': 'Модули памяти',
         'bloki-pitaniya': 'Блоки питания',
         'kulery': 'Кулеры',
+        'ventilyatory-dlya-korpusa': 'Вентиляторы',
         'zhestkie-diski': 'Жесткие диски',
         'ssd-nakopiteli': 'SSD накопители',
         'korpusa': 'Корпуса'

@@ -1,8 +1,5 @@
 from app import create_app, db
-from app.models.models import (
-    User, Motherboard, PowerSupply, Processor, 
-    GraphicsCard, Cooler, RAM, HardDrive, Case, Configuration
-)
+from app.models.models import User, UnifiedProduct, Configuration
 
 app = create_app()
 

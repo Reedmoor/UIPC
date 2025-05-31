@@ -85,9 +85,14 @@
                         <select class="form-select" id="citilink_category" name="citilink_category">
                             <option value="" selected disabled>Выберите категорию</option>
                             <option value="videokarty" {% if env_citilink_category == "videokarty" %}selected{% endif %}>Видеокарты</option>
-                            <option value="protsessory" {% if env_citilink_category == "protsessory" %}selected{% endif %}>Процессоры</option>
+                            <option value="processory" {% if env_citilink_category == "processory" %}selected{% endif %}>Процессоры</option>
                             <option value="materinskie-platy" {% if env_citilink_category == "materinskie-platy" %}selected{% endif %}>Материнские платы</option>
-                            <option value="operativnaya-pamyat" {% if env_citilink_category == "operativnaya-pamyat" %}selected{% endif %}>Оперативная память</option>
+                            <option value="bloki-pitaniya" {% if env_citilink_category == "bloki-pitaniya" %}selected{% endif %}>Блоки питания</option>
+                            <option value="moduli-pamyati" {% if env_citilink_category == "moduli-pamyati" %}selected{% endif %}>Модули памяти</option>
+                            <option value="korpusa" {% if env_citilink_category == "korpusa" %}selected{% endif %}>Корпуса</option>
+                            <option value="ventilyatory-dlya-korpusa" {% if env_citilink_category == "ventilyatory-dlya-korpusa" %}selected{% endif %}>Вентиляторы для корпуса</option>
+                            <option value="ssd-nakopiteli" {% if env_citilink_category == "ssd-nakopiteli" %}selected{% endif %}>SSD накопители</option>
+                            <option value="zhestkie-diski" {% if env_citilink_category == "zhestkie-diski" %}selected{% endif %}>Жесткие диски</option>
                         </select>
                     </div>
                     
@@ -221,124 +226,40 @@
     <div class="col-md-12 mb-4">
         <div class="card">
             <div class="card-header bg-dark text-white">
-                <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Статус операций</h5>
+                <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Результаты парсинга</h5>
             </div>
             <div class="card-body">
-                <div class="accordion" id="parserResults">
+                {% if dns_results or citilink_results %}
+                <div class="list-group">
                     {% if dns_results %}
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingDNS">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDNS" aria-expanded="true" aria-controls="collapseDNS">
-                                Результаты парсера DNS ({{ dns_results|length }} товаров)
-                            </button>
-                        </h2>
-                        <div id="collapseDNS" class="accordion-collapse collapse show" aria-labelledby="headingDNS" data-bs-parent="#parserResults">
-                            <div class="accordion-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Название</th>
-                                                <th>Категория</th>
-                                                <th>Цена</th>
-                                                <th>Ссылка</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {% for item in dns_results[:10] %}
-                                            <tr>
-                                                <td>{{ item.name }}</td>
-                                                <td>{% if item.categories %}{{ item.categories[0].name if item.categories|length > 0 else 'Не указана' }}{% else %}Не указана{% endif %}</td>
-                                                <td>{{ item.price_discounted|default(item.price_original, true) }} ₽</td>
-                                                <td>
-                                                    <a href="{{ item.url }}" target="_blank" class="btn btn-sm btn-outline-danger">
-                                                        <i class="fas fa-external-link-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            {% endfor %}
-                                            {% if dns_results|length > 10 %}
-                                            <tr>
-                                                <td colspan="4" class="text-center">
-                                                    <em>Показаны первые 10 из {{ dns_results|length }} товаров</em>
-                                                </td>
-                                            </tr>
-                                            {% endif %}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">DNS Parser</h6>
+                            <p class="mb-1">Собрано товаров: {{ dns_results|length }}</p>
                         </div>
+                        <a href="{{ url_for('admin.download_parser_results', parser='dns') }}" class="btn btn-sm btn-outline-danger">
+                            <i class="fas fa-download me-1"></i>Скачать данные
+                        </a>
                     </div>
                     {% endif %}
                     
                     {% if citilink_results %}
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingCitilink">
-                            <button class="accordion-button {% if not dns_results %}{% else %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCitilink" aria-expanded="{% if not dns_results %}true{% else %}false{% endif %}" aria-controls="collapseCitilink">
-                                Результаты парсера Citilink ({{ citilink_results|length }} товаров)
-                            </button>
-                        </h2>
-                        <div id="collapseCitilink" class="accordion-collapse collapse {% if not dns_results %}show{% endif %}" aria-labelledby="headingCitilink" data-bs-parent="#parserResults">
-                            <div class="accordion-body">
-                                <!-- Debug information -->
-                                <div class="alert alert-info mb-3">
-                                    <h5>Отладочная информация:</h5>
-                                    <p>Количество товаров: {{ citilink_results|length }}</p>
-                                    {% if citilink_results|length > 0 %}
-                                    <p>Структура первого товара:</p>
-                                    <ul>
-                                        {% for key, value in citilink_results[0].items() %}
-                                        <li><strong>{{ key }}</strong>: {{ value }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                </div>
-                                
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Название</th>
-                                                <th>Категория</th>
-                                                <th>Цена</th>
-                                                <th>Ссылка</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {% for item in citilink_results[:10] %}
-                                            <tr>
-                                                <td>{{ item.name }}</td>
-                                                <td>{% if item.categories and item.categories|length > 1 %}{{ item.categories[1].name }}{% else %}{% if item.categories %}{{ item.categories[0].name if item.categories|length > 0 else 'Не указана' }}{% else %}Не указана{% endif %}{% endif %}</td>
-                                                <td>{% if item.price_old %}{{ item.price }} ₽ <small class="text-muted text-decoration-line-through">{{ item.price_old }} ₽</small>{% else %}{{ item.price|default('Нет в наличии') }} {% if item.price %}₽{% endif %}{% endif %}</td>
-                                                <td>
-                                                    <a href="{{ item.url }}" target="_blank" class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-external-link-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            {% endfor %}
-                                            {% if citilink_results|length > 10 %}
-                                            <tr>
-                                                <td colspan="4" class="text-center">
-                                                    <em>Показаны первые 10 из {{ citilink_results|length }} товаров</em>
-                                                </td>
-                                            </tr>
-                                            {% endif %}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">Citilink Parser</h6>
+                            <p class="mb-1">Собрано товаров: {{ citilink_results|length }}</p>
                         </div>
-                    </div>
-                    {% endif %}
-                    
-                    {% if not dns_results and not citilink_results %}
-                    <div class="alert alert-warning">
-                        <i class="fas fa-exclamation-triangle me-2"></i>Нет результатов парсинга. Запустите парсеры для получения данных.
+                        <a href="{{ url_for('admin.download_parser_results', parser='citilink') }}" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-download me-1"></i>Скачать данные
+                        </a>
                     </div>
                     {% endif %}
                 </div>
+                {% else %}
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle me-2"></i>Нет результатов парсинга. Запустите парсеры для получения данных.
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -404,6 +325,91 @@
                 currentLogFile = this.getAttribute('data-log-file');
                 loadLogs(currentLogFile);
             });
+        });
+        
+        // Загрузка данных по категории Citilink
+        document.getElementById('loadCategoryData').addEventListener('click', function() {
+            const category = document.getElementById('citilink_category_filter').value;
+            const resultsTableBody = document.getElementById('citilink-results-table');
+            
+            // Показываем индикатор загрузки
+            resultsTableBody.innerHTML = '<tr><td colspan="4" class="text-center py-3"><div class="spinner-border text-primary" role="status"></div><span class="ms-2">Загрузка данных...</span></td></tr>';
+            
+            // Функция для отображения данных в таблице
+            function displayResults(data) {
+                if (!data || data.length === 0) {
+                    resultsTableBody.innerHTML = '<tr><td colspan="4" class="text-center">Нет данных для выбранной категории</td></tr>';
+                    return;
+                }
+                
+                let html = '';
+                const displayLimit = 10;
+                const displayItems = data.slice(0, displayLimit);
+                
+                displayItems.forEach(item => {
+                    let categoryName = 'Не указана';
+                    if (item.categories && item.categories.length > 1) {
+                        categoryName = item.categories[1].name;
+                    } else if (item.categories && item.categories.length > 0) {
+                        categoryName = item.categories[0].name;
+                    }
+                    
+                    let priceDisplay = '';
+                    if (item.price_old) {
+                        priceDisplay = `${item.price} ₽ <small class="text-muted text-decoration-line-through">${item.price_old} ₽</small>`;
+                    } else if (item.price) {
+                        priceDisplay = `${item.price} ₽`;
+                    } else {
+                        priceDisplay = 'Нет в наличии';
+                    }
+                    
+                    html += `
+                    <tr>
+                        <td>${item.name}</td>
+                        <td>${categoryName}</td>
+                        <td>${priceDisplay}</td>
+                        <td>
+                            <a href="${item.url}" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </td>
+                    </tr>`;
+                });
+                
+                if (data.length > displayLimit) {
+                    html += `
+                    <tr>
+                        <td colspan="4" class="text-center">
+                            <em>Показаны первые ${displayLimit} из ${data.length} товаров</em>
+                        </td>
+                    </tr>`;
+                }
+                
+                resultsTableBody.innerHTML = html;
+            }
+            
+            // Запрос данных с сервера
+            if (category) {
+                // Запрос для конкретной категории
+                fetch(`/admin/api/citilink-category-data?category=${category}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        displayResults(data.products);
+                    })
+                    .catch(error => {
+                        resultsTableBody.innerHTML = `<tr><td colspan="4" class="text-center text-danger">Ошибка загрузки данных: ${error}</td></tr>`;
+                    });
+            } else {
+                // Запрос для всех категорий (загрузка из основного файла)
+                fetch('/admin/api/citilink-category-data')
+                    .then(response => response.json())
+                    .then(data => {
+                        displayResults(data.products);
+                    })
+                    .catch(error => {
+                        resultsTableBody.innerHTML = `<tr><td colspan="4" class="text-center text-danger">Ошибка загрузки данных: ${error}</td></tr>`;
+                    });
+            }
         });
     });
 </script>
